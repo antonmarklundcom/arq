@@ -1,0 +1,91 @@
+/* ============================================================================
+   ARQ.COM.PY — DESIGN TOKENS
+   "MONOGRAFÍA" — a living monograph of Paraguayan architecture.
+   Palette honors Paraguay's world-famous brickwork: red earth, fired clay, ink on paper.
+   Every phase inherits from here. Do not hardcode colors/sizes elsewhere — use these vars.
+   ============================================================================ */
+
+:root {
+  /* ---- Palette ---------------------------------------------------------- */
+  --paper: #f4f1ea;        /* warm off-white — the gallery wall */
+  --paper-dim: #ebe7dd;    /* slightly recessed surface */
+  --ink: #141210;          /* near-black — editorial text & dark bands */
+  --ink-soft: #2a2621;     /* raised surface on dark bands */
+  --clay: #b5442a;         /* fired-brick red — THE accent, used sparingly */
+  --clay-deep: #8f3320;    /* pressed/active clay */
+  --stone: #8a8378;        /* muted secondary text */
+  --stone-line: #d6d0c4;   /* hairline rules on paper */
+  --stone-line-dark: #3a352e; /* hairline rules on ink */
+
+  /* Semantic surfaces — components read these, not the raw palette */
+  --bg: var(--paper);
+  --bg-raised: var(--paper-dim);
+  --fg: var(--ink);
+  --fg-muted: var(--stone);
+  --rule: var(--stone-line);
+  --accent: var(--clay);
+
+  /* ---- Type ------------------------------------------------------------- */
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Fluid display scale (clamp: min, fluid, max) */
+  --step--1: clamp(0.78rem, 0.74rem + 0.20vw, 0.90rem);
+  --step-0:  clamp(1.00rem, 0.95rem + 0.25vw, 1.15rem);
+  --step-1:  clamp(1.25rem, 1.15rem + 0.50vw, 1.55rem);
+  --step-2:  clamp(1.60rem, 1.40rem + 1.00vw, 2.30rem);
+  --step-3:  clamp(2.10rem, 1.70rem + 2.00vw, 3.50rem);
+  --step-4:  clamp(2.80rem, 2.00rem + 4.00vw, 5.50rem);
+  --step-5:  clamp(3.60rem, 1.80rem + 9.00vw, 9.00rem);
+
+  --lh-tight: 0.98;
+  --lh-snug: 1.12;
+  --lh-body: 1.6;
+
+  /* Uppercase editorial labels ("eyebrows") */
+  --label-tracking: 0.22em;
+  --label-size: var(--step--1);
+
+  /* ---- Spacing (8px base rhythm) --------------------------------------- */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6.5rem;
+  --space-4xl: 10rem;
+
+  /* ---- Layout ----------------------------------------------------------- */
+  --measure: 68ch;                 /* max readable line length */
+  --container: 78rem;              /* max content width */
+  --container-wide: 90rem;         /* full-bleed-ish bands */
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+  --nav-h: 4.75rem;
+
+  /* ---- Motion ----------------------------------------------------------- */
+  /* Slow, heavy, confident. No bounce, no spin. */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 0.35s;
+  --dur: 0.6s;
+  --dur-slow: 1s;
+  --dur-hero: 1.2s;
+
+  /* ---- Elevation / misc ------------------------------------------------- */
+  --radius: 0px;                   /* editorial: sharp corners, no rounding */
+  --hairline: 1px;
+  --z-nav: 100;
+  --z-overlay: 200;
+}
+
+/* Dark bands (hero, footer, featured strips) invert the semantic surfaces. */
+.on-dark,
+[data-theme='dark'] {
+  --bg: var(--ink);
+  --bg-raised: var(--ink-soft);
+  --fg: var(--paper);
+  --fg-muted: #a79f92;
+  --rule: var(--stone-line-dark);
+}

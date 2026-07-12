@@ -1,0 +1,117 @@
+---
+const year = new Date().getFullYear();
+
+const columns = [
+  {
+    title: 'Explorar',
+    links: [
+      { href: '/obras', label: 'Obras' },
+      { href: '/arquitectos', label: 'Arquitectos' },
+    ],
+  },
+  {
+    title: 'Participar',
+    links: [
+      { href: '/postulate', label: 'Postulá tu estudio' },
+      { href: '/contacto', label: 'Contanos tu proyecto' },
+    ],
+  },
+];
+---
+
+<!-- Footer is a dark band with a lead-gen CTA — CTAs to /contacto appear site-wide. -->
+<footer class="site-footer band-dark">
+  <div class="container container-wide">
+    <div class="footer-cta">
+      <p class="eyebrow">¿Tenés un proyecto?</p>
+      <h2 class="footer-cta__title">Empecemos por una conversación.</h2>
+      <a href="/contacto" class="btn btn--ghost">Contanos tu proyecto</a>
+    </div>
+
+    <hr class="rule footer-divider" />
+
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="brand" aria-label="arq.com.py — inicio">
+          <span class="brand__mark">arq</span><span class="brand__tld">.com.py</span>
+        </a>
+        <p class="footer-brand__blurb">
+          La selección de la mejor arquitectura del Paraguay y los estudios que la crean.
+        </p>
+      </div>
+
+      {columns.map((col) => (
+        <nav class="footer-col" aria-label={col.title}>
+          <p class="footer-col__title">{col.title}</p>
+          <ul role="list">
+            {col.links.map((l) => (
+              <li><a href={l.href} class="footer-col__link">{l.label}</a></li>
+            ))}
+          </ul>
+        </nav>
+      ))}
+    </div>
+
+    <div class="footer-base">
+      <p>© {year} arq.com.py — Asunción, Paraguay</p>
+      <p class="footer-base__tag">Arquitectura del Paraguay · Selección {year}</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer { padding-block: var(--space-3xl) var(--space-xl); }
+
+  .footer-cta { padding-block: var(--space-lg) var(--space-2xl); max-width: 46rem; }
+  .footer-cta__title {
+    font-size: var(--step-3);
+    margin-block: var(--space-sm) var(--space-lg);
+  }
+
+  .footer-divider { background: var(--stone-line-dark); }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr;
+    gap: var(--space-2xl);
+    padding-block: var(--space-2xl);
+  }
+  .brand {
+    font-family: var(--font-display);
+    font-size: var(--step-2);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+  .brand__tld { color: var(--accent); }
+  .footer-brand__blurb { color: var(--fg-muted); margin-top: var(--space-md); max-width: 32ch; }
+
+  .footer-col__title {
+    font-size: var(--label-size);
+    text-transform: uppercase;
+    letter-spacing: var(--label-tracking);
+    color: var(--fg-muted);
+    margin-bottom: var(--space-md);
+  }
+  .footer-col ul { display: flex; flex-direction: column; gap: var(--space-sm); padding: 0; margin: 0; list-style: none; }
+  .footer-col__link {
+    position: relative;
+    transition: color var(--dur-fast) var(--ease-out);
+  }
+  .footer-col__link:hover { color: var(--accent); }
+
+  .footer-base {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    padding-top: var(--space-xl);
+    border-top: var(--hairline) solid var(--stone-line-dark);
+    color: var(--fg-muted);
+    font-size: var(--step--1);
+  }
+
+  @media (max-width: 48rem) {
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: var(--space-xl); }
+    .footer-brand { grid-column: 1 / -1; }
+  }
+</style>

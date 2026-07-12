@@ -1,0 +1,195 @@
+---
+export interface Props {
+  /** When true the header floats transparently over a dark hero until scrolled. */
+  transparent?: boolean;
+}
+const { transparent = false } = Astro.props;
+
+const nav = [
+  { href: '/obras', label: 'Obras' },
+  { href: '/arquitectos', label: 'Arquitectos' },
+  { href: '/postulate', label: 'Postulate' },
+];
+
+const path = Astro.url.pathname;
+const isActive = (href: string) => path === href || path.startsWith(href + '/');
+---
+
+<header class:list={['site-header', { 'is-transparent': transparent }]} data-header>
+  <div class="site-header__inner container container-wide">
+    <a href="/" class="brand" aria-label="arq.com.py — inicio">
+      <span class="brand__mark">arq</span>
+      <span class="brand__tld">.com.py</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Principal">
+      <ul role="list" class="site-nav__list">
+        {nav.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              class:list={['site-nav__link', { 'is-active': isActive(item.href) }]}
+              aria-current={isActive(item.href) ? 'page' : undefined}
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <a href="/contacto" class="btn site-header__cta">Contanos tu proyecto</a>
+
+    <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+      <span class="sr-only">Abrir menú</span>
+      <span class="menu-toggle__bar"></span>
+      <span class="menu-toggle__bar"></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
+    <nav aria-label="Móvil">
+      <ul role="list" class="mobile-menu__list">
+        {nav.map((item) => (
+          <li><a href={item.href} class="mobile-menu__link">{item.label}</a></li>
+        ))}
+        <li><a href="/contacto" class="mobile-menu__link mobile-menu__link--cta">Contanos tu proyecto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-nav);
+    background: var(--paper);
+    border-bottom: var(--hairline) solid var(--rule);
+    transition: background var(--dur) var(--ease-out),
+                color var(--dur) var(--ease-out),
+                border-color var(--dur) var(--ease-out);
+  }
+  .site-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-lg);
+    height: var(--nav-h);
+  }
+
+  /* Transparent-over-hero mode; JS flips [data-scrolled] on to solidify. */
+  .site-header.is-transparent {
+    position: fixed;
+    inset-inline: 0;
+    background: transparent;
+    border-color: transparent;
+    color: var(--paper);
+  }
+  .site-header.is-transparent[data-scrolled] {
+    position: fixed;
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--stone-line-dark);
+  }
+
+  .brand {
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .brand__tld { color: var(--accent); }
+
+  .site-nav__list {
+    display: flex;
+    gap: var(--space-xl);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .site-nav__link {
+    position: relative;
+    font-size: var(--step--1);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    padding-block: 0.25em;
+    color: inherit;
+    opacity: 0.85;
+    transition: opacity var(--dur-fast) var(--ease-out);
+  }
+  .site-nav__link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.15em;
+    width: 100%;
+    height: var(--hairline);
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--dur) var(--ease-out);
+  }
+  .site-nav__link:hover { opacity: 1; }
+  .site-nav__link:hover::after,
+  .site-nav__link.is-active::after { transform: scaleX(1); }
+
+  .site-header__cta { padding: 0.7em 1.2em; }
+
+  /* Mobile ---------------------------------------------------------------- */
+  .menu-toggle { display: none; width: 2.5rem; height: 2.5rem; }
+  .menu-toggle__bar {
+    display: block;
+    width: 1.6rem;
+    height: 2px;
+    margin: 4px auto;
+    background: currentColor;
+    transition: transform var(--dur-fast) var(--ease-out), opacity var(--dur-fast) var(--ease-out);
+  }
+  .menu-toggle[aria-expanded='true'] .menu-toggle__bar:nth-child(2) { transform: translateY(3px) rotate(45deg); }
+  .menu-toggle[aria-expanded='true'] .menu-toggle__bar:nth-child(3) { transform: translateY(-3px) rotate(-45deg); }
+
+  .mobile-menu {
+    border-top: var(--hairline) solid var(--rule);
+    background: var(--paper);
+    color: var(--ink);
+  }
+  .mobile-menu__list { display: flex; flex-direction: column; padding: var(--space-md) var(--gutter) var(--space-xl); }
+  .mobile-menu__link {
+    display: block;
+    padding: var(--space-md) 0;
+    font-family: var(--font-display);
+    font-size: var(--step-2);
+    border-bottom: var(--hairline) solid var(--rule);
+  }
+  .mobile-menu__link--cta { color: var(--accent); }
+
+  @media (max-width: 60rem) {
+    .site-nav, .site-header__cta { display: none; }
+    .menu-toggle { display: block; }
+  }
+</style>
+
+<script>
+  // Solidify the transparent header once the hero is scrolled past a threshold.
+  const header = document.querySelector<HTMLElement>('[data-header]');
+  if (header?.classList.contains('is-transparent')) {
+    const onScroll = () => {
+      if (window.scrollY > window.innerHeight * 0.6) header.setAttribute('data-scrolled', '');
+      else header.removeAttribute('data-scrolled');
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+
+  // Mobile menu toggle.
+  const toggle = document.querySelector<HTMLButtonElement>('[data-menu-toggle]');
+  const menu = document.querySelector<HTMLElement>('[data-mobile-menu]');
+  toggle?.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!open));
+    if (menu) menu.hidden = open;
+  });
+</script>
