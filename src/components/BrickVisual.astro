@@ -1,0 +1,76 @@
+---
+// Procedural duotone brick-coursing visual — stands in for real photography/video.
+// Swap-point for Phase 7 or later: replace this component's markup with a real
+// <video>/<picture> once photography or a Higgsfield-generated clip is available;
+// callers (index.astro) don't need to change.
+export interface Props {
+  class?: string;
+}
+const { class: className = '' } = Astro.props;
+---
+
+<div class={`brick-visual ${className}`} data-brick-visual aria-hidden="true">
+  <svg
+    class="brick-visual__svg"
+    viewBox="0 0 400 400"
+    preserveAspectRatio="xMidYMid slice"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      <!-- Running-bond brick coursing: long low units, alternating half-brick offset,
+           visible mortar joints. Muted clay-on-ink, not saturated — reads as masonry
+           texture behind the headline, not a graphic pattern competing with it. -->
+      <pattern id="brickCourse" width="48" height="16" patternUnits="userSpaceOnUse">
+        <rect width="48" height="16" fill="#0e0c0b" />
+        <rect x="0.5" y="0.5" width="21" height="13" fill="#5a2419" />
+        <rect x="25.5" y="0.5" width="21" height="13" fill="#4d1f16" />
+      </pattern>
+      <pattern id="brickCourseOffset" width="48" height="16" patternUnits="userSpaceOnUse" patternTransform="translate(24,16)">
+        <rect width="48" height="16" fill="#0e0c0b" />
+        <rect x="0.5" y="0.5" width="21" height="13" fill="#4d1f16" />
+        <rect x="25.5" y="0.5" width="21" height="13" fill="#5a2419" />
+      </pattern>
+      <linearGradient id="lightRake" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#b5442a" stop-opacity="0.18" />
+        <stop offset="55%" stop-color="#b5442a" stop-opacity="0" />
+      </linearGradient>
+      <radialGradient id="vignette" cx="50%" cy="38%" r="72%">
+        <stop offset="0%" stop-color="#141210" stop-opacity="0.15" />
+        <stop offset="100%" stop-color="#141210" stop-opacity="0.92" />
+      </radialGradient>
+    </defs>
+    <rect width="400" height="208" fill="url(#brickCourse)" />
+    <rect y="208" width="400" height="208" fill="url(#brickCourseOffset)" />
+    <rect width="400" height="416" fill="url(#lightRake)" />
+    <rect width="400" height="416" fill="url(#vignette)" />
+  </svg>
+  <div class="brick-visual__grain"></div>
+</div>
+
+<style>
+  .brick-visual {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    background: var(--ink);
+  }
+  .brick-visual__svg {
+    position: absolute;
+    inset: -6%;
+    width: 112%;
+    height: 112%;
+    transform: scale(1.08);
+    will-change: transform;
+  }
+  /* Subtle film grain via layered gradient noise to avoid a flat vector look */
+  .brick-visual__grain {
+    position: absolute;
+    inset: 0;
+    opacity: 0.06;
+    mix-blend-mode: overlay;
+    background-image: radial-gradient(circle at 20% 30%, #fff 0.5px, transparent 0.5px),
+      radial-gradient(circle at 60% 70%, #fff 0.5px, transparent 0.5px),
+      radial-gradient(circle at 80% 20%, #fff 0.5px, transparent 0.5px);
+    background-size: 3px 3px, 5px 5px, 4px 4px;
+  }
+</style>

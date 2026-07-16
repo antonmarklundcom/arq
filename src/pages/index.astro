@@ -1,44 +1,297 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-// NOTE: Placeholder home page — Phase 2 (Opus) replaces this with the full-height
-// hero + scroll experience per PLAN.md §2. This exists so Phase 1 builds and the
-// design system can be smoke-tested.
+import BrickVisual from '../components/BrickVisual.astro';
+
+// Placeholder cards — Phase 3 wires these to real content collections
+// (src/content/obras, src/content/arquitectos). Structure/markup is final.
+const featuredWorks = [
+  { n: '001', title: 'Casa de Ladrillo', city: 'Asunción', architect: 'Estudio Yvytu' },
+  { n: '002', title: 'Capilla del Cerro', city: 'Areguá', architect: 'Benítez & Ortiz' },
+  { n: '003', title: 'Biblioteca Popular', city: 'Encarnación', architect: 'Taller Kurusu' },
+];
+
+const featuredArchitects = [
+  { n: '01', name: 'Estudio Yvytu', city: 'Asunción', works: 6 },
+  { n: '02', name: 'Benítez & Ortiz', city: 'Areguá', works: 4 },
+  { n: '03', name: 'Taller Kurusu', city: 'Encarnación', works: 9 },
+  { n: '04', name: 'Gabinete Tajy', city: 'Luque', works: 3 },
+];
+
+const steps = [
+  { n: '01', title: 'Explorá', body: 'Recorré obras seleccionadas por ciudad, tipo y estudio.' },
+  { n: '02', title: 'Encontrá', body: 'Cada obra te lleva directo al arquitecto que la creó.' },
+  { n: '03', title: 'Contactá', body: 'Enviá tu proyecto en minutos, sin vueltas.' },
+];
 ---
 
 <BaseLayout transparentHeader>
-  <section class="hero band-dark">
+  <!-- ============ HERO — full 100svh, dark, duotone brick ============ -->
+  <section class="hero band-dark" data-hero>
+    <BrickVisual class="hero__visual" />
+    <div class="hero__scrim" aria-hidden="true"></div>
+
     <div class="container container-wide hero__inner">
-      <p class="eyebrow">Arquitectura del Paraguay — Selección 2026</p>
-      <h1 class="hero__title">La arquitectura que el mundo mira.</h1>
-      <p class="hero__sub">
+      <p class="eyebrow hero__eyebrow" data-hero-word>Arquitectura del Paraguay — Selección 2026</p>
+
+      <h1 class="hero__title" data-hero-title>
+        <span class="hero__line" data-hero-line>
+          <span data-hero-word>La</span> <span data-hero-word>arquitectura</span> <span data-hero-word>que</span>
+        </span>
+        <span class="hero__line" data-hero-line>
+          <span data-hero-word>el</span> <span data-hero-word>mundo</span> <span data-hero-word>mira.</span>
+        </span>
+      </h1>
+
+      <p class="hero__sub" data-hero-word>
         La selección de las mejores obras del Paraguay y los estudios que las crean.
       </p>
-      <div class="hero__actions">
+
+      <div class="hero__actions" data-hero-word>
         <a href="/obras" class="btn">Explorar obras</a>
         <a href="/arquitectos" class="btn btn--ghost">Encontrá tu arquitecto</a>
       </div>
     </div>
+
+    <div class="hero__foot container container-wide">
+      <hr class="rule hero__rule" />
+      <div class="hero__foot-row">
+        <span class="hero__scroll-cue">Desplazate <span class="hero__scroll-arrow">↓</span></span>
+        <span class="hero__stats">34 estudios · 120 obras</span>
+      </div>
+    </div>
   </section>
 
+  <!-- ============ OBRAS DESTACADAS ============ -->
   <section class="section container">
-    <p class="folio">N° 001</p>
-    <hr class="rule" style="margin-block: var(--space-md) var(--space-xl);" />
-    <p style="max-width: var(--measure); font-size: var(--step-1);">
-      Fase&nbsp;1 completa: sistema de diseño, tipografía, navegación y pie de página.
-      La portada definitiva llega en la Fase&nbsp;2.
-    </p>
+    <header class="section-head" data-reveal>
+      <p class="eyebrow">Selección</p>
+      <h2>Obras destacadas</h2>
+    </header>
+
+    <ul role="list" class="works-grid">
+      {featuredWorks.map((w) => (
+        <li class="work-card" data-reveal>
+          <a href="/obras" class="work-card__link">
+            <div class="duotone work-card__image"><div class="work-card__placeholder"></div></div>
+            <p class="folio">N° {w.n}</p>
+            <h3 class="work-card__title">{w.title}</h3>
+            <p class="work-card__meta">{w.city} · {w.architect}</p>
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <a href="/obras" class="link-underline" data-reveal>
+      Ver todas las obras <span class="arrow">→</span>
+    </a>
+  </section>
+
+  <!-- ============ CÓMO FUNCIONA ============ -->
+  <section class="section band-dark how-it-works">
+    <div class="container">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">Cómo funciona</p>
+        <h2>De la idea a tu arquitecto.</h2>
+      </header>
+
+      <ol role="list" class="steps-grid">
+        {steps.map((s) => (
+          <li class="step" data-reveal>
+            <p class="step__n">{s.n}</p>
+            <hr class="rule" data-reveal-rule />
+            <h3 class="step__title">{s.title}</h3>
+            <p class="step__body">{s.body}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ ARQUITECTOS DESTACADOS ============ -->
+  <section class="section container">
+    <header class="section-head" data-reveal>
+      <p class="eyebrow">Los estudios</p>
+      <h2>Arquitectos destacados</h2>
+    </header>
+
+    <ul role="list" class="architects-list">
+      {featuredArchitects.map((a) => (
+        <li data-reveal>
+          <a href="/arquitectos" class="architect-row">
+            <span class="folio architect-row__n">{a.n}</span>
+            <span class="architect-row__name">{a.name}</span>
+            <span class="architect-row__meta">{a.city}</span>
+            <span class="architect-row__meta">{a.works} obras</span>
+            <span class="architect-row__arrow">→</span>
+          </a>
+          <hr class="rule" data-reveal-rule />
+        </li>
+      ))}
+    </ul>
+
+    <a href="/arquitectos" class="link-underline" data-reveal>
+      Ver todos los arquitectos <span class="arrow">→</span>
+    </a>
+  </section>
+
+  <!-- ============ EDITORIAL STRIP ============ -->
+  <section class="section-lg editorial-strip band-dark">
+    <div class="container">
+      <p class="editorial-strip__quote" data-reveal>
+        “El ladrillo no esconde nada. Es la arquitectura que se muestra tal cual es —
+        y así es como merece ser mirada.”
+      </p>
+      <p class="eyebrow" data-reveal>Sobre la selección 2026</p>
+    </div>
   </section>
 </BaseLayout>
 
+<script>
+  import { gsap } from 'gsap';
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Ken-Burns: hero visual scales slowly in on load, independent of scroll.
+  const visual = document.querySelector<HTMLElement>('[data-hero-visual], .hero__visual .brick-visual__svg');
+  const svg = document.querySelector<HTMLElement>('.hero__visual .brick-visual__svg');
+  if (svg && !reduceMotion) {
+    gsap.fromTo(svg, { scale: 1.18 }, { scale: 1.08, duration: 2.4, ease: 'power2.out' });
+  }
+
+  // Headline + eyebrow + sub + actions rise in, word by word for the title.
+  const words = gsap.utils.toArray<HTMLElement>('[data-hero-word]');
+  gsap.set(words, { autoAlpha: 0, y: reduceMotion ? 0 : 24 });
+  gsap.to(words, {
+    autoAlpha: 1,
+    y: 0,
+    duration: reduceMotion ? 0.01 : 0.9,
+    ease: 'power3.out',
+    stagger: reduceMotion ? 0 : 0.045,
+    delay: 0.2,
+  });
+
+  // Import the shared scroll engine (Lenis + ScrollTrigger + generic reveals) after
+  // the hero's own entrance animation is queued.
+  import('../scripts/scroll.ts');
+</script>
+
 <style>
+  /* ---- Hero ---------------------------------------------------------- */
   .hero {
+    position: relative;
     min-height: 100svh;
     display: flex;
-    align-items: flex-end;
-    padding-block: var(--space-4xl) var(--space-3xl);
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
   }
-  .hero__inner { width: 100%; }
-  .hero__title { font-size: var(--step-5); max-width: 16ch; margin-block: var(--space-lg) var(--space-lg); }
-  .hero__sub { color: var(--fg-muted); font-size: var(--step-1); max-width: 42ch; }
-  .hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-md); margin-top: var(--space-xl); }
+  .hero__scrim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, var(--ink) 0%, rgba(20, 18, 16, 0.35) 45%, rgba(20, 18, 16, 0.6) 100%);
+  }
+  .hero__inner {
+    position: relative;
+    z-index: 1;
+    padding-top: calc(var(--nav-h) + var(--space-3xl));
+    padding-bottom: var(--space-2xl);
+  }
+  .hero__eyebrow { margin-bottom: var(--space-lg); }
+  .hero__title {
+    font-size: var(--step-5);
+    line-height: var(--lh-tight);
+    margin: 0 0 var(--space-lg);
+  }
+  .hero__line { display: block; overflow: hidden; }
+  .hero__title [data-hero-word] { display: inline-block; }
+  .hero__sub { color: var(--fg-muted); font-size: var(--step-1); max-width: 42ch; margin-bottom: var(--space-xl); }
+  .hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-md); }
+
+  .hero__foot { position: relative; z-index: 1; padding-bottom: var(--space-xl); }
+  .hero__rule { background: var(--stone-line-dark); margin-bottom: var(--space-md); }
+  .hero__foot-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--step--1);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--fg-muted);
+  }
+  .hero__scroll-arrow {
+    display: inline-block;
+    animation: bob 2s var(--ease-in-out) infinite;
+  }
+  @media (prefers-reduced-motion: reduce) { .hero__scroll-arrow { animation: none; } }
+  @keyframes bob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(4px); }
+  }
+
+  /* ---- Section heads --------------------------------------------------- */
+  .section-head { margin-bottom: var(--space-2xl); max-width: 40rem; }
+  .section-head h2 { margin-top: var(--space-md); }
+
+  /* ---- Obras destacadas -------------------------------------------------- */
+  .works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+    margin-bottom: var(--space-2xl);
+  }
+  .work-card__link { display: block; }
+  .work-card__image { aspect-ratio: 4 / 5; margin-bottom: var(--space-md); }
+  .work-card__placeholder { width: 100%; height: 100%; background: var(--stone); }
+  .work-card__title { font-size: var(--step-1); margin-top: var(--space-sm); }
+  .work-card__meta { color: var(--fg-muted); font-size: var(--step--1); margin-top: var(--space-2xs); }
+
+  /* ---- Cómo funciona -------------------------------------------------- */
+  .how-it-works { padding-block: var(--space-3xl); }
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-2xl);
+    margin-top: var(--space-2xl);
+    padding: 0;
+    list-style: none;
+  }
+  .step__n { font-family: var(--font-display); font-size: var(--step-3); color: var(--accent); }
+  .step .rule { margin-block: var(--space-md); background: var(--stone-line-dark); }
+  .step__title { margin-bottom: var(--space-sm); }
+  .step__body { color: var(--fg-muted); }
+
+  /* ---- Arquitectos destacados -------------------------------------------- */
+  .architects-list { padding: 0; margin: 0 0 var(--space-2xl); list-style: none; }
+  .architect-row {
+    display: grid;
+    grid-template-columns: 3rem 1fr auto auto 2rem;
+    align-items: center;
+    gap: var(--space-lg);
+    padding-block: var(--space-lg);
+    transition: gap var(--dur-fast) var(--ease-out);
+  }
+  .architect-row:hover { gap: var(--space-xl); }
+  .architect-row__name { font-family: var(--font-display); font-size: var(--step-2); }
+  .architect-row__meta { color: var(--fg-muted); font-size: var(--step--1); text-transform: uppercase; letter-spacing: 0.08em; }
+  .architect-row__arrow {
+    justify-self: end;
+    color: var(--accent);
+    transition: transform var(--dur-fast) var(--ease-out);
+  }
+  .architect-row:hover .architect-row__arrow { transform: translateX(0.35em); }
+
+  /* ---- Editorial strip -------------------------------------------------- */
+  .editorial-strip__quote {
+    font-family: var(--font-display);
+    font-size: var(--step-3);
+    line-height: var(--lh-snug);
+    max-width: 34ch;
+    margin-bottom: var(--space-xl);
+  }
+
+  /* ---- Responsive --------------------------------------------------------- */
+  @media (max-width: 60rem) {
+    .works-grid, .steps-grid { grid-template-columns: 1fr; }
+    .architect-row { grid-template-columns: 2.5rem 1fr auto; }
+    .architect-row__meta:last-of-type { display: none; }
+  }
 </style>
