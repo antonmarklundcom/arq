@@ -16,6 +16,10 @@ RewriteRule ^arquitectos/([a-z0-9-]+)/?$ arquitecto.php?slug=$1 [L,QSA]
 # Nunca servir includes, storage ni .env
 RewriteRule ^(includes|storage|docs)/ - [F]
 RewriteRule ^\.env - [F]
+# Deploy por Git: la raíz del repo es el sitio; cerramos .git y archivos de desarrollo.
+RewriteRule (^|/)\.git(/|$) - [F]
+RewriteRule ^(router|verify)\.(php|sh)$ - [F]
+RewriteRule \.(md|sh|lock|log|example)$ - [F,NC]
 RewriteRule ^(obra|arquitecto|sitemap|robots|404|gracias)\.php$ - [L]
 
 # URLs limpias: /contacto -> contacto.php

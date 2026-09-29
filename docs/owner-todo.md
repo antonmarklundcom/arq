@@ -28,3 +28,9 @@ Reemplazar por estudios y obras reales (con autorización) en `includes/data/`.
 - Privacidad: texto base, que lo revise un abogado.
 - Definir document root y que `includes/`, `storage/`, `docs/` no sean públicos (el `.htaccess` los bloquea).
 - Contadores del hero cuentan solo entradas verificadas.
+
+## Deploy por Git (hPanel → Avanzado → GIT)
+1. Repositorio `antonmarklundcom/arq`, rama `main`, ruta de instalación vacía (= `public_html`). `public_html` tiene que estar vacío en el primer deploy (borrá `default.php` o los archivos del sitio viejo).
+2. Copiá la URL del webhook de Hostinger a GitHub → Settings → Webhooks (evento push): cada merge redeploya solo.
+3. Los archivos ignorados por Git (`config.php`, `.env`, `storage/`) no viajan: creálos una sola vez por el administrador de archivos y no se pisan en los deploys siguientes.
+4. Después del primer deploy, verificá que `/docs/`, `/.git/HEAD` y `/PLAN.md` den 403/404.
