@@ -1,0 +1,91 @@
+# arq.com.py — canonical URL list
+
+**Source of truth:** `docs/seo/ARQ-COM-PY-MASTER-BUSINESS-DESIGN-SEO-BRIEF.md` (the MASTER BRIEF, 25 Aug 2026,
+copied from antonmarklundcom/carpinteria `b53d23f`). URLs follow brief §11.3.
+
+**Owner direction (window B):** the MASTER BRIEF wins over `PLAN.md` (July, directory model) and over
+`arq-com-py-site-structure.md` (older URL set). The MONOGRAFÍA look stays. `/arquitectos/` and `/obras/`
+stay and serve as the brief's architects hub. Example entries stay `noindex` until they are real.
+
+**Rules for sister sites (obra, carpinteria, …):** link only to rows with status **live**. Use the exact
+URL with its trailing slash. A row marked *planned* or *not planned* may 404 or redirect.
+
+Status key: **live** = in the sitemap on `main`, 200. *planned* = agreed, not built yet. *not planned* =
+deliberately not built; the reason is in the note. *301* = redirect kept permanently (listed in `.htaccess`,
+`includes/routes.php` and `docs/audit/redirects.tsv`).
+
+Trailing slash: every page URL ends in `/` (brief §14, "trailing-slash consistency"). The slashless
+form 301s to it.
+
+## 1. Pages
+
+| URL | Status | Phase | Note |
+|---|---|---|---|
+| `/` | **live** | — | Brand and conversion page. H1 per brief §11.4 |
+| `/contanos-tu-proyecto/` | *planned* | A3 | Three-step project selector (§7) → `enviar.php` → WhatsApp |
+| `/como-funciona/` | *planned* | A3 | How ARQ works and the independent-professional boundary |
+| `/servicios/` | *planned* | A3 | Hub of the four services |
+| `/servicios/anteproyecto-arquitectonico/` | *planned* | A3 | |
+| `/servicios/planos-documentacion-municipal/` | *planned* | A3 | |
+| `/servicios/calculo-estructural/` | *planned* | A3 | |
+| `/servicios/direccion-de-proyecto/` | *planned* | A3 | |
+| `/proyectos/` | *planned* | A3 | Hub of project-intent pages |
+| `/proyectos/casa-nueva/` | *planned* | A3 | |
+| `/proyectos/reforma-ampliacion/` | *planned* | A3 | |
+| `/proyectos/local-comercial/` | *planned* | Phase 2 | Needs a verified partner for commercial work |
+| `/proyectos/evaluar-un-terreno/` | *planned* | Phase 2 | |
+| `/para-arquitectos/` | *planned* | A3 | Partner information and application |
+| `/arquitectos/` | **live** | — | Architects hub. Designed empty state for partners + editorial references |
+| `/arquitectos/gabinete-de-arquitectura/` | **live** | — | Editorial reference with a named source. **Not** an ARQ partner |
+| `/arquitectos/[perfil-verificado]/` | *planned* | Phase 2 | Only with verified registration (CAP member list) and consent |
+| `/obras/` | **live** | — | Works index kept per owner. Real entries only in the sitemap |
+| `/obras/bienal-venecia-2016/` | **live** | — | Sourced (La Biennale di Venezia) |
+| `/obras/[slug]/`, `/arquitectos/estudio-ejemplo-*/` | noindex | — | Example entries, marked "Ejemplo", outside the sitemap |
+| `/guias/` + six guides of §17 Phase 2 | *planned* | Phase 2 | See A4 keyword map for order |
+| `/zonas/asuncion/`, `/zonas/gran-asuncion/` | *not planned* | — | Brief §11.3: only with real partner coverage |
+| `/privacidad/` | **live** | — | Base text; lawyer review pending |
+| `/terminos/` | *planned* | A3 | Terms + matching disclaimer |
+| `/gracias/` | noindex | — | Thank-you page for the partner and profile forms |
+
+## 2. Existing URLs that move (301)
+
+| Old URL | → New URL | When |
+|---|---|---|
+| `/contacto` | `/contanos-tu-proyecto/` | A3 |
+| `/postulate` | `/para-arquitectos/` | A3 |
+| `/nosotros` | `/como-funciona/` | A3 |
+| `/obras`, `/arquitectos`, `/privacidad`, `/gracias`, `/obras/x`, `/arquitectos/x` | same path + `/` | A3 |
+
+`/arquitectos` keeps working for carpinteria's `/cocinas/` and `/placares/` links: 301 → `/arquitectos/`.
+Carpinteria can update the href to `https://arq.com.py/arquitectos/` to save the hop.
+
+## 3. Old structure-doc URLs → brief equivalent
+
+`arq-com-py-site-structure.md` listed an older URL set that obra.com.py mentions as text. None of these
+URLs was ever live. Those with a clear equivalent get a 301 so a typed or copied link still lands.
+
+| Structure doc | Brief equivalent | Handling |
+|---|---|---|
+| `/planos/` | `/servicios/planos-documentacion-municipal/` | 301 (A3) |
+| `/carpeta/` | `/servicios/planos-documentacion-municipal/` | 301 (A3) |
+| `/diseno/` | `/servicios/anteproyecto-arquitectonico/` | 301 (A3) |
+| `/estructural/` | `/servicios/calculo-estructural/` | 301 (A3) |
+| `/como-trabajamos/` | `/como-funciona/` | 301 (A3) |
+| `/cotizar/` | `/contanos-tu-proyecto/` | 301 (A3) |
+| `/comercial/` | `/proyectos/local-comercial/` | *planned*. 404 until that page exists |
+| `/proyectos/` (portfolio) | `/obras/` | In the brief `/proyectos/` is the project-intent hub, not a portfolio |
+| `/regularizacion/` | — | *not planned*: brief §11.2 says "only if verified partners genuinely provide it" |
+| `/renders/` | — | *not planned*: renders are part of the anteproyecto; no stand-alone page |
+| `/interiores/` | — | *not planned*: not in the brief; carpinteria keeps linking to `/arquitectos/` |
+| `/estilos/`, `/minimalista/`, `/moderna/` | — | *not planned*: style cluster not in the brief. Revisit with keyword data (A4) as `/guias/` |
+
+## 4. Cross-links out of arq
+
+| From | To | Anchor idea |
+|---|---|---|
+| `/proyectos/casa-nueva/` | `https://obra.com.py/casas/` | ¿Ya tenés planos y querés construir? |
+| `/proyectos/reforma-ampliacion/` | `https://obra.com.py/reformas/` | ¿Ya sabés qué reformar? |
+| service pages (where it fits) | `https://obra.com.py/` | ¿Ya querés construir? |
+
+Obra URLs were checked against `antonmarklundcom/obra` main (`app/routes.php`) on 2026-09-30. They were
+not checked live: the egress proxy blocks obra.com.py and arq.com.py in this environment.
