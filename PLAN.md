@@ -1,5 +1,11 @@
 # ARQ.COM.PY — Master Project Plan
 
+> **Superseded for strategy (window B, 2026-09-30).** The source of truth is now
+> `docs/seo/ARQ-COM-PY-MASTER-BUSINESS-DESIGN-SEO-BRIEF.md` (ARQ = demand generation and matching,
+> not a studio or a prestige directory). Canonical URLs: `docs/seo/arq-urls.md`. What stays from this
+> file: the MONOGRAFÍA look (§2 palette and type) and `/arquitectos/` + `/obras/` as the brief's
+> architects hub. The stack is PHP, not Astro (see `docs/owner-todo.md`).
+
 > Written by the planning model (Fable 5). Every build session MUST read this file first.
 > Execution models per phase are listed in the Phase Table. Do not deviate from the
 > creative direction without the owner's approval.
