@@ -323,3 +323,4 @@ input, select, textarea { font: inherit; padding: 12px 14px; min-height: 48px; b
   .section { padding-top: 72px; padding-bottom: 96px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+.prose-note { max-width: 40em; margin: 28px 0 0; font-size: 1.0625rem; line-height: 1.65; }

@@ -82,6 +82,7 @@ page_start([
   </div>
 
   <?= faq_html($faq) ?>
+  <p class="prose-note">Para ver qué trae un anteproyecto, etapa por etapa, leé la guía <a class="link" href="/guias/que-incluye-un-anteproyecto/">qué incluye un anteproyecto</a>.</p>
   <?= related([
       ['Planos y documentación municipal', '/servicios/planos-documentacion-municipal/', 'La etapa que sigue: planos completos y presentación.'],
       ['Casa nueva', '/proyectos/casa-nueva/', 'Del terreno a la vivienda, paso a paso.'],
