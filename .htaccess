@@ -1,0 +1,39 @@
+Options -Indexes
+DirectoryIndex index.php
+ErrorDocument 404 /404.php
+
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTP_HOST} !^(localhost|127\.)
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+RewriteRule ^robots\.txt$ robots.php [L]
+RewriteRule ^obras/([a-z0-9-]+)/?$ obra.php?slug=$1 [L,QSA]
+RewriteRule ^arquitectos/([a-z0-9-]+)/?$ arquitecto.php?slug=$1 [L,QSA]
+
+# Nunca servir includes, storage ni .env
+RewriteRule ^(includes|storage|docs)/ - [F]
+RewriteRule ^\.env - [F]
+# Deploy por Git: la raíz del repo es el sitio; cerramos .git y archivos de desarrollo.
+RewriteRule (^|/)\.git(/|$) - [F]
+RewriteRule ^(router|verify)\.(php|sh)$ - [F]
+RewriteRule \.(md|sh|lock|log|example)$ - [F,NC]
+RewriteRule ^(obra|arquitecto|sitemap|robots|404|gracias)\.php$ - [L]
+
+# URLs limpias: /contacto -> contacto.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([a-z]+)/?$ $1.php [L]
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 month"
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/xml
+</IfModule>
