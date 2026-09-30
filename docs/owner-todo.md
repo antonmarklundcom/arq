@@ -1,6 +1,6 @@
 # Pendientes del dueño
 
-Actualizado en la ventana B (2026-09-30). Fuente de verdad: `docs/seo/ARQ-COM-PY-MASTER-BUSINESS-DESIGN-SEO-BRIEF.md`.
+Actualizado en la ventana C (2026-09-30). Fuente de verdad: `docs/seo/ARQ-COM-PY-MASTER-BUSINESS-DESIGN-SEO-BRIEF.md`.
 URLs: `docs/seo/arq-urls.md`. Informe de la ventana: `docs/BUILD-REPORT-2026-09-30.md`.
 
 ## Hecho en la ventana B
@@ -12,6 +12,18 @@ URLs: `docs/seo/arq-urls.md`. Informe de la ventana: `docs/BUILD-REPORT-2026-09-
 - WhatsApp: número por defecto `595992279599` si `.env` no define otro; un mensaje por página en `includes/data/whatsapp.json`.
 - Herramientas de QA en `tools/` (`tools/gates.sh`).
 - Plan de imágenes en `docs/imagery-manifest.json` (19 imágenes, ~27 créditos), **sin generar**.
+
+## Hecho en la ventana C (2026-09-30)
+- Guías de la fase 2: hub `/guias/` + seis guías (anteproyecto, elegir arquitecto, terreno, planos en Asunción, cálculo estructural, orientación y sombra), enlazadas desde sus páginas de servicio/proyecto y desde el pie.
+- Las guías no llevan autor en el schema; dicen "contenido orientativo". Si un profesional calificado las revisa y acepta figurar, se agrega autor/revisor.
+
+## Sigue abierto de la ventana C
+- Auditoría en vivo (`live-check`, `audit`, `linkcheck --external`): NO EJECUTADA, el proxy devuelve 403 para arq.com.py. Se corre tras permitir el dominio.
+- Mapa de palabras clave (A4): NO EJECUTADO, sin acceso al MCP de palabras clave.
+- Imágenes (C2): no se generaron. Escribí "Generate image" en el chat y permití `*.cloudfront.net`.
+- Socios (C3): esperan profesionales reales con matrícula verificada y consentimiento.
+- Guía "cuánto cobra un arquitecto" (brief §11.3): no se hizo, es contenido de precios.
+- Revisar las seis guías: frases sobre criterios de diseño (orientación, sol) y sobre señales de alerta estructurales.
 
 ## Solo Anton puede hacerlo
 
@@ -42,4 +54,4 @@ URLs: `docs/seo/arq-urls.md`. Informe de la ventana: `docs/BUILD-REPORT-2026-09-
 
 ## Otros
 - Movimiento hecho (C3): el hero muestra la sombra de la casa conceptual sobre el lote vacío (dibujo vectorial animado, sin librerías), más la galería al mediodía, la luz de la celosía y la barra fija con un CTA. Cuando lleguen las fotos se ponen encima de esas escenas.
-- Guías de la fase 2 y páginas de zona: ver `docs/NEXT-WINDOW-PROMPT.md`. Zonas solo con cobertura real.
+- Páginas de zona: ver `docs/NEXT-WINDOW-PROMPT.md`. Zonas solo con cobertura real.
