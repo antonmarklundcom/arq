@@ -25,9 +25,10 @@ function env(string $key, string $default = ''): string
     return ($v === false || $v === null || $v === '') ? $default : (string)$v;
 }
 
-const SITE_NAME     = 'MONOGRAFÍA · arq.com.py';
-const SITE_SHORT    = 'MONOGRAFÍA';
-const SITE_TAGLINE  = 'Directorio de la arquitectura paraguaya';
+const SITE_NAME     = 'ARQ.com.py';
+const SITE_SHORT    = 'ARQ';
+const SITE_TAGLINE  = 'ARQ conecta proyectos en Paraguay con arquitectos e ingenieros independientes, según el alcance, la ubicación y la especialidad necesaria.';
+const SITE_COVERAGE = 'Asunción y Gran Asunción';
 const SITE_LOCALE   = 'es-PY';
 define('SITE_URL', rtrim(env('SITE_URL', 'https://arq.com.py'), '/'));
 

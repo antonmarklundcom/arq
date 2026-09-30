@@ -62,6 +62,7 @@ for (const vp of viewports) {
         if (s.display === 'none' || s.visibility === 'hidden' || r.width === 0 || r.height === 0) return;
         if (el.closest('.hp,[hidden]')) return;
         if (el.matches('p a, li p a, .faq p a, dd a, td a, .crumbs a')) return; // inline text links are exempt (WCAG 2.5.8)
+        if (el.tagName === 'A' && el.parentElement && el.parentElement.textContent.trim().length > el.textContent.trim().length + 12) return; // link inside a sentence
         if (r.height < 44 || r.width < 44) small.push(`${el.tagName.toLowerCase()}${el.className ? `.${String(el.className).split(' ')[0]}` : ''} ${Math.round(r.width)}x${Math.round(r.height)} "${(el.textContent || el.getAttribute('aria-label') || '').trim().slice(0, 24)}"`);
       });
       return {

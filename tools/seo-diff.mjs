@@ -2,8 +2,10 @@
 // Usage: node tools/seo-diff.mjs <before.json> <after.json> [--approved-titles file] [--redirects file]
 // Redirects file (tab separated "/old<TAB>/new", # comments): a baseline URL
 // that left the sitemap is compared with its 301 target, and its canonical may
-// become the target URL. Defaults: docs/audit/approved-titles.tsv and
-// docs/audit/redirects.tsv when they exist.
+// become the target URL. Approved-changes file ("/old<TAB>field<TAB>after
+// value", # comments) turns a specific failing row into an approved one.
+// Defaults: docs/audit/approved-titles.tsv, docs/audit/redirects.tsv and
+// docs/audit/approved-changes.tsv when they exist.
 // Fails on: status not 200, canonical changed / not self, noindex added,
 // H1 count not 1, title or description empty, unapproved title change,
 // word_count_main down >10 %, lost in-links, lost schema type, URL left the
@@ -14,18 +16,23 @@ import path from 'node:path';
 import { REPO_ROOT, ORIGIN } from './lib.mjs';
 
 const argv = process.argv.slice(2);
-const flagged = new Set(['--approved-titles', '--redirects']);
+const flagged = new Set(['--approved-titles', '--redirects', '--approved-changes']);
 const [beforeF, afterF] = argv.filter((a, i) => !a.startsWith('--') && !flagged.has(argv[i - 1]));
 const opt = (k, d) => { const i = argv.indexOf(k); const f = i >= 0 ? argv[i + 1] : path.join(REPO_ROOT, d); return fs.existsSync(f) ? f : null; };
 const tsv = (f) => (f ? fs.readFileSync(f, 'utf8').split('\n').filter((l) => l.trim() && !l.startsWith('#')).map((l) => l.split('\t').map((x) => x.trim())) : []);
 const approved = new Map(tsv(opt('--approved-titles', 'docs/audit/approved-titles.tsv')));
 const redirects = new Map(tsv(opt('--redirects', 'docs/audit/redirects.tsv')));
+const approvedChanges = new Set(tsv(opt('--approved-changes', 'docs/audit/approved-changes.tsv')).map((r) => r.join('\t')));
 const follow = (p) => { let q = p; for (let i = 0; i < 5 && redirects.has(q); i++) q = redirects.get(q); return q; };
 
 const B = JSON.parse(fs.readFileSync(path.resolve(REPO_ROOT, beforeF), 'utf8')).pages;
 const A = JSON.parse(fs.readFileSync(path.resolve(REPO_ROOT, afterF), 'utf8')).pages;
 const rows = []; const fails = [];
-const row = (p, field, before, after, bad) => { rows.push({ p, field, before, after, bad }); if (bad) fails.push(`${p} ${field}`); };
+const row = (p, field, before, after, bad) => {
+  const ok = bad && approvedChanges.has(`${p}\t${field}\t${after}`);
+  rows.push({ p, field, before, after, bad: bad && !ok, approved: ok });
+  if (bad && !ok) fails.push(`${p} ${field}`);
+};
 const s = (v) => (Array.isArray(v) ? v.join(', ') : String(v ?? ''));
 
 const mapped = new Set();
@@ -68,6 +75,6 @@ dupT.forEach(([t, p]) => row(p, 'duplicate title', '', t, true));
 
 const cut = (x, n = 70) => (String(x).length > n ? `${String(x).slice(0, n - 1)}…` : String(x));
 console.log('| URL | field | before | after | gate |\n|---|---|---|---|---|');
-rows.forEach((r) => console.log(`| ${r.p} | ${r.field} | ${cut(r.before).replace(/\|/g, '/')} | ${cut(r.after).replace(/\|/g, '/')} | ${r.bad ? 'FAIL' : 'ok'} |`));
+rows.forEach((r) => console.log(`| ${r.p} | ${r.field} | ${cut(r.before).replace(/\|/g, '/')} | ${cut(r.after).replace(/\|/g, '/')} | ${r.bad ? 'FAIL' : r.approved ? 'approved' : 'ok'} |`));
 console.log(`\nseo-diff: ${Object.keys(B).length} URLs, ${rows.length} differences, ${fails.length} failing`);
 if (fails.length) { console.log(`  ${fails.join('\n  ')}`); process.exit(1); }

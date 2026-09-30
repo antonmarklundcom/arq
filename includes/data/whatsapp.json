@@ -2,18 +2,51 @@
   "_readme": "Mensajes de WhatsApp pre-escritos, uno por página (clave = ruta canónica). El número sale de includes/config.php (WHATSAPP_NUMBER en .env, o 595992279599). Sin precios, sin 'gratis', con voseo. Lo verifica tools/check-wa.mjs.",
   "pages": {
     "/": "Hola, vi ARQ.com.py. Quiero contarles mi proyecto de arquitectura y que me orienten con el profesional adecuado.",
-    "/obras": "Hola, estuve mirando las obras en ARQ.com.py y quiero consultar por un proyecto propio.",
-    "/arquitectos": "Hola, vi el directorio de arquitectos de ARQ.com.py. Quiero que me ayuden a encontrar un estudio para mi proyecto.",
-    "/postulate": "Hola, soy arquitecto/a y quiero saber cómo sumar mi estudio a ARQ.com.py.",
-    "/contacto": "Hola, vengo de la página de contacto de ARQ.com.py. Quiero contarles qué quiero construir.",
-    "/nosotros": "Hola, leí cómo trabaja ARQ.com.py y tengo una consulta sobre mi proyecto.",
-    "/privacidad": "Hola, tengo una consulta sobre mis datos en ARQ.com.py.",
-    "/gracias": "Hola, acabo de enviar el formulario en ARQ.com.py y quiero sumar un dato más.",
+    "/contanos-tu-proyecto/": "Hola, estoy en ARQ.com.py y prefiero contarles mi proyecto directamente por acá.",
+    "/como-funciona/": "Hola, leí cómo funciona ARQ.com.py. Quiero contarles mi proyecto para saber qué profesional necesito.",
+    "/servicios/": "Hola, vi los servicios de ARQ.com.py y no sé bien cuál necesito para mi proyecto. ¿Me orientan?",
+    "/servicios/anteproyecto-arquitectonico/": "Hola, vi la página de anteproyecto en ARQ.com.py. Quiero empezar el diseño de mi proyecto con un arquitecto.",
+    "/servicios/planos-documentacion-municipal/": "Hola, vi planos y documentación municipal en ARQ.com.py. Necesito preparar los planos para presentar en la municipalidad.",
+    "/servicios/calculo-estructural/": "Hola, vi cálculo estructural en ARQ.com.py. Necesito un ingeniero para calcular la estructura de mi proyecto.",
+    "/servicios/direccion-de-proyecto/": "Hola, vi dirección de proyecto en ARQ.com.py. Busco un profesional que coordine y acompañe mi proyecto.",
+    "/proyectos/": "Hola, vi los tipos de proyecto en ARQ.com.py y quiero contarles el mío.",
+    "/proyectos/casa-nueva/": "Hola, vi la página de casa nueva en ARQ.com.py. Quiero diseñar mi casa y que me conecten con el arquitecto adecuado.",
+    "/proyectos/reforma-ampliacion/": "Hola, vi reforma y ampliación en ARQ.com.py. Quiero reformar o ampliar y necesito saber qué profesional me corresponde.",
+    "/arquitectos/": "Hola, vi la sección de arquitectos de ARQ.com.py. Quiero que me ayuden a encontrar un profesional para mi proyecto.",
+    "/obras/": "Hola, estuve mirando las obras en ARQ.com.py y quiero consultar por un proyecto propio.",
+    "/para-arquitectos/": "Hola, soy arquitecto/a o ingeniero/a y quiero saber cómo trabajar con ARQ.com.py.",
+    "/privacidad/": "Hola, tengo una consulta sobre mis datos en ARQ.com.py.",
+    "/terminos/": "Hola, leí los términos de ARQ.com.py y tengo una consulta.",
+    "/gracias/": "Hola, acabo de enviar el formulario en ARQ.com.py y quiero sumar un dato más.",
     "/404": "Hola, llegué a una página que no existe en ARQ.com.py. Quiero consultar por un proyecto de arquitectura."
   },
   "templates": {
     "work": "Hola, vi la ficha «{title}» en ARQ.com.py y quiero consultar por un proyecto parecido.",
-    "profile": "Hola, vi la ficha de {name} en ARQ.com.py y quiero consultar por mi proyecto."
+    "profile": "Hola, vi la ficha de {name} en ARQ.com.py. Quiero contarles mi proyecto para que me conecten con un profesional."
   },
-  "selector": {}
+  "selector": {
+    "_readme": "Mensaje del selector: intro + tipo + terreno + zona + cierre. Claves = valores del formulario.",
+    "intro": "Hola, vi ARQ.com.py.",
+    "tipo": {
+      "casa-nueva": "Quiero consultar por una casa nueva.",
+      "reforma-ampliacion": "Quiero consultar por una reforma o ampliación.",
+      "local-comercial": "Quiero consultar por un local o espacio comercial.",
+      "planos-documentacion": "Quiero consultar por planos y documentación municipal.",
+      "calculo-estructural": "Quiero consultar por un cálculo estructural.",
+      "otro": "Quiero consultar por un proyecto de arquitectura."
+    },
+    "terreno": {
+      "si": "Ya tengo terreno.",
+      "todavia-no": "Todavía no tengo terreno.",
+      "por-comprar": "Estoy por comprar un terreno.",
+      "no-aplica": "El terreno no aplica en este caso."
+    },
+    "zona": {
+      "asuncion": "El proyecto sería en Asunción.",
+      "gran-asuncion": "El proyecto sería en Gran Asunción.",
+      "interior": "El proyecto sería en el interior del país."
+    },
+    "cierre": "Quiero que me conecten con el profesional adecuado.",
+    "detalle": "Algo más:"
+  }
 }
