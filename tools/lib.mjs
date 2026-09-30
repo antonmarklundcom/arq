@@ -25,8 +25,8 @@ export const isLive = (src) => /^https?:\/\//.test(src) && !/^https?:\/\/(127\.0
 export const args = (argv = process.argv.slice(2)) => Object.fromEntries(argv.filter((a) => a.startsWith('--')).map((a) => { const [k, ...v] = a.replace(/^--/, '').split('='); return [k, v.length ? v.join('=') : true]; }));
 
 export async function fetchText(url, opts = {}) {
-  const res = await fetch(url, { method: opts.method || 'GET', body: opts.body, headers: { 'user-agent': 'arq-qa/1.0', ...(opts.headers || {}) }, redirect: opts.redirect || 'follow' });
-  const text = opts.head ? '' : await res.text();
+  const res = await fetch(url, { method: opts.method || (opts.head ? 'HEAD' : 'GET'), body: opts.body, headers: { 'user-agent': 'arq-qa/1.0', ...(opts.headers || {}) }, redirect: opts.redirect || 'follow' });
+  const text = opts.head ? (await res.arrayBuffer(), '') : await res.text();
   return { status: res.status, url: res.url, headers: Object.fromEntries(res.headers), text };
 }
 

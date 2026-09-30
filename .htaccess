@@ -1,6 +1,6 @@
 Options -Indexes
 DirectoryIndex index.php
-ErrorDocument 404 /404.php
+ErrorDocument 404 /app.php
 
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
@@ -8,24 +8,39 @@ RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteCond %{HTTP_HOST} !^(localhost|127\.)
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-RewriteRule ^sitemap\.xml$ sitemap.php [L]
-RewriteRule ^robots\.txt$ robots.php [L]
-RewriteRule ^obras/([a-z0-9-]+)/?$ obra.php?slug=$1 [L,QSA]
-RewriteRule ^arquitectos/([a-z0-9-]+)/?$ arquitecto.php?slug=$1 [L,QSA]
-
-# Nunca servir includes, storage, docs, herramientas ni .env
-RewriteRule ^(includes|storage|docs|tools|audit-shots)(/|$) - [F]
+# Nunca servir includes, pages, storage, docs, herramientas ni .env
+RewriteRule ^(includes|pages|storage|docs|tools|audit-shots)(/|$) - [F]
 RewriteRule ^\.env - [F]
 # Deploy por Git: la raíz del repo es el sitio; cerramos .git y archivos de desarrollo.
 RewriteRule (^|/)\.git(/|$) - [F]
 RewriteRule ^(router|verify)\.(php|sh)$ - [F]
-RewriteRule \.(md|sh|lock|log|example)$ - [F,NC]
-RewriteRule ^(obra|arquitecto|sitemap|robots|404|gracias)\.php$ - [L]
+RewriteRule \.(md|sh|lock|log|example|json)$ - [F,NC]
+# app.php, index.php, sitemap.php y robots.php solo por reescritura interna
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteRule ^(app|index|sitemap|robots)\.php$ - [F]
 
-# URLs limpias: /contacto -> contacto.php
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+RewriteRule ^robots\.txt$ robots.php [L]
+
+# 301 permanentes. Mantener igual que redirects() en includes/routes.php
+# (verify.sh compara ambas listas) y docs/audit/redirects.tsv.
+RewriteRule ^contacto/?$ /contanos-tu-proyecto/ [R=301,L]
+RewriteRule ^postulate/?$ /para-arquitectos/ [R=301,L]
+RewriteRule ^nosotros/?$ /como-funciona/ [R=301,L]
+RewriteRule ^planos/?$ /servicios/planos-documentacion-municipal/ [R=301,L]
+RewriteRule ^carpeta/?$ /servicios/planos-documentacion-municipal/ [R=301,L]
+RewriteRule ^diseno/?$ /servicios/anteproyecto-arquitectonico/ [R=301,L]
+RewriteRule ^estructural/?$ /servicios/calculo-estructural/ [R=301,L]
+RewriteRule ^como-trabajamos/?$ /como-funciona/ [R=301,L]
+RewriteRule ^cotizar/?$ /contanos-tu-proyecto/ [R=301,L]
+
+# Barra final en todas las páginas: /obras -> /obras/
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^([a-z]+)/?$ $1.php [L]
+RewriteRule ^([a-z0-9/-]*[a-z0-9-])$ /$1/ [R=301,L]
+
+# Todo lo demás que no sea un archivo lo resuelve app.php (includes/routes.php)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ app.php [L,QSA]
 
 <IfModule mod_expires.c>
   ExpiresActive On
@@ -33,6 +48,8 @@ RewriteRule ^([a-z]+)/?$ $1.php [L]
   ExpiresByType application/javascript "access plus 1 month"
   ExpiresByType font/woff2 "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/avif "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
 </IfModule>
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/xml

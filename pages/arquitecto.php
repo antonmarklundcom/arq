@@ -1,26 +1,24 @@
 <?php
 declare(strict_types=1);
-require_once __DIR__ . '/includes/lib.php';
-require_once __DIR__ . '/includes/form.php';
 
 $a = architect((string)($_GET['slug'] ?? '')) ?? not_found();
 $ws = works_of($a['slug']);
-$crumbs = [['Inicio', '/'], ['Arquitectos', '/arquitectos'], [$a['name'], '/arquitectos/' . $a['slug']]];
+$crumbs = [['Inicio', '/'], ['Arquitectos', '/arquitectos/'], [$a['name'], '/arquitectos/' . $a['slug'] . '/']];
 $isPerson = $a['type'] === 'Arquitecto';
 $node = [
-    '@type' => $isPerson ? 'Person' : 'Organization', 'name' => $a['name'], 'url' => url('/arquitectos/' . $a['slug']),
+    '@type' => $isPerson ? 'Person' : 'Organization', 'name' => $a['name'], 'url' => url('/arquitectos/' . $a['slug'] . '/'),
     'description' => $a['summary'], 'address' => ['@type' => 'PostalAddress', 'addressLocality' => $a['city'], 'addressCountry' => 'PY'],
 ];
 if ($a['people']) {
     $node['member'] = array_map(fn($p) => ['@type' => 'Person', 'name' => $p], $a['people']);
 }
-$title = mb_substr($a['name'], 0, 40) . ' | Arquitectos | MONOGRAFÍA';
-$title = mb_strlen($title) > 60 ? mb_substr($a['name'], 0, 44) . ' | MONOGRAFÍA' : $title;
-$desc = $a['summary'] . ' Perfil, obras vinculadas y contacto en MONOGRAFÍA.';
+$title = mb_substr($a['name'], 0, 40) . ' | Arquitectos | ARQ';
+$title = mb_strlen($title) > 60 ? mb_substr($a['name'], 0, 50) . ' | ARQ' : $title;
+$desc = $a['summary'] . ' Ficha con datos verificables, fuentes y obras vinculadas en ARQ.';
 if (mb_strlen($desc) > 155) { $desc = mb_substr($desc, 0, 152) . '...'; }
-if (mb_strlen($desc) < 120) { $desc .= ' Conocé su trabajo y escribile directo desde arq.com.py.'; $desc = mb_substr($desc, 0, 155); }
+if (mb_strlen($desc) < 120) { $desc .= ' Conocé su trabajo y las fuentes de cada dato en arq.com.py.'; $desc = mb_substr($desc, 0, 155); }
 
-page_start(['title' => $title, 'description' => $desc, 'path' => '/arquitectos/' . $a['slug'], 'wa' => wa_template('profile', ['name' => $a['name']]), 'crumbs' => $crumbs, 'jsonld' => [$node], 'og_type' => 'profile', 'noindex' => !empty($a['example'])]);
+page_start(['title' => $title, 'description' => $desc, 'path' => '/arquitectos/' . $a['slug'] . '/', 'wa' => wa_template('profile', ['name' => $a['name']]), 'crumbs' => $crumbs, 'jsonld' => [$node], 'og_type' => 'profile', 'noindex' => !empty($a['example'])]);
 ?>
 <article class="wrap section profile">
   <?= crumbs_html($crumbs) ?>
@@ -43,10 +41,17 @@ page_start(['title' => $title, 'description' => $desc, 'path' => '/arquitectos/'
   <?php endif; ?>
 
   <section class="formbox" aria-labelledby="inq">
+  <?php if (!empty($a['partner'])): ?>
     <h2 id="inq" class="display display--sm">Contactá a <?= e($a['name']) ?></h2>
-    <?php if (!empty($a['example'])): ?>
-      <p class="small">Este es un perfil de muestra; el formulario está desactivado.</p>
-    <?php else: lead_form('arquitecto', ['architect' => $a['slug'], 'cta' => 'Enviar consulta']); endif; ?>
+    <?php lead_form('arquitecto', ['architect' => $a['slug'], 'cta' => 'Enviar consulta']); ?>
+  <?php elseif (!empty($a['example'])): ?>
+    <h2 id="inq" class="display display--sm">Perfil de muestra</h2>
+    <p class="small">Así se verá la ficha de un estudio verificado. No es un estudio real y no recibe consultas.</p>
+  <?php else: ?>
+    <h2 id="inq" class="display display--sm">Ficha editorial</h2>
+    <p><?= e($a['name']) ?> no es un estudio asociado a ARQ: esta ficha reúne información pública con su fuente. ARQ no deriva consultas a estudios que no forman parte de su red.</p>
+    <p>Si buscás un profesional para tu proyecto, <a class="link" href="/contanos-tu-proyecto/">contanos qué querés hacer</a>.</p>
+  <?php endif; ?>
   </section>
 </article>
 <?php page_end();

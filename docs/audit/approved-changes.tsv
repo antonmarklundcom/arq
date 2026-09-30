@@ -1,0 +1,5 @@
+# Approved seo-diff failures: /old-path<TAB>field<TAB>after value.
+# Window B (A3): the home follows brief §9 and no longer lists directory entries;
+# editorial entries are still linked from /obras/ and /arquitectos/.
+/obras/bienal-venecia-2016	in-links lost	/
+/arquitectos/gabinete-de-arquitectura	in-links lost	/

@@ -1,0 +1,17 @@
+# 301s: old path<TAB>new path. Used by tools/seo-diff.mjs and tools/live-check.mjs.
+# Must match redirects() in includes/routes.php and .htaccess.
+/contacto	/contanos-tu-proyecto/
+/postulate	/para-arquitectos/
+/nosotros	/como-funciona/
+/obras	/obras/
+/arquitectos	/arquitectos/
+/privacidad	/privacidad/
+/gracias	/gracias/
+/obras/bienal-venecia-2016	/obras/bienal-venecia-2016/
+/arquitectos/gabinete-de-arquitectura	/arquitectos/gabinete-de-arquitectura/
+/planos/	/servicios/planos-documentacion-municipal/
+/carpeta/	/servicios/planos-documentacion-municipal/
+/diseno/	/servicios/anteproyecto-arquitectonico/
+/estructural/	/servicios/calculo-estructural/
+/como-trabajamos/	/como-funciona/
+/cotizar/	/contanos-tu-proyecto/

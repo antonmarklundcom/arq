@@ -8,7 +8,7 @@ PORT=${PORT:-8765}
 echo "== php -l"
 while IFS= read -r f; do
   out=$(php -l "$f" 2>&1) || { echo "$out"; fail=1; }
-done < <(find . -name '*.php' -not -path './.git/*')
+done < <(find . -name '*.php' -not -path './.git/*' -not -path './tools/node_modules/*')
 
 echo "== servidor"
 LOG=$(mktemp)
@@ -20,7 +20,6 @@ for i in $(seq 1 30); do curl -s -o /dev/null "http://127.0.0.1:$PORT/robots.txt
 BASE="http://127.0.0.1:$PORT"
 urls=$(curl -s "$BASE/sitemap.xml" | grep -o '<loc>[^<]*</loc>' | sed 's/<[^>]*>//g' | sed "s#^https\?://[^/]*##" | sed 's#^$#/#')
 [ -n "$urls" ] || { echo "sitemap vacío"; fail=1; }
-extra="/gracias /404-inexistente /obras/estudio-x /arquitectos/estudio-ejemplo-uno /obras/casa-ejemplo-ladrillo /obras?ciudad=Asunci%C3%B3n /robots.txt"
 
 check() { # $1 path  $2 expected code
   local body code
@@ -41,16 +40,46 @@ check() { # $1 path  $2 expected code
   echo "ok  $1 ($code)"
 }
 
-for u in $urls; do check "$u" 200; done
-check /404-inexistente 404
-check /obras/estudio-x 404
-for u in /gracias /arquitectos/estudio-ejemplo-uno /obras/casa-ejemplo-ladrillo "/obras?ciudad=Asunci%C3%B3n" /robots.txt; do check "$u" 200; done
+for u in $urls; do
+  case "$u" in */) ;; *) echo "FAIL sitemap sin barra final: $u"; fail=1;; esac
+  check "$u" 200
+done
+check /404-inexistente/ 404
+check /obras/estudio-x/ 404
+for u in /gracias/ /arquitectos/estudio-ejemplo-uno/ /obras/casa-ejemplo-ladrillo/ "/obras/?ciudad=Asunci%C3%B3n" /robots.txt; do check "$u" 200; done
 
-echo "== POST anti-spam (honeypot -> /gracias, sin escribir)"
-code=$(curl -s -o /dev/null -w '%{http_code}' -d 'website=x&t=1&nombre=a&telefono=1' "$BASE/enviar.php")
-[ "$code" = 303 ] || { echo "FAIL honeypot $code"; fail=1; }
-code=$(curl -s -o /dev/null -w '%{http_code}' -d "t=$(( $(date +%s) - 10 ))&nombre=&telefono=1&source=contacto" "$BASE/enviar.php")
-[ "$code" = 422 ] || { echo "FAIL validación $code"; fail=1; }
+echo "== 301"
+redir() { # $1 desde  $2 hacia
+  local out; out=$(curl -s -o /dev/null -w '%{http_code} %{redirect_url}' "$BASE$1")
+  [ "$out" = "301 $BASE$2" ] && echo "ok  301 $1 -> $2" || { echo "FAIL $1 -> $out (esperado 301 $2)"; fail=1; }
+}
+while IFS=$'\t' read -r from to; do redir "$from" "$to"; redir "${from%/}" "$to"; done < <(php -r 'require "includes/routes.php"; foreach (redirects() as $f => $t) echo "$f\t$t\n";')
+redir /obras /obras/
+redir /arquitectos /arquitectos/
+redir /servicios/calculo-estructural /servicios/calculo-estructural/
+echo "== .htaccess y routes.php tienen las mismas 301"
+while IFS=$'\t' read -r from to; do
+  f=${from#/}; f=${f%/}
+  grep -qF "RewriteRule ^$f/?\$ $to [R=301,L]" .htaccess || { echo "FAIL falta en .htaccess: $from -> $to"; fail=1; }
+done < <(php -r 'require "includes/routes.php"; foreach (redirects() as $f => $t) echo "$f\t$t\n";')
+[ "$(grep -cE '^RewriteRule \^[a-z0-9-]+/\?\$ ' .htaccess)" = "$(php -r 'require "includes/routes.php"; echo count(redirects());')" ] || { echo "FAIL .htaccess tiene 301 que no están en routes.php"; fail=1; }
+
+echo "== archivos privados -> 403"
+for u in /pages/home.php /includes/config.php /includes/data/whatsapp.json /tools/package.json /docs/owner-todo.md /PLAN.md /app.php; do
+  code=$(curl -s -o /dev/null -w '%{http_code}' "$BASE$u")
+  [ "$code" = 403 ] || [ "$code" = 404 ] || { echo "FAIL $u -> $code"; fail=1; }
+done
+
+echo "== POST (servidor de desarrollo, sin escribir: X-Arq-Dry-Run)"
+T=$(( $(date +%s) - 10 ))
+post() { curl -s -o /dev/null -w '%{http_code} %{redirect_url}' -H 'X-Arq-Dry-Run: 1' -d "$1" "$BASE/enviar.php"; }
+out=$(post 'website=x&t=1&nombre=a&telefono=1'); [ "${out%% *}" = 303 ] || { echo "FAIL honeypot $out"; fail=1; }
+out=$(post "t=$T&source=proyecto&terreno=si"); [ "${out%% *}" = 422 ] || { echo "FAIL selector sin tipo $out"; fail=1; }
+out=$(post "t=$T&source=proyecto&tipo=casa-nueva&terreno=si&zona=gran-asuncion")
+case "$out" in "303 https://wa.me/595992279599?text="*) echo "ok  selector -> WhatsApp";; *) echo "FAIL selector $out"; fail=1;; esac
+out=$(post "t=$T&source=contacto&tipo=otro"); case "$out" in "303 https://wa.me/"*) echo "ok  source=contacto viejo -> selector";; *) echo "FAIL contacto viejo $out"; fail=1;; esac
+out=$(post "t=$T&source=postulate&nombre=&telefono=1"); [ "${out%% *}" = 422 ] || { echo "FAIL postulate sin nombre $out"; fail=1; }
+out=$(post "t=$T&source=postulate&nombre=Ana&telefono=021000000&estudio=Estudio"); [ "$out" = "303 $BASE/gracias/" ] || { echo "FAIL postulate $out"; fail=1; }
 
 grep -qiE 'Notice|Warning|Deprecated|Fatal' "$LOG" && { echo "FAIL avisos en log del servidor:"; grep -iE 'Notice|Warning|Deprecated|Fatal' "$LOG"; fail=1; }
 

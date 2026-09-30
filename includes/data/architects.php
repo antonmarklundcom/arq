@@ -4,6 +4,8 @@ declare(strict_types=1);
 /**
  * Arquitectos y estudios. Contenido como datos.
  * 'example' => true  = contenido de ejemplo, NO real (se muestra con la marca "Ejemplo").
+ * 'partner' => true solo para estudios verificados (matrícula, portafolio propio con permiso,
+ *   acuerdo firmado; ver brief §6.4). Solo ellos reciben consultas desde su ficha.
  * Nunca agregar personas, citas ni credenciales sin fuente verificable.
  */
 return [
@@ -24,6 +26,7 @@ return [
         'quote' => null,
         'sources' => ['Bienal de Venecia 2016, La Biennale di Venezia (labiennale.org)'],
         'works' => ['bienal-venecia-2016'],
+        'partner' => false, // referencia editorial, no es estudio asociado a ARQ
         'example' => false,
     ],
     [
@@ -40,6 +43,7 @@ return [
         'quote' => null,
         'sources' => [],
         'works' => ['casa-ejemplo-ladrillo', 'centro-ejemplo-cultural'],
+        'partner' => false,
         'example' => true,
     ],
     [
@@ -56,6 +60,7 @@ return [
         'quote' => null,
         'sources' => [],
         'works' => ['casa-ejemplo-ladrillo', 'pabellon-ejemplo-encarnacion'],
+        'partner' => false,
         'example' => true,
     ],
 ];

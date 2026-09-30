@@ -1,11 +1,10 @@
 <?php
 declare(strict_types=1);
-require_once __DIR__ . '/includes/lib.php';
-$crumbs = [['Inicio', '/'], ['Privacidad', '/privacidad']];
+$crumbs = [['Inicio', '/'], ['Privacidad', '/privacidad/']];
 page_start([
-    'title' => 'Política de privacidad | MONOGRAFÍA',
+    'title' => 'Política de privacidad | ARQ',
     'description' => 'Cómo usamos los datos que dejás en los formularios de arq.com.py: qué guardamos, para qué y cómo podés pedir que los eliminemos.',
-    'path' => '/privacidad', 'crumbs' => $crumbs,
+    'path' => '/privacidad/', 'crumbs' => $crumbs,
 ]);
 ?>
 <section class="wrap section narrow prose">
