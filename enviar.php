@@ -16,6 +16,15 @@ function clean(string $k, int $max = 500): string
     return mb_substr($s, 0, $max);
 }
 
+/** Teléfono en formato internacional (+595…), que es la identidad del contacto en el CRM. */
+function intl_phone(string $digits): string
+{
+    if (str_starts_with($digits, '595')) { return '+' . $digits; }
+    if (str_starts_with($digits, '0')) { return '+595' . substr($digits, 1); }
+    if (strlen($digits) === 9 && $digits[0] === '9') { return '+595' . $digits; }
+    return '+' . $digits;
+}
+
 function log_line(string $msg): void
 {
     @file_put_contents(STORAGE_DIR . '/form.log', date('c') . ' ' . $msg . "\n", FILE_APPEND | LOCK_EX);
@@ -48,7 +57,7 @@ foreach (['nombre', 'telefono', 'email', 'mensaje', 'ciudad', 'tipo', 'presupues
 $errors = [];
 if ($d['nombre'] === '') { $errors['nombre'] = 'Escribí tu nombre.'; }
 $digits = preg_replace('/\D/', '', $d['telefono']) ?? '';
-if (strlen($digits) < 6 || strlen($digits) > 15) { $errors['telefono'] = 'Escribí un teléfono válido, por ejemplo 0981 123 456.'; }
+if (strlen($digits) < 6 || strlen($digits) > 15) { $errors['telefono'] = 'Escribí un teléfono válido, con código de área.'; }
 if ($d['email'] !== '' && !filter_var($d['email'], FILTER_VALIDATE_EMAIL)) { $errors['email'] = 'Revisá el email.'; }
 if ($source === 'arquitecto' && $d['mensaje'] === '') { $errors['mensaje'] = 'Contanos qué querés consultar.'; }
 if ($source === 'postulate' && $d['estudio'] === '') { $errors['estudio'] = 'Escribí el nombre del estudio.'; }
@@ -91,11 +100,11 @@ if (CRM_API_KEY !== '' && function_exists('curl_init')) {
     }
     $payload = array_filter([
         'name' => $d['nombre'],
-        'phone' => $d['telefono'],
+        'phone' => intl_phone($digits),
         'email' => $d['email'],
         'message' => $d['mensaje'],
         'source' => 'arq.com.py:' . $source,
-        'idempotency_key' => hash('sha256', $digits . '|' . $source . '|' . date('Y-m-d-H')),
+        'idempotency_key' => bin2hex(random_bytes(16)), // uno nuevo por envío (reglas de VenderCRM)
         'page_url' => (string)($_SERVER['HTTP_REFERER'] ?? ''),
         'fields' => $fields ?: null,
     ] + array_intersect_key($attr, array_flip(['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid'])),

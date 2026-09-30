@@ -31,13 +31,14 @@ const SITE_TAGLINE  = 'Directorio de la arquitectura paraguaya';
 const SITE_LOCALE   = 'es-PY';
 define('SITE_URL', rtrim(env('SITE_URL', 'https://arq.com.py'), '/'));
 
-// Contacto: completar en .env (ver docs/owner-todo.md). Vacío = no se muestra.
-define('WHATSAPP_NUMBER', env('WHATSAPP_NUMBER'));   // solo dígitos, ej. 595981000000
+// Contacto: completar en .env (ver docs/owner-todo.md).
+// WhatsApp: solo dígitos. Sin WHATSAPP_NUMBER en .env se usa el número por defecto.
+define('WHATSAPP_NUMBER', preg_replace('/\D/', '', env('WHATSAPP_NUMBER', '595992279599')) ?: '595992279599');
 define('CONTACT_EMAIL', env('CONTACT_EMAIL'));
 define('NOTIFY_EMAIL', env('NOTIFY_EMAIL', CONTACT_EMAIL));
 
 // VenderCRM (clave nunca en el repo)
 const CRM_ENDPOINT = 'https://crm.clientes.com.py/api/v1/leads';
-define('CRM_API_KEY', env('VENDERCRM_API_KEY'));
+define('CRM_API_KEY', env('VENDERCRM_API_KEY', env('VCRM_API_KEY')));
 
 const STORAGE_DIR = __DIR__ . '/../storage';

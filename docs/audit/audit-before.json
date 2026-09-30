@@ -1,0 +1,688 @@
+{
+  "generated": "2026-09-30T18:17:57.672Z",
+  "source": "local php -S router.php",
+  "sitemap_url_count": 9,
+  "summary": {
+    "not_200": [],
+    "foreign_number_hits": [
+      "/postulate: 0981 123 456",
+      "/contacto: 0981 123 456",
+      "/arquitectos/gabinete-de-arquitectura: 0981 123 456"
+    ],
+    "pages_missing_meta_description": [],
+    "pages_multi_or_no_h1": [],
+    "pages_canonical_not_self": [],
+    "duplicate_titles": [],
+    "pages_without_cross_domain_link": [
+      "/",
+      "/obras",
+      "/arquitectos",
+      "/postulate",
+      "/contacto",
+      "/nosotros",
+      "/privacidad",
+      "/obras/bienal-venecia-2016",
+      "/arquitectos/gabinete-de-arquitectura"
+    ],
+    "images_without_alt_total": 0,
+    "external_media_hosts": [],
+    "phone_display_variants": [],
+    "whatsapp_numbers": [],
+    "word_count_main_min_max": [
+      50,
+      211
+    ]
+  },
+  "pages": {
+    "/": {
+      "url": "https://arq.com.py/",
+      "status": 200,
+      "title": "MONOGRAFÍA | Arquitectura del Paraguay, obras y estudios",
+      "title_len": 56,
+      "meta_description": "Directorio de la arquitectura paraguaya: explorá obras de ladrillo y encontrá el estudio indicado para tu proyecto. Postulá tu estudio.",
+      "meta_description_len": 135,
+      "h1": [
+        "La arquitectura que el mundo mira."
+      ],
+      "h2_count": 5,
+      "canonical": "https://arq.com.py/",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 211,
+      "word_count_body": 254,
+      "internal_links_out": [
+        "/",
+        "/arquitectos",
+        "/arquitectos/estudio-ejemplo-dos",
+        "/arquitectos/estudio-ejemplo-uno",
+        "/arquitectos/gabinete-de-arquitectura",
+        "/contacto",
+        "/nosotros",
+        "/obras",
+        "/obras/bienal-venecia-2016",
+        "/obras/casa-ejemplo-ladrillo",
+        "/obras/centro-ejemplo-cultural",
+        "/obras/pabellon-ejemplo-encarnacion",
+        "/postulate",
+        "/privacidad"
+      ],
+      "internal_links_out_in_main": [
+        "/arquitectos",
+        "/arquitectos/estudio-ejemplo-dos",
+        "/arquitectos/estudio-ejemplo-uno",
+        "/arquitectos/gabinete-de-arquitectura",
+        "/obras",
+        "/obras/bienal-venecia-2016",
+        "/obras/casa-ejemplo-ladrillo",
+        "/obras/centro-ejemplo-cultural",
+        "/obras/pabellon-ejemplo-encarnacion",
+        "/postulate"
+      ],
+      "external_link_hosts": [
+        "arq.com.py"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "Organization",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 0,
+      "whatsapp_ctas": 0,
+      "whatsapp_numbers": [],
+      "whatsapp_texts_distinct": [],
+      "tel_links": [],
+      "phone_display": [],
+      "cross_domain_links": [],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/obras",
+        "/arquitectos",
+        "/postulate",
+        "/contacto",
+        "/nosotros",
+        "/privacidad",
+        "/obras/bienal-venecia-2016",
+        "/arquitectos/gabinete-de-arquitectura"
+      ],
+      "internal_links_in_count": 8,
+      "internal_links_in_from_main": [
+        "/obras",
+        "/arquitectos",
+        "/postulate",
+        "/contacto",
+        "/nosotros",
+        "/privacidad",
+        "/obras/bienal-venecia-2016",
+        "/arquitectos/gabinete-de-arquitectura"
+      ]
+    },
+    "/obras": {
+      "url": "https://arq.com.py/obras",
+      "status": 200,
+      "title": "Obras de arquitectura paraguaya | MONOGRAFÍA",
+      "title_len": 44,
+      "meta_description": "Índice de obras de arquitectura del Paraguay con sus autores. Filtrá por ciudad y tipo, y llegá al estudio que las proyectó.",
+      "meta_description_len": 124,
+      "h1": [
+        "Obras"
+      ],
+      "h2_count": 1,
+      "canonical": "https://arq.com.py/obras",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 50,
+      "word_count_body": 93,
+      "internal_links_out": [
+        "/",
+        "/arquitectos",
+        "/contacto",
+        "/nosotros",
+        "/obras",
+        "/obras/bienal-venecia-2016",
+        "/obras/casa-ejemplo-ladrillo",
+        "/obras/centro-ejemplo-cultural",
+        "/obras/pabellon-ejemplo-encarnacion",
+        "/postulate",
+        "/privacidad"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/obras/bienal-venecia-2016",
+        "/obras/casa-ejemplo-ladrillo",
+        "/obras/centro-ejemplo-cultural",
+        "/obras/pabellon-ejemplo-encarnacion"
+      ],
+      "external_link_hosts": [
+        "arq.com.py"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "BreadcrumbList",
+        "CollectionPage",
+        "ListItem",
+        "Organization",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 0,
+      "whatsapp_ctas": 0,
+      "whatsapp_numbers": [],
+      "whatsapp_texts_distinct": [],
+      "tel_links": [],
+      "phone_display": [],
+      "cross_domain_links": [],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/",
+        "/arquitectos",
+        "/postulate",
+        "/contacto",
+        "/nosotros",
+        "/privacidad",
+        "/obras/bienal-venecia-2016",
+        "/arquitectos/gabinete-de-arquitectura"
+      ],
+      "internal_links_in_count": 8,
+      "internal_links_in_from_main": [
+        "/",
+        "/obras/bienal-venecia-2016"
+      ]
+    },
+    "/arquitectos": {
+      "url": "https://arq.com.py/arquitectos",
+      "status": 200,
+      "title": "Arquitectos y estudios del Paraguay | MONOGRAFÍA",
+      "title_len": 48,
+      "meta_description": "Directorio de arquitectos y estudios de Paraguay: conocé su trabajo, sus obras y contactalos directamente para tu proyecto.",
+      "meta_description_len": 123,
+      "h1": [
+        "Arquitectos"
+      ],
+      "h2_count": 1,
+      "canonical": "https://arq.com.py/arquitectos",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 76,
+      "word_count_body": 119,
+      "internal_links_out": [
+        "/",
+        "/arquitectos",
+        "/arquitectos/estudio-ejemplo-dos",
+        "/arquitectos/estudio-ejemplo-uno",
+        "/arquitectos/gabinete-de-arquitectura",
+        "/contacto",
+        "/nosotros",
+        "/obras",
+        "/postulate",
+        "/privacidad"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/arquitectos/estudio-ejemplo-dos",
+        "/arquitectos/estudio-ejemplo-uno",
+        "/arquitectos/gabinete-de-arquitectura",
+        "/postulate"
+      ],
+      "external_link_hosts": [
+        "arq.com.py"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "BreadcrumbList",
+        "CollectionPage",
+        "ListItem",
+        "Organization",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 0,
+      "whatsapp_ctas": 0,
+      "whatsapp_numbers": [],
+      "whatsapp_texts_distinct": [],
+      "tel_links": [],
+      "phone_display": [],
+      "cross_domain_links": [],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/",
+        "/obras",
+        "/postulate",
+        "/contacto",
+        "/nosotros",
+        "/privacidad",
+        "/obras/bienal-venecia-2016",
+        "/arquitectos/gabinete-de-arquitectura"
+      ],
+      "internal_links_in_count": 8,
+      "internal_links_in_from_main": [
+        "/",
+        "/arquitectos/gabinete-de-arquitectura"
+      ]
+    },
+    "/postulate": {
+      "url": "https://arq.com.py/postulate",
+      "status": 200,
+      "title": "Postulá tu estudio de arquitectura | MONOGRAFÍA",
+      "title_len": 47,
+      "meta_description": "Postulá tu estudio para integrar el directorio de arquitectura paraguaya. Mostrá tus obras y recibí consultas de clientes que quieren construir.",
+      "meta_description_len": 144,
+      "h1": [
+        "Un lugar entre los mejores."
+      ],
+      "h2_count": 1,
+      "canonical": "https://arq.com.py/postulate",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 90,
+      "word_count_body": 133,
+      "internal_links_out": [
+        "/",
+        "/arquitectos",
+        "/contacto",
+        "/nosotros",
+        "/obras",
+        "/postulate",
+        "/privacidad"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/privacidad"
+      ],
+      "external_link_hosts": [
+        "arq.com.py"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "BreadcrumbList",
+        "ListItem",
+        "Organization",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 0,
+      "whatsapp_ctas": 0,
+      "whatsapp_numbers": [],
+      "whatsapp_texts_distinct": [],
+      "tel_links": [],
+      "phone_display": [],
+      "cross_domain_links": [],
+      "foreign_py_mobiles": [
+        "0981 123 456"
+      ],
+      "internal_links_in": [
+        "/",
+        "/obras",
+        "/arquitectos",
+        "/contacto",
+        "/nosotros",
+        "/privacidad",
+        "/obras/bienal-venecia-2016",
+        "/arquitectos/gabinete-de-arquitectura"
+      ],
+      "internal_links_in_count": 8,
+      "internal_links_in_from_main": [
+        "/",
+        "/arquitectos",
+        "/nosotros"
+      ]
+    },
+    "/contacto": {
+      "url": "https://arq.com.py/contacto",
+      "status": 200,
+      "title": "Contacto: ¿qué querés construir? | MONOGRAFÍA",
+      "title_len": 45,
+      "meta_description": "Contanos qué querés construir en Paraguay y te ayudamos a encontrar el estudio de arquitectura indicado. Respondemos por teléfono o WhatsApp.",
+      "meta_description_len": 141,
+      "h1": [
+        "¿Qué querés construir?"
+      ],
+      "h2_count": 1,
+      "canonical": "https://arq.com.py/contacto",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 58,
+      "word_count_body": 101,
+      "internal_links_out": [
+        "/",
+        "/arquitectos",
+        "/contacto",
+        "/nosotros",
+        "/obras",
+        "/postulate",
+        "/privacidad"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/privacidad"
+      ],
+      "external_link_hosts": [
+        "arq.com.py"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "BreadcrumbList",
+        "ContactPage",
+        "ListItem",
+        "Organization",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 0,
+      "whatsapp_ctas": 0,
+      "whatsapp_numbers": [],
+      "whatsapp_texts_distinct": [],
+      "tel_links": [],
+      "phone_display": [],
+      "cross_domain_links": [],
+      "foreign_py_mobiles": [
+        "0981 123 456"
+      ],
+      "internal_links_in": [
+        "/",
+        "/obras",
+        "/arquitectos",
+        "/postulate",
+        "/nosotros",
+        "/privacidad",
+        "/obras/bienal-venecia-2016",
+        "/arquitectos/gabinete-de-arquitectura"
+      ],
+      "internal_links_in_count": 8,
+      "internal_links_in_from_main": []
+    },
+    "/nosotros": {
+      "url": "https://arq.com.py/nosotros",
+      "status": 200,
+      "title": "Nosotros | MONOGRAFÍA, arquitectura paraguaya",
+      "title_len": 45,
+      "meta_description": "MONOGRAFÍA es un directorio editorial de arquitectura paraguaya que conecta obras, estudios y personas que quieren construir en el país.",
+      "meta_description_len": 136,
+      "h1": [
+        "Una monografía viva"
+      ],
+      "h2_count": 1,
+      "canonical": "https://arq.com.py/nosotros",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 91,
+      "word_count_body": 134,
+      "internal_links_out": [
+        "/",
+        "/arquitectos",
+        "/contacto",
+        "/nosotros",
+        "/obras",
+        "/postulate",
+        "/privacidad"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/postulate"
+      ],
+      "external_link_hosts": [
+        "arq.com.py"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "AboutPage",
+        "BreadcrumbList",
+        "ListItem",
+        "Organization",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 0,
+      "whatsapp_ctas": 0,
+      "whatsapp_numbers": [],
+      "whatsapp_texts_distinct": [],
+      "tel_links": [],
+      "phone_display": [],
+      "cross_domain_links": [],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/",
+        "/obras",
+        "/arquitectos",
+        "/postulate",
+        "/contacto",
+        "/privacidad",
+        "/obras/bienal-venecia-2016",
+        "/arquitectos/gabinete-de-arquitectura"
+      ],
+      "internal_links_in_count": 8,
+      "internal_links_in_from_main": []
+    },
+    "/privacidad": {
+      "url": "https://arq.com.py/privacidad",
+      "status": 200,
+      "title": "Política de privacidad | MONOGRAFÍA",
+      "title_len": 35,
+      "meta_description": "Cómo usamos los datos que dejás en los formularios de arq.com.py: qué guardamos, para qué y cómo podés pedir que los eliminemos.",
+      "meta_description_len": 128,
+      "h1": [
+        "Política de privacidad"
+      ],
+      "h2_count": 5,
+      "canonical": "https://arq.com.py/privacidad",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 83,
+      "word_count_body": 126,
+      "internal_links_out": [
+        "/",
+        "/arquitectos",
+        "/contacto",
+        "/nosotros",
+        "/obras",
+        "/postulate",
+        "/privacidad"
+      ],
+      "internal_links_out_in_main": [
+        "/"
+      ],
+      "external_link_hosts": [
+        "arq.com.py"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "BreadcrumbList",
+        "ListItem",
+        "Organization",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 0,
+      "whatsapp_ctas": 0,
+      "whatsapp_numbers": [],
+      "whatsapp_texts_distinct": [],
+      "tel_links": [],
+      "phone_display": [],
+      "cross_domain_links": [],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/",
+        "/obras",
+        "/arquitectos",
+        "/postulate",
+        "/contacto",
+        "/nosotros",
+        "/obras/bienal-venecia-2016",
+        "/arquitectos/gabinete-de-arquitectura"
+      ],
+      "internal_links_in_count": 8,
+      "internal_links_in_from_main": [
+        "/postulate",
+        "/contacto",
+        "/arquitectos/gabinete-de-arquitectura"
+      ]
+    },
+    "/obras/bienal-venecia-2016": {
+      "url": "https://arq.com.py/obras/bienal-venecia-2016",
+      "status": 200,
+      "title": "Bienal de Venecia 2016: León de Oro | MONOGRAFÍA",
+      "title_len": 48,
+      "meta_description": "El León de Oro que Solano Benítez y Gabinete de Arquitectura llevaron a Paraguay. Reconocimiento en Venecia (participación de Paraguay). Créditos y estu...",
+      "meta_description_len": 155,
+      "h1": [
+        "Bienal de Venecia 2016: León de Oro"
+      ],
+      "h2_count": 2,
+      "canonical": "https://arq.com.py/obras/bienal-venecia-2016",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 88,
+      "word_count_body": 131,
+      "internal_links_out": [
+        "/",
+        "/arquitectos",
+        "/arquitectos/gabinete-de-arquitectura",
+        "/contacto",
+        "/nosotros",
+        "/obras",
+        "/postulate",
+        "/privacidad"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/arquitectos/gabinete-de-arquitectura",
+        "/obras"
+      ],
+      "external_link_hosts": [
+        "arq.com.py"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "BreadcrumbList",
+        "CreativeWork",
+        "ListItem",
+        "Organization",
+        "Place",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 0,
+      "whatsapp_ctas": 0,
+      "whatsapp_numbers": [],
+      "whatsapp_texts_distinct": [],
+      "tel_links": [],
+      "phone_display": [],
+      "cross_domain_links": [],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/",
+        "/obras",
+        "/arquitectos/gabinete-de-arquitectura"
+      ],
+      "internal_links_in_count": 3,
+      "internal_links_in_from_main": [
+        "/",
+        "/obras",
+        "/arquitectos/gabinete-de-arquitectura"
+      ]
+    },
+    "/arquitectos/gabinete-de-arquitectura": {
+      "url": "https://arq.com.py/arquitectos/gabinete-de-arquitectura",
+      "status": 200,
+      "title": "Gabinete de Arquitectura | Arquitectos | MONOGRAFÍA",
+      "title_len": 51,
+      "meta_description": "Estudio asunceno liderado por Solano Benítez, referencia mundial en arquitectura de ladrillo. Perfil, obras vinculadas y contacto en MONOGRAFÍA.",
+      "meta_description_len": 144,
+      "h1": [
+        "Gabinete de Arquitectura"
+      ],
+      "h2_count": 3,
+      "canonical": "https://arq.com.py/arquitectos/gabinete-de-arquitectura",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 151,
+      "word_count_body": 194,
+      "internal_links_out": [
+        "/",
+        "/arquitectos",
+        "/contacto",
+        "/nosotros",
+        "/obras",
+        "/obras/bienal-venecia-2016",
+        "/postulate",
+        "/privacidad"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/arquitectos",
+        "/obras/bienal-venecia-2016",
+        "/privacidad"
+      ],
+      "external_link_hosts": [
+        "arq.com.py"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "BreadcrumbList",
+        "ListItem",
+        "Organization",
+        "Person",
+        "PostalAddress",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 0,
+      "whatsapp_ctas": 0,
+      "whatsapp_numbers": [],
+      "whatsapp_texts_distinct": [],
+      "tel_links": [],
+      "phone_display": [],
+      "cross_domain_links": [],
+      "foreign_py_mobiles": [
+        "0981 123 456"
+      ],
+      "internal_links_in": [
+        "/",
+        "/arquitectos",
+        "/obras/bienal-venecia-2016"
+      ],
+      "internal_links_in_count": 3,
+      "internal_links_in_from_main": [
+        "/",
+        "/arquitectos",
+        "/obras/bienal-venecia-2016"
+      ]
+    }
+  }
+}

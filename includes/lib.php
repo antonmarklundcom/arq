@@ -51,6 +51,36 @@ function wa(string $text = ''): string
     return 'https://wa.me/' . WHATSAPP_NUMBER . ($text !== '' ? '?text=' . rawurlencode($text) : '');
 }
 
+/** Mapa de mensajes de WhatsApp (includes/data/whatsapp.json). */
+function wa_map(): array
+{
+    static $m = null;
+    return $m ??= json_decode((string)file_get_contents(__DIR__ . '/data/whatsapp.json'), true) ?: [];
+}
+
+/** Mensaje de la página actual: 'wa' en page_start() o la entrada del mapa para su ruta. */
+function wa_message(): string
+{
+    $p = $GLOBALS['page'] ?? [];
+    return $p['wa'] ?? (wa_map()['pages'][$p['path'] ?? '/'] ?? wa_map()['pages']['/']);
+}
+
+/** Plantilla del mapa con {marcadores} reemplazados. */
+function wa_template(string $key, array $vars): string
+{
+    $t = wa_map()['templates'][$key] ?? '';
+    foreach ($vars as $k => $v) {
+        $t = str_replace('{' . $k . '}', $v, $t);
+    }
+    return $t;
+}
+
+/** Enlace de WhatsApp con el mensaje de la página actual. */
+function wa_page(): string
+{
+    return wa(wa_message());
+}
+
 function example_badge(array $item): string
 {
     return !empty($item['example']) ? '<span class="badge" title="Contenido de muestra, no real">Ejemplo</span>' : '';

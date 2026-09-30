@@ -3,7 +3,8 @@ declare(strict_types=1);
 /** Router para desarrollo local: php -S localhost:8000 router.php */
 $path = rawurldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) ?: '/');
 
-if ($path !== '/' && is_file(__DIR__ . $path) && !str_starts_with($path, '/includes') && !str_starts_with($path, '/storage') && !str_starts_with($path, '/.')) {
+$private = preg_match('#^/(includes|storage|docs|tools|audit-shots|\.)#', $path) || preg_match('#\.(md|sh|json|lock|log)$#', $path);
+if ($path !== '/' && is_file(__DIR__ . $path) && !$private) {
     return false; // asset estático o .php directo (enviar.php)
 }
 if ($path === '/') { require __DIR__ . '/index.php'; return true; }

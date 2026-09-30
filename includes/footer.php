@@ -22,7 +22,7 @@
     </nav>
     <div>
       <?php if (CONTACT_EMAIL): ?><p><a href="mailto:<?= e(CONTACT_EMAIL) ?>"><?= e(CONTACT_EMAIL) ?></a></p><?php endif; ?>
-      <?php if (WHATSAPP_NUMBER): ?><p><a href="<?= e(wa('Hola, quiero consultar por arquitectura.')) ?>" rel="noopener">WhatsApp</a></p><?php endif; ?>
+      <p><a href="<?= e(wa_page()) ?>" rel="noopener">WhatsApp</a></p>
       <p class="small">© <?= date('Y') ?> arq.com.py</p>
     </div>
   </div>

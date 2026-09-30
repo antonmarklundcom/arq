@@ -18,7 +18,7 @@ $desc = $w['summary'] . ' ' . $w['type'] . ' en ' . $w['city'] . '. Créditos y 
 if (mb_strlen($desc) > 155) { $desc = mb_substr($desc, 0, 152) . '...'; }
 if (mb_strlen($desc) < 120) { $desc .= ' Ficha completa con autores y datos de la obra en arq.com.py.'; $desc = mb_substr($desc, 0, 155); }
 
-page_start(['title' => $title, 'description' => $desc, 'path' => '/obras/' . $w['slug'], 'crumbs' => $crumbs, 'jsonld' => [$node], 'og_type' => 'article', 'noindex' => !empty($w['example'])]);
+page_start(['title' => $title, 'description' => $desc, 'path' => '/obras/' . $w['slug'], 'wa' => wa_template('work', ['title' => $w['title']]), 'crumbs' => $crumbs, 'jsonld' => [$node], 'og_type' => 'article', 'noindex' => !empty($w['example'])]);
 ?>
 <article class="wrap section">
   <?= crumbs_html($crumbs) ?>

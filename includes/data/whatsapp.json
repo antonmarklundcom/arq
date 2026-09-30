@@ -1,0 +1,19 @@
+{
+  "_readme": "Mensajes de WhatsApp pre-escritos, uno por página (clave = ruta canónica). El número sale de includes/config.php (WHATSAPP_NUMBER en .env, o 595992279599). Sin precios, sin 'gratis', con voseo. Lo verifica tools/check-wa.mjs.",
+  "pages": {
+    "/": "Hola, vi ARQ.com.py. Quiero contarles mi proyecto de arquitectura y que me orienten con el profesional adecuado.",
+    "/obras": "Hola, estuve mirando las obras en ARQ.com.py y quiero consultar por un proyecto propio.",
+    "/arquitectos": "Hola, vi el directorio de arquitectos de ARQ.com.py. Quiero que me ayuden a encontrar un estudio para mi proyecto.",
+    "/postulate": "Hola, soy arquitecto/a y quiero saber cómo sumar mi estudio a ARQ.com.py.",
+    "/contacto": "Hola, vengo de la página de contacto de ARQ.com.py. Quiero contarles qué quiero construir.",
+    "/nosotros": "Hola, leí cómo trabaja ARQ.com.py y tengo una consulta sobre mi proyecto.",
+    "/privacidad": "Hola, tengo una consulta sobre mis datos en ARQ.com.py.",
+    "/gracias": "Hola, acabo de enviar el formulario en ARQ.com.py y quiero sumar un dato más.",
+    "/404": "Hola, llegué a una página que no existe en ARQ.com.py. Quiero consultar por un proyecto de arquitectura."
+  },
+  "templates": {
+    "work": "Hola, vi la ficha «{title}» en ARQ.com.py y quiero consultar por un proyecto parecido.",
+    "profile": "Hola, vi la ficha de {name} en ARQ.com.py y quiero consultar por mi proyecto."
+  },
+  "selector": {}
+}
