@@ -157,7 +157,9 @@ function page_start(array $m): void
 <meta name="twitter:title" content="<?= e($title) ?>">
 <meta name="twitter:description" content="<?= e($desc) ?>">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-<?php if ($fonts): ?><link rel="stylesheet" href="/assets/fonts/fonts.css"><?php endif; ?>
+<?php if ($fonts): ?><link rel="preload" href="/assets/fonts/fraunces-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/archivo-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts/fonts.css"><?php endif; ?>
 <link rel="stylesheet" href="/assets/css/style.css">
 <script type="application/ld+json"><?= $ld ?></script>
 </head>
