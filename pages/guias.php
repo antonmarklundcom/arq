@@ -12,6 +12,9 @@ $guides = [
     ['¿Qué incluye un anteproyecto?', '/guias/que-incluye-un-anteproyecto/', 'Qué se entrega, qué decidís vos en cada etapa y cómo se pasa a los planos de obra.'],
     ['Cómo elegir arquitecto', '/guias/como-elegir-arquitecto/', 'Qué mirar, qué preguntar en la primera reunión y qué dejar por escrito.'],
     ['Antes de comprar un terreno', '/guias/antes-de-comprar-un-terreno/', 'Qué revisar del lote antes de firmar, y con quién conviene consultarlo.'],
+    ['Planos para construir en Asunción', '/guias/planos-para-construir-en-asuncion/', 'El recorrido, los documentos que suelen pedirse y quién firma cada parte.'],
+    ['Cuándo se necesita cálculo estructural', '/guias/cuando-se-necesita-calculo-estructural/', 'Casos dudosos, señales de alerta y qué preguntarle al ingeniero.'],
+    ['Orientación y sombra', '/guias/orientacion-y-sombra-casa-paraguay/', 'Sol, galerías, aleros y ventilación para una casa en clima cálido.'],
 ];
 ?>
 <article class="wrap section">

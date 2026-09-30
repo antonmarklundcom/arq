@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-30T19:52:29.385Z",
+  "generated": "2026-09-30T19:56:41.943Z",
   "source": "local php -S router.php",
-  "sitemap_url_count": 22,
+  "sitemap_url_count": 25,
   "summary": {
     "not_200": [],
     "foreign_number_hits": [],
@@ -31,7 +31,7 @@
     ],
     "word_count_main_min_max": [
       88,
-      1208
+      1218
     ]
   },
   "pages": {
@@ -122,6 +122,9 @@
         "/guias/que-incluye-un-anteproyecto/",
         "/guias/como-elegir-arquitecto/",
         "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
+        "/guias/orientacion-y-sombra-casa-paraguay/",
         "/arquitectos/",
         "/obras/",
         "/para-arquitectos/",
@@ -130,7 +133,7 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 21,
+      "internal_links_in_count": 24,
       "internal_links_in_from_main": [
         "/contanos-tu-proyecto/",
         "/como-funciona/",
@@ -146,6 +149,9 @@
         "/guias/que-incluye-un-anteproyecto/",
         "/guias/como-elegir-arquitecto/",
         "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
+        "/guias/orientacion-y-sombra-casa-paraguay/",
         "/arquitectos/",
         "/obras/",
         "/para-arquitectos/",
@@ -234,6 +240,9 @@
         "/guias/que-incluye-un-anteproyecto/",
         "/guias/como-elegir-arquitecto/",
         "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
+        "/guias/orientacion-y-sombra-casa-paraguay/",
         "/arquitectos/",
         "/obras/",
         "/para-arquitectos/",
@@ -242,7 +251,7 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 21,
+      "internal_links_in_count": 24,
       "internal_links_in_from_main": [
         "/",
         "/como-funciona/",
@@ -258,6 +267,9 @@
         "/guias/que-incluye-un-anteproyecto/",
         "/guias/como-elegir-arquitecto/",
         "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
+        "/guias/orientacion-y-sombra-casa-paraguay/",
         "/arquitectos/",
         "/obras/",
         "/arquitectos/gabinete-de-arquitectura/"
@@ -360,6 +372,9 @@
         "/guias/que-incluye-un-anteproyecto/",
         "/guias/como-elegir-arquitecto/",
         "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
+        "/guias/orientacion-y-sombra-casa-paraguay/",
         "/arquitectos/",
         "/obras/",
         "/para-arquitectos/",
@@ -368,7 +383,7 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 21,
+      "internal_links_in_count": 24,
       "internal_links_in_from_main": [
         "/",
         "/servicios/",
@@ -482,6 +497,9 @@
         "/guias/que-incluye-un-anteproyecto/",
         "/guias/como-elegir-arquitecto/",
         "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
+        "/guias/orientacion-y-sombra-casa-paraguay/",
         "/arquitectos/",
         "/obras/",
         "/para-arquitectos/",
@@ -490,7 +508,7 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 21,
+      "internal_links_in_count": 24,
       "internal_links_in_from_main": [
         "/como-funciona/",
         "/servicios/anteproyecto-arquitectonico/",
@@ -596,9 +614,10 @@
         "/proyectos/casa-nueva/",
         "/proyectos/reforma-ampliacion/",
         "/guias/que-incluye-un-anteproyecto/",
-        "/guias/antes-de-comprar-un-terreno/"
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/orientacion-y-sombra-casa-paraguay/"
       ],
-      "internal_links_in_count": 8,
+      "internal_links_in_count": 9,
       "internal_links_in_from_main": [
         "/",
         "/servicios/",
@@ -607,7 +626,8 @@
         "/proyectos/casa-nueva/",
         "/proyectos/reforma-ampliacion/",
         "/guias/que-incluye-un-anteproyecto/",
-        "/guias/antes-de-comprar-un-terreno/"
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/orientacion-y-sombra-casa-paraguay/"
       ]
     },
     "/servicios/planos-documentacion-municipal/": {
@@ -625,14 +645,15 @@
       "canonical_self": true,
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
-      "word_count_main": 1056,
-      "word_count_body": 1149,
+      "word_count_main": 1072,
+      "word_count_body": 1165,
       "internal_links_out": [
         "/",
         "/arquitectos/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
         "/guias/",
+        "/guias/planos-para-construir-en-asuncion/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -647,6 +668,7 @@
         "/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/planos-para-construir-en-asuncion/",
         "/proyectos/reforma-ampliacion/",
         "/servicios/",
         "/servicios/anteproyecto-arquitectonico/",
@@ -704,9 +726,10 @@
         "/proyectos/reforma-ampliacion/",
         "/guias/que-incluye-un-anteproyecto/",
         "/guias/como-elegir-arquitecto/",
-        "/guias/antes-de-comprar-un-terreno/"
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/"
       ],
-      "internal_links_in_count": 10,
+      "internal_links_in_count": 11,
       "internal_links_in_from_main": [
         "/",
         "/servicios/",
@@ -717,7 +740,8 @@
         "/proyectos/reforma-ampliacion/",
         "/guias/que-incluye-un-anteproyecto/",
         "/guias/como-elegir-arquitecto/",
-        "/guias/antes-de-comprar-un-terreno/"
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/"
       ]
     },
     "/servicios/calculo-estructural/": {
@@ -735,14 +759,15 @@
       "canonical_self": true,
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
-      "word_count_main": 1017,
-      "word_count_body": 1110,
+      "word_count_main": 1037,
+      "word_count_body": 1130,
       "internal_links_out": [
         "/",
         "/arquitectos/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
         "/guias/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -757,6 +782,7 @@
       "internal_links_out_in_main": [
         "/",
         "/contanos-tu-proyecto/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
         "/proyectos/reforma-ampliacion/",
         "/servicios/",
         "/servicios/anteproyecto-arquitectonico/",
@@ -815,9 +841,12 @@
         "/proyectos/reforma-ampliacion/",
         "/guias/que-incluye-un-anteproyecto/",
         "/guias/como-elegir-arquitecto/",
-        "/guias/antes-de-comprar-un-terreno/"
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
+        "/guias/orientacion-y-sombra-casa-paraguay/"
       ],
-      "internal_links_in_count": 10,
+      "internal_links_in_count": 13,
       "internal_links_in_from_main": [
         "/",
         "/servicios/",
@@ -828,7 +857,10 @@
         "/proyectos/reforma-ampliacion/",
         "/guias/que-incluye-un-anteproyecto/",
         "/guias/como-elegir-arquitecto/",
-        "/guias/antes-de-comprar-un-terreno/"
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
+        "/guias/orientacion-y-sombra-casa-paraguay/"
       ]
     },
     "/servicios/direccion-de-proyecto/": {
@@ -1013,6 +1045,9 @@
         "/guias/que-incluye-un-anteproyecto/",
         "/guias/como-elegir-arquitecto/",
         "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
+        "/guias/orientacion-y-sombra-casa-paraguay/",
         "/arquitectos/",
         "/obras/",
         "/para-arquitectos/",
@@ -1021,7 +1056,7 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 21,
+      "internal_links_in_count": 24,
       "internal_links_in_from_main": [
         "/como-funciona/",
         "/proyectos/casa-nueva/",
@@ -1043,8 +1078,8 @@
       "canonical_self": true,
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
-      "word_count_main": 1051,
-      "word_count_body": 1144,
+      "word_count_main": 1064,
+      "word_count_body": 1157,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -1053,6 +1088,7 @@
         "/guias/",
         "/guias/antes-de-comprar-un-terreno/",
         "/guias/como-elegir-arquitecto/",
+        "/guias/orientacion-y-sombra-casa-paraguay/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -1070,6 +1106,7 @@
         "/contanos-tu-proyecto/",
         "/guias/antes-de-comprar-un-terreno/",
         "/guias/como-elegir-arquitecto/",
+        "/guias/orientacion-y-sombra-casa-paraguay/",
         "/proyectos/",
         "/proyectos/reforma-ampliacion/",
         "/servicios/anteproyecto-arquitectonico/",
@@ -1127,9 +1164,11 @@
         "/proyectos/reforma-ampliacion/",
         "/guias/que-incluye-un-anteproyecto/",
         "/guias/como-elegir-arquitecto/",
-        "/guias/antes-de-comprar-un-terreno/"
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/orientacion-y-sombra-casa-paraguay/"
       ],
-      "internal_links_in_count": 9,
+      "internal_links_in_count": 11,
       "internal_links_in_from_main": [
         "/como-funciona/",
         "/servicios/",
@@ -1139,7 +1178,9 @@
         "/proyectos/reforma-ampliacion/",
         "/guias/que-incluye-un-anteproyecto/",
         "/guias/como-elegir-arquitecto/",
-        "/guias/antes-de-comprar-un-terreno/"
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/orientacion-y-sombra-casa-paraguay/"
       ]
     },
     "/proyectos/reforma-ampliacion/": {
@@ -1157,14 +1198,15 @@
       "canonical_self": true,
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
-      "word_count_main": 1055,
-      "word_count_body": 1148,
+      "word_count_main": 1067,
+      "word_count_body": 1160,
       "internal_links_out": [
         "/",
         "/arquitectos/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
         "/guias/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -1179,6 +1221,7 @@
       "internal_links_out_in_main": [
         "/",
         "/contanos-tu-proyecto/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
         "/proyectos/",
         "/proyectos/casa-nueva/",
         "/servicios/anteproyecto-arquitectonico/",
@@ -1232,15 +1275,17 @@
         "/servicios/planos-documentacion-municipal/",
         "/servicios/calculo-estructural/",
         "/proyectos/",
-        "/proyectos/casa-nueva/"
+        "/proyectos/casa-nueva/",
+        "/guias/cuando-se-necesita-calculo-estructural/"
       ],
-      "internal_links_in_count": 5,
+      "internal_links_in_count": 6,
       "internal_links_in_from_main": [
         "/servicios/",
         "/servicios/planos-documentacion-municipal/",
         "/servicios/calculo-estructural/",
         "/proyectos/",
-        "/proyectos/casa-nueva/"
+        "/proyectos/casa-nueva/",
+        "/guias/cuando-se-necesita-calculo-estructural/"
       ]
     },
     "/guias/": {
@@ -1258,8 +1303,8 @@
       "canonical_self": true,
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
-      "word_count_main": 201,
-      "word_count_body": 294,
+      "word_count_main": 241,
+      "word_count_body": 334,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -1268,6 +1313,9 @@
         "/guias/",
         "/guias/antes-de-comprar-un-terreno/",
         "/guias/como-elegir-arquitecto/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
+        "/guias/orientacion-y-sombra-casa-paraguay/",
+        "/guias/planos-para-construir-en-asuncion/",
         "/guias/que-incluye-un-anteproyecto/",
         "/obras/",
         "/para-arquitectos/",
@@ -1282,6 +1330,9 @@
         "/contanos-tu-proyecto/",
         "/guias/antes-de-comprar-un-terreno/",
         "/guias/como-elegir-arquitecto/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
+        "/guias/orientacion-y-sombra-casa-paraguay/",
+        "/guias/planos-para-construir-en-asuncion/",
         "/guias/que-incluye-un-anteproyecto/",
         "/servicios/"
       ],
@@ -1330,6 +1381,9 @@
         "/guias/que-incluye-un-anteproyecto/",
         "/guias/como-elegir-arquitecto/",
         "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
+        "/guias/orientacion-y-sombra-casa-paraguay/",
         "/arquitectos/",
         "/obras/",
         "/para-arquitectos/",
@@ -1338,11 +1392,14 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 21,
+      "internal_links_in_count": 24,
       "internal_links_in_from_main": [
         "/guias/que-incluye-un-anteproyecto/",
         "/guias/como-elegir-arquitecto/",
-        "/guias/antes-de-comprar-un-terreno/"
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
+        "/guias/orientacion-y-sombra-casa-paraguay/"
       ]
     },
     "/guias/que-incluye-un-anteproyecto/": {
@@ -1434,13 +1491,17 @@
       "internal_links_in": [
         "/servicios/anteproyecto-arquitectonico/",
         "/guias/",
-        "/guias/como-elegir-arquitecto/"
+        "/guias/como-elegir-arquitecto/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/cuando-se-necesita-calculo-estructural/"
       ],
-      "internal_links_in_count": 3,
+      "internal_links_in_count": 5,
       "internal_links_in_from_main": [
         "/servicios/anteproyecto-arquitectonico/",
         "/guias/",
-        "/guias/como-elegir-arquitecto/"
+        "/guias/como-elegir-arquitecto/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/cuando-se-necesita-calculo-estructural/"
       ]
     },
     "/guias/como-elegir-arquitecto/": {
@@ -1535,15 +1596,19 @@
         "/proyectos/casa-nueva/",
         "/guias/",
         "/guias/que-incluye-un-anteproyecto/",
-        "/guias/antes-de-comprar-un-terreno/"
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/orientacion-y-sombra-casa-paraguay/"
       ],
-      "internal_links_in_count": 5,
+      "internal_links_in_count": 7,
       "internal_links_in_from_main": [
         "/como-funciona/",
         "/proyectos/casa-nueva/",
         "/guias/",
         "/guias/que-incluye-un-anteproyecto/",
-        "/guias/antes-de-comprar-un-terreno/"
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/orientacion-y-sombra-casa-paraguay/"
       ]
     },
     "/guias/antes-de-comprar-un-terreno/": {
@@ -1561,8 +1626,8 @@
       "canonical_self": true,
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
-      "word_count_main": 1208,
-      "word_count_body": 1301,
+      "word_count_main": 1218,
+      "word_count_body": 1311,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -1634,14 +1699,304 @@
         "/proyectos/casa-nueva/",
         "/guias/",
         "/guias/que-incluye-un-anteproyecto/",
-        "/guias/como-elegir-arquitecto/"
+        "/guias/como-elegir-arquitecto/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
+        "/guias/orientacion-y-sombra-casa-paraguay/"
       ],
-      "internal_links_in_count": 4,
+      "internal_links_in_count": 7,
       "internal_links_in_from_main": [
         "/proyectos/casa-nueva/",
         "/guias/",
         "/guias/que-incluye-un-anteproyecto/",
-        "/guias/como-elegir-arquitecto/"
+        "/guias/como-elegir-arquitecto/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
+        "/guias/orientacion-y-sombra-casa-paraguay/"
+      ]
+    },
+    "/guias/planos-para-construir-en-asuncion/": {
+      "url": "https://arq.com.py/guias/planos-para-construir-en-asuncion/",
+      "status": 200,
+      "title": "Planos para construir en Asunción: qué se necesita | ARQ",
+      "title_len": 56,
+      "meta_description": "El recorrido para construir en Asunción: anteproyecto, planos, cálculo, presentación en la municipalidad e inicio de obra, y quién firma cada parte.",
+      "meta_description_len": 148,
+      "h1": [
+        "Planos para construir en Asunción: qué se necesita"
+      ],
+      "h2_count": 9,
+      "canonical": "https://arq.com.py/guias/planos-para-construir-en-asuncion/",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 906,
+      "word_count_body": 999,
+      "internal_links_out": [
+        "/",
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/guias/",
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/servicios/",
+        "/servicios/calculo-estructural/",
+        "/servicios/planos-documentacion-municipal/",
+        "/terminos/"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/contanos-tu-proyecto/",
+        "/guias/",
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/proyectos/casa-nueva/",
+        "/servicios/calculo-estructural/",
+        "/servicios/planos-documentacion-municipal/"
+      ],
+      "external_link_hosts": [
+        "arq.com.py",
+        "obra.com.py",
+        "wa.me"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "Answer",
+        "BreadcrumbList",
+        "FAQPage",
+        "ListItem",
+        "Organization",
+        "Question",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 5,
+      "whatsapp_ctas": 4,
+      "whatsapp_numbers": [
+        "595992279599"
+      ],
+      "whatsapp_texts_distinct": [
+        "Hola, leí la guía de planos para construir en Asunción en ARQ.com.py. Necesito un profesional para preparar los planos."
+      ],
+      "tel_links": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
+      "cross_domain_links": [
+        {
+          "href": "https://obra.com.py/",
+          "anchor": "obra.com.py",
+          "in_main": true
+        }
+      ],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/servicios/planos-documentacion-municipal/",
+        "/guias/"
+      ],
+      "internal_links_in_count": 2,
+      "internal_links_in_from_main": [
+        "/servicios/planos-documentacion-municipal/",
+        "/guias/"
+      ]
+    },
+    "/guias/cuando-se-necesita-calculo-estructural/": {
+      "url": "https://arq.com.py/guias/cuando-se-necesita-calculo-estructural/",
+      "status": 200,
+      "title": "Cuándo se necesita cálculo estructural | ARQ",
+      "title_len": 44,
+      "meta_description": "Casos límite como quitar un muro, sumar un piso, hacer una galería o una pileta, señales de alerta en tu casa y qué preguntarle al ingeniero.",
+      "meta_description_len": 141,
+      "h1": [
+        "Cuándo se necesita cálculo estructural"
+      ],
+      "h2_count": 10,
+      "canonical": "https://arq.com.py/guias/cuando-se-necesita-calculo-estructural/",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 1032,
+      "word_count_body": 1125,
+      "internal_links_out": [
+        "/",
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/guias/",
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/proyectos/reforma-ampliacion/",
+        "/servicios/",
+        "/servicios/calculo-estructural/",
+        "/terminos/"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/contanos-tu-proyecto/",
+        "/guias/",
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/proyectos/reforma-ampliacion/",
+        "/servicios/calculo-estructural/"
+      ],
+      "external_link_hosts": [
+        "arq.com.py",
+        "obra.com.py",
+        "wa.me"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "Answer",
+        "BreadcrumbList",
+        "FAQPage",
+        "ListItem",
+        "Organization",
+        "Question",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 5,
+      "whatsapp_ctas": 4,
+      "whatsapp_numbers": [
+        "595992279599"
+      ],
+      "whatsapp_texts_distinct": [
+        "Hola, leí cuándo se necesita cálculo estructural en ARQ.com.py. Quiero consultar mi caso con un ingeniero."
+      ],
+      "tel_links": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
+      "cross_domain_links": [
+        {
+          "href": "https://obra.com.py/",
+          "anchor": "obra.com.py",
+          "in_main": true
+        }
+      ],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/servicios/calculo-estructural/",
+        "/proyectos/reforma-ampliacion/",
+        "/guias/"
+      ],
+      "internal_links_in_count": 3,
+      "internal_links_in_from_main": [
+        "/servicios/calculo-estructural/",
+        "/proyectos/reforma-ampliacion/",
+        "/guias/"
+      ]
+    },
+    "/guias/orientacion-y-sombra-casa-paraguay/": {
+      "url": "https://arq.com.py/guias/orientacion-y-sombra-casa-paraguay/",
+      "status": 200,
+      "title": "Orientación y sombra en la casa en Paraguay | ARQ",
+      "title_len": 49,
+      "meta_description": "Cómo pensar sol, sombra y ventilación al diseñar una casa en Paraguay: orientación, galerías, aleros, vegetación y estudio solar, explicado con claridad.",
+      "meta_description_len": 153,
+      "h1": [
+        "Orientación y sombra: cómo pensar la casa en Paraguay"
+      ],
+      "h2_count": 10,
+      "canonical": "https://arq.com.py/guias/orientacion-y-sombra-casa-paraguay/",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 1112,
+      "word_count_body": 1205,
+      "internal_links_out": [
+        "/",
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/guias/",
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/como-elegir-arquitecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/calculo-estructural/",
+        "/terminos/"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/contanos-tu-proyecto/",
+        "/guias/",
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/como-elegir-arquitecto/",
+        "/proyectos/casa-nueva/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/calculo-estructural/"
+      ],
+      "external_link_hosts": [
+        "arq.com.py",
+        "obra.com.py",
+        "wa.me"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "Answer",
+        "BreadcrumbList",
+        "FAQPage",
+        "ListItem",
+        "Organization",
+        "Question",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 5,
+      "whatsapp_ctas": 4,
+      "whatsapp_numbers": [
+        "595992279599"
+      ],
+      "whatsapp_texts_distinct": [
+        "Hola, leí la guía de orientación y sombra en ARQ.com.py. Quiero que un arquitecto analice mi terreno."
+      ],
+      "tel_links": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
+      "cross_domain_links": [
+        {
+          "href": "https://obra.com.py/",
+          "anchor": "obra.com.py",
+          "in_main": true
+        }
+      ],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/proyectos/casa-nueva/",
+        "/guias/"
+      ],
+      "internal_links_in_count": 2,
+      "internal_links_in_from_main": [
+        "/proyectos/casa-nueva/",
+        "/guias/"
       ]
     },
     "/arquitectos/": {
@@ -1733,6 +2088,9 @@
         "/guias/que-incluye-un-anteproyecto/",
         "/guias/como-elegir-arquitecto/",
         "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
+        "/guias/orientacion-y-sombra-casa-paraguay/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -1740,7 +2098,7 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 21,
+      "internal_links_in_count": 24,
       "internal_links_in_from_main": [
         "/",
         "/para-arquitectos/",
@@ -1835,6 +2193,9 @@
         "/guias/que-incluye-un-anteproyecto/",
         "/guias/como-elegir-arquitecto/",
         "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
+        "/guias/orientacion-y-sombra-casa-paraguay/",
         "/arquitectos/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -1842,7 +2203,7 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 21,
+      "internal_links_in_count": 24,
       "internal_links_in_from_main": [
         "/arquitectos/",
         "/obras/bienal-venecia-2016/"
@@ -1942,6 +2303,9 @@
         "/guias/que-incluye-un-anteproyecto/",
         "/guias/como-elegir-arquitecto/",
         "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
+        "/guias/orientacion-y-sombra-casa-paraguay/",
         "/arquitectos/",
         "/obras/",
         "/privacidad/",
@@ -1949,7 +2313,7 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 21,
+      "internal_links_in_count": 24,
       "internal_links_in_from_main": [
         "/",
         "/como-funciona/",
@@ -2036,6 +2400,9 @@
         "/guias/que-incluye-un-anteproyecto/",
         "/guias/como-elegir-arquitecto/",
         "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
+        "/guias/orientacion-y-sombra-casa-paraguay/",
         "/arquitectos/",
         "/obras/",
         "/para-arquitectos/",
@@ -2043,7 +2410,7 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 21,
+      "internal_links_in_count": 24,
       "internal_links_in_from_main": [
         "/",
         "/contanos-tu-proyecto/",
@@ -2133,6 +2500,9 @@
         "/guias/que-incluye-un-anteproyecto/",
         "/guias/como-elegir-arquitecto/",
         "/guias/antes-de-comprar-un-terreno/",
+        "/guias/planos-para-construir-en-asuncion/",
+        "/guias/cuando-se-necesita-calculo-estructural/",
+        "/guias/orientacion-y-sombra-casa-paraguay/",
         "/arquitectos/",
         "/obras/",
         "/para-arquitectos/",
@@ -2140,7 +2510,7 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 21,
+      "internal_links_in_count": 24,
       "internal_links_in_from_main": [
         "/arquitectos/",
         "/para-arquitectos/",

@@ -90,6 +90,7 @@ page_start([
   </div>
 
   <?= faq_html($faq) ?>
+  <p class="prose-note">Para los casos dudosos, como quitar un muro o sumar un piso, leé la guía <a class="link" href="/guias/cuando-se-necesita-calculo-estructural/">cuándo se necesita cálculo estructural</a>.</p>
   <?= related([
       ['Anteproyecto arquitectónico', '/servicios/anteproyecto-arquitectonico/', 'El diseño sobre el que después se calcula la estructura.'],
       ['Planos y documentación municipal', '/servicios/planos-documentacion-municipal/', 'La carpeta que se presenta y se usa en obra.'],

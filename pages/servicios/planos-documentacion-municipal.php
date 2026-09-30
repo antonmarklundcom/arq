@@ -85,6 +85,7 @@ page_start([
     <p>Cuando la documentación esté lista y busques quién construya, podés mirar <?= obra_link('https://obra.com.py/', 'obra.com.py') ?>. Si se trata de una obra existente, mirá <a class="link" href="/proyectos/reforma-ampliacion/">reforma o ampliación</a>; el recorrido completo está en <a class="link" href="/como-funciona/">cómo funciona ARQ</a>.</p>
   </div>
   <?= faq_html($faq) ?>
+  <p class="prose-note">Para ver el recorrido completo antes de construir, leé la guía <a class="link" href="/guias/planos-para-construir-en-asuncion/">planos para construir en Asunción</a>.</p>
   <?= related([
       ['Anteproyecto arquitectónico', '/servicios/anteproyecto-arquitectonico/', 'La etapa de diseño que suele venir antes de los planos.'],
       ['Cálculo estructural', '/servicios/calculo-estructural/', 'Cuando la obra necesita un ingeniero que firme la estructura.'],

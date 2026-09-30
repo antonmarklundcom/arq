@@ -93,7 +93,7 @@ page_start([
   </div>
 
   <?= faq_html($faq) ?>
-  <p class="prose-note">Si todavía estás eligiendo el lote, leé <a class="link" href="/guias/antes-de-comprar-un-terreno/">antes de comprar un terreno</a>; si estás eligiendo con quién trabajar, <a class="link" href="/guias/como-elegir-arquitecto/">cómo elegir arquitecto</a>.</p>
+  <p class="prose-note">Si todavía estás eligiendo el lote, leé <a class="link" href="/guias/antes-de-comprar-un-terreno/">antes de comprar un terreno</a>; si estás eligiendo con quién trabajar, <a class="link" href="/guias/como-elegir-arquitecto/">cómo elegir arquitecto</a>. Para pensar el sol y la sombra de la casa, <a class="link" href="/guias/orientacion-y-sombra-casa-paraguay/">orientación y sombra</a>.</p>
   <?= related([
       ['Anteproyecto arquitectónico', '/servicios/anteproyecto-arquitectonico/', 'La primera propuesta de tu casa sobre el terreno.'],
       ['Planos y documentación municipal', '/servicios/planos-documentacion-municipal/', 'El juego de planos para la municipalidad y la obra.'],

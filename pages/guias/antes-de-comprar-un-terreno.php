@@ -88,7 +88,7 @@ page_start([
     <p>Lo que sigue después de comprar está en <a class="link" href="/proyectos/casa-nueva/">casa nueva</a>. Y cuando el proyecto esté resuelto y busques quién lo ejecute, esa etapa es de <?= obra_link('https://obra.com.py/', 'obra.com.py') ?>.</p>
 
     <div class="note">
-      <p><strong>Contenido orientativo, revisalo con un profesional.</strong> Cada caso y cada municipalidad tienen sus particularidades.</p>
+      <p>Contenido orientativo, sin valor legal. Antes de pagar una seña, consultá con un escribano o abogado y con un profesional que vea el lote.</p>
     </div>
   </div>
 
