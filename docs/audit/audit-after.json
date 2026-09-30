@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-30T18:22:28.955Z",
+  "generated": "2026-09-30T18:46:44.473Z",
   "source": "local php -S router.php",
-  "sitemap_url_count": 9,
+  "sitemap_url_count": 18,
   "summary": {
     "not_200": [],
     "foreign_number_hits": [],
@@ -11,71 +11,72 @@
     "duplicate_titles": [],
     "pages_without_cross_domain_link": [
       "/",
-      "/obras",
-      "/arquitectos",
-      "/postulate",
-      "/contacto",
-      "/nosotros",
-      "/privacidad",
-      "/obras/bienal-venecia-2016",
-      "/arquitectos/gabinete-de-arquitectura"
+      "/contanos-tu-proyecto/",
+      "/proyectos/",
+      "/arquitectos/",
+      "/obras/",
+      "/privacidad/",
+      "/terminos/",
+      "/obras/bienal-venecia-2016/",
+      "/arquitectos/gabinete-de-arquitectura/"
     ],
     "images_without_alt_total": 0,
     "external_media_hosts": [],
-    "phone_display_variants": [],
+    "phone_display_variants": [
+      "+595 992 279 599"
+    ],
     "whatsapp_numbers": [
       "595992279599"
     ],
     "word_count_main_min_max": [
-      50,
-      211
+      88,
+      1056
     ]
   },
   "pages": {
     "/": {
       "url": "https://arq.com.py/",
       "status": 200,
-      "title": "MONOGRAFÍA | Arquitectura del Paraguay, obras y estudios",
-      "title_len": 56,
-      "meta_description": "Directorio de la arquitectura paraguaya: explorá obras de ladrillo y encontrá el estudio indicado para tu proyecto. Postulá tu estudio.",
-      "meta_description_len": 135,
+      "title": "Arquitectos en Asunción para tu proyecto | ARQ",
+      "title_len": 46,
+      "meta_description": "Contanos qué querés construir. ARQ te conecta con arquitectos e ingenieros independientes según tu proyecto, ubicación y especialidad.",
+      "meta_description_len": 134,
       "h1": [
-        "La arquitectura que el mundo mira."
+        "Encontrá el arquitecto adecuado para tu proyecto en Paraguay."
       ],
-      "h2_count": 5,
+      "h2_count": 8,
       "canonical": "https://arq.com.py/",
       "canonical_self": true,
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
-      "word_count_main": 211,
-      "word_count_body": 255,
+      "word_count_main": 520,
+      "word_count_body": 608,
       "internal_links_out": [
         "/",
-        "/arquitectos",
-        "/arquitectos/estudio-ejemplo-dos",
-        "/arquitectos/estudio-ejemplo-uno",
-        "/arquitectos/gabinete-de-arquitectura",
-        "/contacto",
-        "/nosotros",
-        "/obras",
-        "/obras/bienal-venecia-2016",
-        "/obras/casa-ejemplo-ladrillo",
-        "/obras/centro-ejemplo-cultural",
-        "/obras/pabellon-ejemplo-encarnacion",
-        "/postulate",
-        "/privacidad"
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/servicios/planos-documentacion-municipal/",
+        "/terminos/"
       ],
       "internal_links_out_in_main": [
-        "/arquitectos",
-        "/arquitectos/estudio-ejemplo-dos",
-        "/arquitectos/estudio-ejemplo-uno",
-        "/arquitectos/gabinete-de-arquitectura",
-        "/obras",
-        "/obras/bienal-venecia-2016",
-        "/obras/casa-ejemplo-ladrillo",
-        "/obras/centro-ejemplo-cultural",
-        "/obras/pabellon-ejemplo-encarnacion",
-        "/postulate"
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/servicios/planos-documentacion-municipal/"
       ],
       "external_link_hosts": [
         "arq.com.py",
@@ -91,7 +92,7 @@
       ],
       "schema_telephones": [],
       "faq_items": 0,
-      "whatsapp_ctas": 1,
+      "whatsapp_ctas": 3,
       "whatsapp_numbers": [
         "595992279599"
       ],
@@ -99,295 +100,83 @@
         "Hola, vi ARQ.com.py. Quiero contarles mi proyecto de arquitectura y que me orienten con el profesional adecuado."
       ],
       "tel_links": [],
-      "phone_display": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
       "cross_domain_links": [],
       "foreign_py_mobiles": [],
       "internal_links_in": [
-        "/obras",
-        "/arquitectos",
-        "/postulate",
-        "/contacto",
-        "/nosotros",
-        "/privacidad",
-        "/obras/bienal-venecia-2016",
-        "/arquitectos/gabinete-de-arquitectura"
+        "/contanos-tu-proyecto/",
+        "/como-funciona/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/",
+        "/arquitectos/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/terminos/",
+        "/obras/bienal-venecia-2016/",
+        "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 8,
+      "internal_links_in_count": 17,
       "internal_links_in_from_main": [
-        "/obras",
-        "/arquitectos",
-        "/postulate",
-        "/contacto",
-        "/nosotros",
-        "/privacidad",
-        "/obras/bienal-venecia-2016",
-        "/arquitectos/gabinete-de-arquitectura"
+        "/contanos-tu-proyecto/",
+        "/como-funciona/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/",
+        "/arquitectos/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/terminos/",
+        "/obras/bienal-venecia-2016/",
+        "/arquitectos/gabinete-de-arquitectura/"
       ]
     },
-    "/obras": {
-      "url": "https://arq.com.py/obras",
+    "/contanos-tu-proyecto/": {
+      "url": "https://arq.com.py/contanos-tu-proyecto/",
       "status": 200,
-      "title": "Obras de arquitectura paraguaya | MONOGRAFÍA",
-      "title_len": 44,
-      "meta_description": "Índice de obras de arquitectura del Paraguay con sus autores. Filtrá por ciudad y tipo, y llegá al estudio que las proyectó.",
-      "meta_description_len": 124,
-      "h1": [
-        "Obras"
-      ],
-      "h2_count": 1,
-      "canonical": "https://arq.com.py/obras",
-      "canonical_self": true,
-      "robots": "index,follow,max-image-preview:large",
-      "og_image": null,
-      "word_count_main": 50,
-      "word_count_body": 94,
-      "internal_links_out": [
-        "/",
-        "/arquitectos",
-        "/contacto",
-        "/nosotros",
-        "/obras",
-        "/obras/bienal-venecia-2016",
-        "/obras/casa-ejemplo-ladrillo",
-        "/obras/centro-ejemplo-cultural",
-        "/obras/pabellon-ejemplo-encarnacion",
-        "/postulate",
-        "/privacidad"
-      ],
-      "internal_links_out_in_main": [
-        "/",
-        "/obras/bienal-venecia-2016",
-        "/obras/casa-ejemplo-ladrillo",
-        "/obras/centro-ejemplo-cultural",
-        "/obras/pabellon-ejemplo-encarnacion"
-      ],
-      "external_link_hosts": [
-        "arq.com.py",
-        "wa.me"
-      ],
-      "images": 0,
-      "images_without_alt": [],
-      "external_media": [],
-      "jsonld_parse_errors": [],
-      "schema_types": [
-        "BreadcrumbList",
-        "CollectionPage",
-        "ListItem",
-        "Organization",
-        "WebSite"
-      ],
-      "schema_telephones": [],
-      "faq_items": 0,
-      "whatsapp_ctas": 1,
-      "whatsapp_numbers": [
-        "595992279599"
-      ],
-      "whatsapp_texts_distinct": [
-        "Hola, estuve mirando las obras en ARQ.com.py y quiero consultar por un proyecto propio."
-      ],
-      "tel_links": [],
-      "phone_display": [],
-      "cross_domain_links": [],
-      "foreign_py_mobiles": [],
-      "internal_links_in": [
-        "/",
-        "/arquitectos",
-        "/postulate",
-        "/contacto",
-        "/nosotros",
-        "/privacidad",
-        "/obras/bienal-venecia-2016",
-        "/arquitectos/gabinete-de-arquitectura"
-      ],
-      "internal_links_in_count": 8,
-      "internal_links_in_from_main": [
-        "/",
-        "/obras/bienal-venecia-2016"
-      ]
-    },
-    "/arquitectos": {
-      "url": "https://arq.com.py/arquitectos",
-      "status": 200,
-      "title": "Arquitectos y estudios del Paraguay | MONOGRAFÍA",
-      "title_len": 48,
-      "meta_description": "Directorio de arquitectos y estudios de Paraguay: conocé su trabajo, sus obras y contactalos directamente para tu proyecto.",
-      "meta_description_len": 123,
-      "h1": [
-        "Arquitectos"
-      ],
-      "h2_count": 1,
-      "canonical": "https://arq.com.py/arquitectos",
-      "canonical_self": true,
-      "robots": "index,follow,max-image-preview:large",
-      "og_image": null,
-      "word_count_main": 76,
-      "word_count_body": 120,
-      "internal_links_out": [
-        "/",
-        "/arquitectos",
-        "/arquitectos/estudio-ejemplo-dos",
-        "/arquitectos/estudio-ejemplo-uno",
-        "/arquitectos/gabinete-de-arquitectura",
-        "/contacto",
-        "/nosotros",
-        "/obras",
-        "/postulate",
-        "/privacidad"
-      ],
-      "internal_links_out_in_main": [
-        "/",
-        "/arquitectos/estudio-ejemplo-dos",
-        "/arquitectos/estudio-ejemplo-uno",
-        "/arquitectos/gabinete-de-arquitectura",
-        "/postulate"
-      ],
-      "external_link_hosts": [
-        "arq.com.py",
-        "wa.me"
-      ],
-      "images": 0,
-      "images_without_alt": [],
-      "external_media": [],
-      "jsonld_parse_errors": [],
-      "schema_types": [
-        "BreadcrumbList",
-        "CollectionPage",
-        "ListItem",
-        "Organization",
-        "WebSite"
-      ],
-      "schema_telephones": [],
-      "faq_items": 0,
-      "whatsapp_ctas": 1,
-      "whatsapp_numbers": [
-        "595992279599"
-      ],
-      "whatsapp_texts_distinct": [
-        "Hola, vi el directorio de arquitectos de ARQ.com.py. Quiero que me ayuden a encontrar un estudio para mi proyecto."
-      ],
-      "tel_links": [],
-      "phone_display": [],
-      "cross_domain_links": [],
-      "foreign_py_mobiles": [],
-      "internal_links_in": [
-        "/",
-        "/obras",
-        "/postulate",
-        "/contacto",
-        "/nosotros",
-        "/privacidad",
-        "/obras/bienal-venecia-2016",
-        "/arquitectos/gabinete-de-arquitectura"
-      ],
-      "internal_links_in_count": 8,
-      "internal_links_in_from_main": [
-        "/",
-        "/arquitectos/gabinete-de-arquitectura"
-      ]
-    },
-    "/postulate": {
-      "url": "https://arq.com.py/postulate",
-      "status": 200,
-      "title": "Postulá tu estudio de arquitectura | MONOGRAFÍA",
-      "title_len": 47,
-      "meta_description": "Postulá tu estudio para integrar el directorio de arquitectura paraguaya. Mostrá tus obras y recibí consultas de clientes que quieren construir.",
-      "meta_description_len": 144,
-      "h1": [
-        "Un lugar entre los mejores."
-      ],
-      "h2_count": 1,
-      "canonical": "https://arq.com.py/postulate",
-      "canonical_self": true,
-      "robots": "index,follow,max-image-preview:large",
-      "og_image": null,
-      "word_count_main": 90,
-      "word_count_body": 134,
-      "internal_links_out": [
-        "/",
-        "/arquitectos",
-        "/contacto",
-        "/nosotros",
-        "/obras",
-        "/postulate",
-        "/privacidad"
-      ],
-      "internal_links_out_in_main": [
-        "/",
-        "/privacidad"
-      ],
-      "external_link_hosts": [
-        "arq.com.py",
-        "wa.me"
-      ],
-      "images": 0,
-      "images_without_alt": [],
-      "external_media": [],
-      "jsonld_parse_errors": [],
-      "schema_types": [
-        "BreadcrumbList",
-        "ListItem",
-        "Organization",
-        "WebSite"
-      ],
-      "schema_telephones": [],
-      "faq_items": 0,
-      "whatsapp_ctas": 1,
-      "whatsapp_numbers": [
-        "595992279599"
-      ],
-      "whatsapp_texts_distinct": [
-        "Hola, soy arquitecto/a y quiero saber cómo sumar mi estudio a ARQ.com.py."
-      ],
-      "tel_links": [],
-      "phone_display": [],
-      "cross_domain_links": [],
-      "foreign_py_mobiles": [],
-      "internal_links_in": [
-        "/",
-        "/obras",
-        "/arquitectos",
-        "/contacto",
-        "/nosotros",
-        "/privacidad",
-        "/obras/bienal-venecia-2016",
-        "/arquitectos/gabinete-de-arquitectura"
-      ],
-      "internal_links_in_count": 8,
-      "internal_links_in_from_main": [
-        "/",
-        "/arquitectos",
-        "/nosotros"
-      ]
-    },
-    "/contacto": {
-      "url": "https://arq.com.py/contacto",
-      "status": 200,
-      "title": "Contacto: ¿qué querés construir? | MONOGRAFÍA",
-      "title_len": 45,
-      "meta_description": "Contanos qué querés construir en Paraguay y te ayudamos a encontrar el estudio de arquitectura indicado. Respondemos por teléfono o WhatsApp.",
-      "meta_description_len": 141,
+      "title": "Contanos tu proyecto de arquitectura | ARQ",
+      "title_len": 42,
+      "meta_description": "Tres preguntas sobre tu proyecto, tu terreno y la zona. Seguís por WhatsApp con la consulta ya escrita y te conectamos con el profesional adecuado.",
+      "meta_description_len": 147,
       "h1": [
         "¿Qué querés construir?"
       ],
       "h2_count": 1,
-      "canonical": "https://arq.com.py/contacto",
+      "canonical": "https://arq.com.py/contanos-tu-proyecto/",
       "canonical_self": true,
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
-      "word_count_main": 58,
-      "word_count_body": 102,
+      "word_count_main": 221,
+      "word_count_body": 309,
       "internal_links_out": [
         "/",
-        "/arquitectos",
-        "/contacto",
-        "/nosotros",
-        "/obras",
-        "/postulate",
-        "/privacidad"
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/servicios/",
+        "/terminos/"
       ],
       "internal_links_out_in_main": [
         "/",
-        "/privacidad"
+        "/privacidad/"
       ],
       "external_link_hosts": [
         "arq.com.py",
@@ -406,62 +195,97 @@
       ],
       "schema_telephones": [],
       "faq_items": 0,
-      "whatsapp_ctas": 1,
+      "whatsapp_ctas": 3,
       "whatsapp_numbers": [
         "595992279599"
       ],
       "whatsapp_texts_distinct": [
-        "Hola, vengo de la página de contacto de ARQ.com.py. Quiero contarles qué quiero construir."
+        "Hola, estoy en ARQ.com.py y prefiero contarles mi proyecto directamente por acá."
       ],
       "tel_links": [],
-      "phone_display": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
       "cross_domain_links": [],
       "foreign_py_mobiles": [],
       "internal_links_in": [
         "/",
-        "/obras",
-        "/arquitectos",
-        "/postulate",
-        "/nosotros",
-        "/privacidad",
-        "/obras/bienal-venecia-2016",
-        "/arquitectos/gabinete-de-arquitectura"
+        "/como-funciona/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/",
+        "/arquitectos/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/terminos/",
+        "/obras/bienal-venecia-2016/",
+        "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 8,
-      "internal_links_in_from_main": []
+      "internal_links_in_count": 17,
+      "internal_links_in_from_main": [
+        "/",
+        "/como-funciona/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/",
+        "/arquitectos/",
+        "/obras/",
+        "/arquitectos/gabinete-de-arquitectura/"
+      ]
     },
-    "/nosotros": {
-      "url": "https://arq.com.py/nosotros",
+    "/como-funciona/": {
+      "url": "https://arq.com.py/como-funciona/",
       "status": 200,
-      "title": "Nosotros | MONOGRAFÍA, arquitectura paraguaya",
-      "title_len": 45,
-      "meta_description": "MONOGRAFÍA es un directorio editorial de arquitectura paraguaya que conecta obras, estudios y personas que quieren construir en el país.",
-      "meta_description_len": 136,
+      "title": "Cómo funciona ARQ: del proyecto al profesional | ARQ",
+      "title_len": 52,
+      "meta_description": "Contás tu proyecto, ARQ confirma el alcance y te presenta a un arquitecto o ingeniero independiente. Así son los cuatro pasos y cómo elegimos.",
+      "meta_description_len": 142,
       "h1": [
-        "Una monografía viva"
+        "Cómo funciona ARQ"
       ],
-      "h2_count": 1,
-      "canonical": "https://arq.com.py/nosotros",
+      "h2_count": 11,
+      "canonical": "https://arq.com.py/como-funciona/",
       "canonical_self": true,
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
-      "word_count_main": 91,
-      "word_count_body": 135,
+      "word_count_main": 956,
+      "word_count_body": 1044,
       "internal_links_out": [
         "/",
-        "/arquitectos",
-        "/contacto",
-        "/nosotros",
-        "/obras",
-        "/postulate",
-        "/privacidad"
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/servicios/",
+        "/terminos/"
       ],
       "internal_links_out_in_main": [
         "/",
-        "/postulate"
+        "/contanos-tu-proyecto/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/servicios/"
       ],
       "external_link_hosts": [
         "arq.com.py",
+        "obra.com.py",
         "wa.me"
       ],
       "images": 0,
@@ -470,65 +294,1210 @@
       "jsonld_parse_errors": [],
       "schema_types": [
         "AboutPage",
+        "Answer",
         "BreadcrumbList",
+        "FAQPage",
+        "ListItem",
+        "Organization",
+        "Question",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 4,
+      "whatsapp_ctas": 4,
+      "whatsapp_numbers": [
+        "595992279599"
+      ],
+      "whatsapp_texts_distinct": [
+        "Hola, leí cómo funciona ARQ.com.py. Quiero contarles mi proyecto para saber qué profesional necesito."
+      ],
+      "tel_links": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
+      "cross_domain_links": [
+        {
+          "href": "https://obra.com.py/",
+          "anchor": "obra.com.py",
+          "in_main": true
+        }
+      ],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/",
+        "/contanos-tu-proyecto/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/",
+        "/arquitectos/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/terminos/",
+        "/obras/bienal-venecia-2016/",
+        "/arquitectos/gabinete-de-arquitectura/"
+      ],
+      "internal_links_in_count": 17,
+      "internal_links_in_from_main": [
+        "/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/casa-nueva/",
+        "/para-arquitectos/",
+        "/terminos/"
+      ]
+    },
+    "/servicios/": {
+      "url": "https://arq.com.py/servicios/",
+      "status": 200,
+      "title": "Servicios de arquitectura en Asunción | ARQ",
+      "title_len": 43,
+      "meta_description": "Anteproyecto, planos y documentación municipal, cálculo estructural y dirección de proyecto: te conectamos con el profesional independiente adecuado.",
+      "meta_description_len": 149,
+      "h1": [
+        "Qué profesional necesita tu proyecto"
+      ],
+      "h2_count": 8,
+      "canonical": "https://arq.com.py/servicios/",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 520,
+      "word_count_body": 608,
+      "internal_links_out": [
+        "/",
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/servicios/planos-documentacion-municipal/",
+        "/terminos/"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/para-arquitectos/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/servicios/planos-documentacion-municipal/"
+      ],
+      "external_link_hosts": [
+        "arq.com.py",
+        "obra.com.py",
+        "wa.me"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "BreadcrumbList",
+        "CollectionPage",
         "ListItem",
         "Organization",
         "WebSite"
       ],
       "schema_telephones": [],
       "faq_items": 0,
-      "whatsapp_ctas": 1,
+      "whatsapp_ctas": 4,
       "whatsapp_numbers": [
         "595992279599"
       ],
       "whatsapp_texts_distinct": [
-        "Hola, leí cómo trabaja ARQ.com.py y tengo una consulta sobre mi proyecto."
+        "Hola, vi los servicios de ARQ.com.py y no sé bien cuál necesito para mi proyecto. ¿Me orientan?"
       ],
       "tel_links": [],
-      "phone_display": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
+      "cross_domain_links": [
+        {
+          "href": "https://obra.com.py/",
+          "anchor": "obra.com.py",
+          "in_main": true
+        }
+      ],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/",
+        "/contanos-tu-proyecto/",
+        "/como-funciona/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/",
+        "/arquitectos/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/terminos/",
+        "/obras/bienal-venecia-2016/",
+        "/arquitectos/gabinete-de-arquitectura/"
+      ],
+      "internal_links_in_count": 17,
+      "internal_links_in_from_main": [
+        "/como-funciona/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/",
+        "/para-arquitectos/"
+      ]
+    },
+    "/servicios/anteproyecto-arquitectonico/": {
+      "url": "https://arq.com.py/servicios/anteproyecto-arquitectonico/",
+      "status": 200,
+      "title": "Anteproyecto arquitectónico en Asunción | ARQ",
+      "title_len": 45,
+      "meta_description": "Qué es un anteproyecto, qué incluye y qué llevar a la primera reunión. Te conectamos con arquitectos independientes para diseñar tu casa en Asunción.",
+      "meta_description_len": 149,
+      "h1": [
+        "Anteproyecto arquitectónico: la primera versión de tu proyecto"
+      ],
+      "h2_count": 11,
+      "canonical": "https://arq.com.py/servicios/anteproyecto-arquitectonico/",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 1053,
+      "word_count_body": 1141,
+      "internal_links_out": [
+        "/",
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/servicios/",
+        "/servicios/calculo-estructural/",
+        "/servicios/planos-documentacion-municipal/",
+        "/terminos/"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/proyectos/casa-nueva/",
+        "/servicios/",
+        "/servicios/calculo-estructural/",
+        "/servicios/planos-documentacion-municipal/"
+      ],
+      "external_link_hosts": [
+        "arq.com.py",
+        "obra.com.py",
+        "wa.me"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "AdministrativeArea",
+        "Answer",
+        "BreadcrumbList",
+        "City",
+        "FAQPage",
+        "ListItem",
+        "Organization",
+        "Question",
+        "Service",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 5,
+      "whatsapp_ctas": 4,
+      "whatsapp_numbers": [
+        "595992279599"
+      ],
+      "whatsapp_texts_distinct": [
+        "Hola, vi la página de anteproyecto en ARQ.com.py. Quiero empezar el diseño de mi proyecto con un arquitecto."
+      ],
+      "tel_links": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
+      "cross_domain_links": [
+        {
+          "href": "https://obra.com.py/",
+          "anchor": "obra.com.py",
+          "in_main": true
+        }
+      ],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/",
+        "/servicios/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/calculo-estructural/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/"
+      ],
+      "internal_links_in_count": 6,
+      "internal_links_in_from_main": [
+        "/",
+        "/servicios/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/calculo-estructural/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/"
+      ]
+    },
+    "/servicios/planos-documentacion-municipal/": {
+      "url": "https://arq.com.py/servicios/planos-documentacion-municipal/",
+      "status": 200,
+      "title": "Planos y documentación municipal en Asunción | ARQ",
+      "title_len": 50,
+      "meta_description": "Qué planos se presentan en la municipalidad, qué documentos reunir y cómo es el proceso: te conectamos con profesionales de Asunción y Gran Asunción.",
+      "meta_description_len": 149,
+      "h1": [
+        "Planos y documentación para la municipalidad"
+      ],
+      "h2_count": 12,
+      "canonical": "https://arq.com.py/servicios/planos-documentacion-municipal/",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 1056,
+      "word_count_body": 1144,
+      "internal_links_out": [
+        "/",
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/proyectos/reforma-ampliacion/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/calculo-estructural/",
+        "/terminos/"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/proyectos/reforma-ampliacion/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/calculo-estructural/"
+      ],
+      "external_link_hosts": [
+        "arq.com.py",
+        "obra.com.py",
+        "wa.me"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "AdministrativeArea",
+        "Answer",
+        "BreadcrumbList",
+        "City",
+        "FAQPage",
+        "ListItem",
+        "Organization",
+        "Question",
+        "Service",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 6,
+      "whatsapp_ctas": 4,
+      "whatsapp_numbers": [
+        "595992279599"
+      ],
+      "whatsapp_texts_distinct": [
+        "Hola, vi planos y documentación municipal en ARQ.com.py. Necesito preparar los planos para presentar en la municipalidad."
+      ],
+      "tel_links": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
+      "cross_domain_links": [
+        {
+          "href": "https://obra.com.py/",
+          "anchor": "obra.com.py",
+          "in_main": true
+        }
+      ],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/"
+      ],
+      "internal_links_in_count": 7,
+      "internal_links_in_from_main": [
+        "/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/"
+      ]
+    },
+    "/servicios/calculo-estructural/": {
+      "url": "https://arq.com.py/servicios/calculo-estructural/",
+      "status": 200,
+      "title": "Cálculo estructural en Asunción y Paraguay | ARQ",
+      "title_len": 48,
+      "meta_description": "Cuándo una obra necesita cálculo estructural, qué entrega el ingeniero y qué datos preparar. Te conectamos con ingenieros independientes en Asunción.",
+      "meta_description_len": 149,
+      "h1": [
+        "Cálculo estructural: qué es y cuándo lo necesitás"
+      ],
+      "h2_count": 10,
+      "canonical": "https://arq.com.py/servicios/calculo-estructural/",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 1017,
+      "word_count_body": 1105,
+      "internal_links_out": [
+        "/",
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/proyectos/reforma-ampliacion/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/direccion-de-proyecto/",
+        "/servicios/planos-documentacion-municipal/",
+        "/terminos/"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/contanos-tu-proyecto/",
+        "/proyectos/reforma-ampliacion/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/direccion-de-proyecto/",
+        "/servicios/planos-documentacion-municipal/"
+      ],
+      "external_link_hosts": [
+        "arq.com.py",
+        "obra.com.py",
+        "wa.me"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "AdministrativeArea",
+        "Answer",
+        "BreadcrumbList",
+        "City",
+        "FAQPage",
+        "ListItem",
+        "Organization",
+        "Question",
+        "Service",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 5,
+      "whatsapp_ctas": 4,
+      "whatsapp_numbers": [
+        "595992279599"
+      ],
+      "whatsapp_texts_distinct": [
+        "Hola, vi cálculo estructural en ARQ.com.py. Necesito un ingeniero para calcular la estructura de mi proyecto."
+      ],
+      "tel_links": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
+      "cross_domain_links": [
+        {
+          "href": "https://obra.com.py/",
+          "anchor": "obra.com.py",
+          "in_main": true
+        }
+      ],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/"
+      ],
+      "internal_links_in_count": 7,
+      "internal_links_in_from_main": [
+        "/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/"
+      ]
+    },
+    "/servicios/direccion-de-proyecto/": {
+      "url": "https://arq.com.py/servicios/direccion-de-proyecto/",
+      "status": 200,
+      "title": "Dirección de proyecto y coordinación | ARQ",
+      "title_len": 42,
+      "meta_description": "Qué es la dirección de proyecto, qué puede incluir y cuándo conviene. Te conectamos con profesionales independientes que ofrecen este servicio.",
+      "meta_description_len": 143,
+      "h1": [
+        "Quién dirige tu proyecto mientras se construye"
+      ],
+      "h2_count": 11,
+      "canonical": "https://arq.com.py/servicios/direccion-de-proyecto/",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 1042,
+      "word_count_body": 1130,
+      "internal_links_out": [
+        "/",
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/servicios/",
+        "/servicios/calculo-estructural/",
+        "/servicios/planos-documentacion-municipal/",
+        "/terminos/"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/proyectos/casa-nueva/",
+        "/servicios/",
+        "/servicios/calculo-estructural/",
+        "/servicios/planos-documentacion-municipal/"
+      ],
+      "external_link_hosts": [
+        "arq.com.py",
+        "obra.com.py",
+        "wa.me"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "AdministrativeArea",
+        "Answer",
+        "BreadcrumbList",
+        "City",
+        "FAQPage",
+        "ListItem",
+        "Organization",
+        "Question",
+        "Service",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 5,
+      "whatsapp_ctas": 4,
+      "whatsapp_numbers": [
+        "595992279599"
+      ],
+      "whatsapp_texts_distinct": [
+        "Hola, vi dirección de proyecto en ARQ.com.py. Busco un profesional que coordine y acompañe mi proyecto."
+      ],
+      "tel_links": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
+      "cross_domain_links": [
+        {
+          "href": "https://obra.com.py/",
+          "anchor": "obra.com.py",
+          "in_main": true
+        }
+      ],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/",
+        "/servicios/",
+        "/servicios/calculo-estructural/"
+      ],
+      "internal_links_in_count": 3,
+      "internal_links_in_from_main": [
+        "/",
+        "/servicios/",
+        "/servicios/calculo-estructural/"
+      ]
+    },
+    "/proyectos/": {
+      "url": "https://arq.com.py/proyectos/",
+      "status": 200,
+      "title": "Proyectos: casa nueva, reforma o ampliación | ARQ",
+      "title_len": 49,
+      "meta_description": "Elegí tu situación: una casa desde cero o una casa que ya existe. Te explicamos el camino y te conectamos con el arquitecto o ingeniero que corresponde.",
+      "meta_description_len": 152,
+      "h1": [
+        "Empezá por tu situación"
+      ],
+      "h2_count": 4,
+      "canonical": "https://arq.com.py/proyectos/",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 197,
+      "word_count_body": 285,
+      "internal_links_out": [
+        "/",
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/",
+        "/servicios/",
+        "/terminos/"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/contanos-tu-proyecto/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/",
+        "/servicios/"
+      ],
+      "external_link_hosts": [
+        "arq.com.py",
+        "wa.me"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "BreadcrumbList",
+        "CollectionPage",
+        "ListItem",
+        "Organization",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 0,
+      "whatsapp_ctas": 3,
+      "whatsapp_numbers": [
+        "595992279599"
+      ],
+      "whatsapp_texts_distinct": [
+        "Hola, vi los tipos de proyecto en ARQ.com.py y quiero contarles el mío."
+      ],
+      "tel_links": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
       "cross_domain_links": [],
       "foreign_py_mobiles": [],
       "internal_links_in": [
         "/",
-        "/obras",
-        "/arquitectos",
-        "/postulate",
-        "/contacto",
-        "/privacidad",
-        "/obras/bienal-venecia-2016",
-        "/arquitectos/gabinete-de-arquitectura"
+        "/contanos-tu-proyecto/",
+        "/como-funciona/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/",
+        "/arquitectos/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/terminos/",
+        "/obras/bienal-venecia-2016/",
+        "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 8,
-      "internal_links_in_from_main": []
+      "internal_links_in_count": 17,
+      "internal_links_in_from_main": [
+        "/como-funciona/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/"
+      ]
     },
-    "/privacidad": {
-      "url": "https://arq.com.py/privacidad",
+    "/proyectos/casa-nueva/": {
+      "url": "https://arq.com.py/proyectos/casa-nueva/",
       "status": 200,
-      "title": "Política de privacidad | MONOGRAFÍA",
-      "title_len": 35,
-      "meta_description": "Cómo usamos los datos que dejás en los formularios de arq.com.py: qué guardamos, para qué y cómo podés pedir que los eliminemos.",
-      "meta_description_len": 128,
+      "title": "Arquitecto para tu casa nueva en Paraguay | ARQ",
+      "title_len": 47,
+      "meta_description": "Tenés un terreno, o estás por comprarlo, y querés hacer tu casa. Te mostramos el camino hasta la obra y te conectamos con un arquitecto independiente.",
+      "meta_description_len": 150,
       "h1": [
-        "Política de privacidad"
+        "Tu casa nueva empieza antes del plano"
       ],
-      "h2_count": 5,
-      "canonical": "https://arq.com.py/privacidad",
+      "h2_count": 12,
+      "canonical": "https://arq.com.py/proyectos/casa-nueva/",
       "canonical_self": true,
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
-      "word_count_main": 83,
-      "word_count_body": 127,
+      "word_count_main": 1030,
+      "word_count_body": 1118,
       "internal_links_out": [
         "/",
-        "/arquitectos",
-        "/contacto",
-        "/nosotros",
-        "/obras",
-        "/postulate",
-        "/privacidad"
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/proyectos/reforma-ampliacion/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/calculo-estructural/",
+        "/servicios/planos-documentacion-municipal/",
+        "/terminos/"
       ],
       "internal_links_out_in_main": [
-        "/"
+        "/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/proyectos/",
+        "/proyectos/reforma-ampliacion/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/calculo-estructural/",
+        "/servicios/planos-documentacion-municipal/"
+      ],
+      "external_link_hosts": [
+        "arq.com.py",
+        "obra.com.py",
+        "wa.me"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "AdministrativeArea",
+        "Answer",
+        "BreadcrumbList",
+        "City",
+        "FAQPage",
+        "ListItem",
+        "Organization",
+        "Question",
+        "Service",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 4,
+      "whatsapp_ctas": 4,
+      "whatsapp_numbers": [
+        "595992279599"
+      ],
+      "whatsapp_texts_distinct": [
+        "Hola, vi la página de casa nueva en ARQ.com.py. Quiero diseñar mi casa y que me conecten con el arquitecto adecuado."
+      ],
+      "tel_links": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
+      "cross_domain_links": [
+        {
+          "href": "https://obra.com.py/casas/",
+          "anchor": "construir tu casa con obra.com.py",
+          "in_main": true
+        }
+      ],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/como-funciona/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/",
+        "/proyectos/reforma-ampliacion/"
+      ],
+      "internal_links_in_count": 6,
+      "internal_links_in_from_main": [
+        "/como-funciona/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/",
+        "/proyectos/reforma-ampliacion/"
+      ]
+    },
+    "/proyectos/reforma-ampliacion/": {
+      "url": "https://arq.com.py/proyectos/reforma-ampliacion/",
+      "status": 200,
+      "title": "Arquitecto para reforma o ampliación | ARQ",
+      "title_len": 42,
+      "meta_description": "Ampliar o reformar una casa existente no es igual que proyectar de cero. Te conectamos con el arquitecto o ingeniero independiente que corresponde.",
+      "meta_description_len": 147,
+      "h1": [
+        "Reformar o ampliar una casa que ya existe"
+      ],
+      "h2_count": 12,
+      "canonical": "https://arq.com.py/proyectos/reforma-ampliacion/",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 1055,
+      "word_count_body": 1143,
+      "internal_links_out": [
+        "/",
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/calculo-estructural/",
+        "/servicios/planos-documentacion-municipal/",
+        "/terminos/"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/contanos-tu-proyecto/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/calculo-estructural/",
+        "/servicios/planos-documentacion-municipal/"
+      ],
+      "external_link_hosts": [
+        "arq.com.py",
+        "obra.com.py",
+        "wa.me"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "AdministrativeArea",
+        "Answer",
+        "BreadcrumbList",
+        "City",
+        "FAQPage",
+        "ListItem",
+        "Organization",
+        "Question",
+        "Service",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 4,
+      "whatsapp_ctas": 4,
+      "whatsapp_numbers": [
+        "595992279599"
+      ],
+      "whatsapp_texts_distinct": [
+        "Hola, vi reforma y ampliación en ARQ.com.py. Quiero reformar o ampliar y necesito saber qué profesional me corresponde."
+      ],
+      "tel_links": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
+      "cross_domain_links": [
+        {
+          "href": "https://obra.com.py/reformas/",
+          "anchor": "reformas con obra.com.py",
+          "in_main": true
+        }
+      ],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/servicios/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/calculo-estructural/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/"
+      ],
+      "internal_links_in_count": 5,
+      "internal_links_in_from_main": [
+        "/servicios/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/calculo-estructural/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/"
+      ]
+    },
+    "/arquitectos/": {
+      "url": "https://arq.com.py/arquitectos/",
+      "status": 200,
+      "title": "Arquitectos y estudios en Paraguay | ARQ",
+      "title_len": 40,
+      "meta_description": "Arquitectos e ingenieros independientes con matrícula verificada, y referencias de la arquitectura paraguaya con su fuente. Así funciona la red de ARQ.",
+      "meta_description_len": 151,
+      "h1": [
+        "Arquitectos y estudios"
+      ],
+      "h2_count": 5,
+      "canonical": "https://arq.com.py/arquitectos/",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 291,
+      "word_count_body": 379,
+      "internal_links_out": [
+        "/",
+        "/arquitectos/",
+        "/arquitectos/estudio-ejemplo-dos/",
+        "/arquitectos/estudio-ejemplo-uno/",
+        "/arquitectos/gabinete-de-arquitectura/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/servicios/",
+        "/terminos/"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/arquitectos/estudio-ejemplo-dos/",
+        "/arquitectos/estudio-ejemplo-uno/",
+        "/arquitectos/gabinete-de-arquitectura/",
+        "/contanos-tu-proyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/terminos/"
+      ],
+      "external_link_hosts": [
+        "arq.com.py",
+        "wa.me"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "BreadcrumbList",
+        "CollectionPage",
+        "ListItem",
+        "Organization",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 0,
+      "whatsapp_ctas": 3,
+      "whatsapp_numbers": [
+        "595992279599"
+      ],
+      "whatsapp_texts_distinct": [
+        "Hola, vi la sección de arquitectos de ARQ.com.py. Quiero que me ayuden a encontrar un profesional para mi proyecto."
+      ],
+      "tel_links": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
+      "cross_domain_links": [],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/",
+        "/contanos-tu-proyecto/",
+        "/como-funciona/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/terminos/",
+        "/obras/bienal-venecia-2016/",
+        "/arquitectos/gabinete-de-arquitectura/"
+      ],
+      "internal_links_in_count": 17,
+      "internal_links_in_from_main": [
+        "/",
+        "/para-arquitectos/",
+        "/arquitectos/gabinete-de-arquitectura/"
+      ]
+    },
+    "/obras/": {
+      "url": "https://arq.com.py/obras/",
+      "status": 200,
+      "title": "Obras de arquitectura paraguaya | ARQ",
+      "title_len": 37,
+      "meta_description": "Índice de obras de arquitectura del Paraguay con sus autores. Filtrá por ciudad y tipo, y llegá al estudio que las proyectó.",
+      "meta_description_len": 124,
+      "h1": [
+        "Obras"
+      ],
+      "h2_count": 1,
+      "canonical": "https://arq.com.py/obras/",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 118,
+      "word_count_body": 206,
+      "internal_links_out": [
+        "/",
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/obras/",
+        "/obras/bienal-venecia-2016/",
+        "/obras/casa-ejemplo-ladrillo/",
+        "/obras/centro-ejemplo-cultural/",
+        "/obras/pabellon-ejemplo-encarnacion/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/servicios/",
+        "/terminos/"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/contanos-tu-proyecto/",
+        "/obras/bienal-venecia-2016/",
+        "/obras/casa-ejemplo-ladrillo/",
+        "/obras/centro-ejemplo-cultural/",
+        "/obras/pabellon-ejemplo-encarnacion/"
+      ],
+      "external_link_hosts": [
+        "arq.com.py",
+        "wa.me"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "BreadcrumbList",
+        "CollectionPage",
+        "ListItem",
+        "Organization",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 0,
+      "whatsapp_ctas": 3,
+      "whatsapp_numbers": [
+        "595992279599"
+      ],
+      "whatsapp_texts_distinct": [
+        "Hola, estuve mirando las obras en ARQ.com.py y quiero consultar por un proyecto propio."
+      ],
+      "tel_links": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
+      "cross_domain_links": [],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/",
+        "/contanos-tu-proyecto/",
+        "/como-funciona/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/",
+        "/arquitectos/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/terminos/",
+        "/obras/bienal-venecia-2016/",
+        "/arquitectos/gabinete-de-arquitectura/"
+      ],
+      "internal_links_in_count": 17,
+      "internal_links_in_from_main": [
+        "/arquitectos/",
+        "/obras/bienal-venecia-2016/"
+      ]
+    },
+    "/para-arquitectos/": {
+      "url": "https://arq.com.py/para-arquitectos/",
+      "status": 200,
+      "title": "Para arquitectos e ingenieros: trabajá con ARQ | ARQ",
+      "title_len": 52,
+      "meta_description": "Si sos arquitecto o ingeniero en Paraguay, conocé cómo funciona ARQ, qué verificamos y qué compromisos pedimos antes de publicar tu ficha.",
+      "meta_description_len": 138,
+      "h1": [
+        "¿Sos arquitecto? Trabajá con ARQ."
+      ],
+      "h2_count": 9,
+      "canonical": "https://arq.com.py/para-arquitectos/",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 998,
+      "word_count_body": 1086,
+      "internal_links_out": [
+        "/",
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/servicios/",
+        "/terminos/"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/arquitectos/",
+        "/como-funciona/",
+        "/privacidad/",
+        "/servicios/",
+        "/terminos/"
+      ],
+      "external_link_hosts": [
+        "arq.com.py",
+        "obra.com.py",
+        "wa.me"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "Answer",
+        "BreadcrumbList",
+        "FAQPage",
+        "ListItem",
+        "Organization",
+        "Question",
+        "WebPage",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 6,
+      "whatsapp_ctas": 3,
+      "whatsapp_numbers": [
+        "595992279599"
+      ],
+      "whatsapp_texts_distinct": [
+        "Hola, soy arquitecto/a o ingeniero/a y quiero saber cómo trabajar con ARQ.com.py."
+      ],
+      "tel_links": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
+      "cross_domain_links": [
+        {
+          "href": "https://obra.com.py/",
+          "anchor": "obra.com.py",
+          "in_main": true
+        }
+      ],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/",
+        "/contanos-tu-proyecto/",
+        "/como-funciona/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/",
+        "/arquitectos/",
+        "/obras/",
+        "/privacidad/",
+        "/terminos/",
+        "/obras/bienal-venecia-2016/",
+        "/arquitectos/gabinete-de-arquitectura/"
+      ],
+      "internal_links_in_count": 17,
+      "internal_links_in_from_main": [
+        "/",
+        "/como-funciona/",
+        "/servicios/",
+        "/arquitectos/"
+      ]
+    },
+    "/privacidad/": {
+      "url": "https://arq.com.py/privacidad/",
+      "status": 200,
+      "title": "Política de privacidad | ARQ",
+      "title_len": 28,
+      "meta_description": "Qué datos recibe ARQ cuando contás tu proyecto, para qué los usa, con quién los comparte y cómo pedir que los corrijamos o eliminemos.",
+      "meta_description_len": 134,
+      "h1": [
+        "Política de privacidad"
+      ],
+      "h2_count": 6,
+      "canonical": "https://arq.com.py/privacidad/",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 241,
+      "word_count_body": 329,
+      "internal_links_out": [
+        "/",
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/servicios/",
+        "/terminos/"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/terminos/"
       ],
       "external_link_hosts": [
         "arq.com.py",
@@ -546,7 +1515,7 @@
       ],
       "schema_telephones": [],
       "faq_items": 0,
-      "whatsapp_ctas": 1,
+      "whatsapp_ctas": 3,
       "whatsapp_numbers": [
         "595992279599"
       ],
@@ -554,57 +1523,163 @@
         "Hola, tengo una consulta sobre mis datos en ARQ.com.py."
       ],
       "tel_links": [],
-      "phone_display": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
       "cross_domain_links": [],
       "foreign_py_mobiles": [],
       "internal_links_in": [
         "/",
-        "/obras",
-        "/arquitectos",
-        "/postulate",
-        "/contacto",
-        "/nosotros",
-        "/obras/bienal-venecia-2016",
-        "/arquitectos/gabinete-de-arquitectura"
+        "/contanos-tu-proyecto/",
+        "/como-funciona/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/",
+        "/arquitectos/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/terminos/",
+        "/obras/bienal-venecia-2016/",
+        "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 8,
+      "internal_links_in_count": 17,
       "internal_links_in_from_main": [
-        "/postulate",
-        "/contacto",
-        "/arquitectos/gabinete-de-arquitectura"
+        "/",
+        "/contanos-tu-proyecto/",
+        "/como-funciona/",
+        "/para-arquitectos/",
+        "/terminos/"
       ]
     },
-    "/obras/bienal-venecia-2016": {
-      "url": "https://arq.com.py/obras/bienal-venecia-2016",
+    "/terminos/": {
+      "url": "https://arq.com.py/terminos/",
       "status": 200,
-      "title": "Bienal de Venecia 2016: León de Oro | MONOGRAFÍA",
-      "title_len": 48,
-      "meta_description": "El León de Oro que Solano Benítez y Gabinete de Arquitectura llevaron a Paraguay. Reconocimiento en Venecia (participación de Paraguay). Créditos y estu...",
+      "title": "Términos de uso y aviso de intermediación | ARQ",
+      "title_len": 47,
+      "meta_description": "Qué es ARQ y qué no: somos un servicio de orientación y conexión con profesionales independientes. Leé los términos de uso de arq.com.py.",
+      "meta_description_len": 137,
+      "h1": [
+        "Términos de uso"
+      ],
+      "h2_count": 12,
+      "canonical": "https://arq.com.py/terminos/",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 773,
+      "word_count_body": 861,
+      "internal_links_out": [
+        "/",
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/servicios/",
+        "/terminos/"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/como-funciona/",
+        "/privacidad/"
+      ],
+      "external_link_hosts": [
+        "arq.com.py",
+        "wa.me"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "BreadcrumbList",
+        "ListItem",
+        "Organization",
+        "WebPage",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 0,
+      "whatsapp_ctas": 3,
+      "whatsapp_numbers": [
+        "595992279599"
+      ],
+      "whatsapp_texts_distinct": [
+        "Hola, leí los términos de ARQ.com.py y tengo una consulta."
+      ],
+      "tel_links": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
+      "cross_domain_links": [],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/",
+        "/contanos-tu-proyecto/",
+        "/como-funciona/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/",
+        "/arquitectos/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/obras/bienal-venecia-2016/",
+        "/arquitectos/gabinete-de-arquitectura/"
+      ],
+      "internal_links_in_count": 17,
+      "internal_links_in_from_main": [
+        "/arquitectos/",
+        "/para-arquitectos/",
+        "/privacidad/"
+      ]
+    },
+    "/obras/bienal-venecia-2016/": {
+      "url": "https://arq.com.py/obras/bienal-venecia-2016/",
+      "status": 200,
+      "title": "Bienal de Venecia 2016: León de Oro | ARQ",
+      "title_len": 41,
+      "meta_description": "El León de Oro que Solano Benítez y Gabinete de Arquitectura llevaron a Paraguay. Reconocimiento en Venecia (participación de Paraguay). Créditos y fuen...",
       "meta_description_len": 155,
       "h1": [
         "Bienal de Venecia 2016: León de Oro"
       ],
-      "h2_count": 2,
-      "canonical": "https://arq.com.py/obras/bienal-venecia-2016",
+      "h2_count": 1,
+      "canonical": "https://arq.com.py/obras/bienal-venecia-2016/",
       "canonical_self": true,
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 88,
-      "word_count_body": 132,
+      "word_count_body": 176,
       "internal_links_out": [
         "/",
-        "/arquitectos",
-        "/arquitectos/gabinete-de-arquitectura",
-        "/contacto",
-        "/nosotros",
-        "/obras",
-        "/postulate",
-        "/privacidad"
+        "/arquitectos/",
+        "/arquitectos/gabinete-de-arquitectura/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/servicios/",
+        "/terminos/"
       ],
       "internal_links_out_in_main": [
         "/",
-        "/arquitectos/gabinete-de-arquitectura",
-        "/obras"
+        "/arquitectos/gabinete-de-arquitectura/",
+        "/obras/"
       ],
       "external_link_hosts": [
         "arq.com.py",
@@ -624,7 +1699,7 @@
       ],
       "schema_telephones": [],
       "faq_items": 0,
-      "whatsapp_ctas": 1,
+      "whatsapp_ctas": 2,
       "whatsapp_numbers": [
         "595992279599"
       ],
@@ -632,53 +1707,56 @@
         "Hola, vi la ficha «Bienal de Venecia 2016: León de Oro» en ARQ.com.py y quiero consultar por un proyecto parecido."
       ],
       "tel_links": [],
-      "phone_display": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
       "cross_domain_links": [],
       "foreign_py_mobiles": [],
       "internal_links_in": [
-        "/",
-        "/obras",
-        "/arquitectos/gabinete-de-arquitectura"
+        "/obras/",
+        "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 3,
+      "internal_links_in_count": 2,
       "internal_links_in_from_main": [
-        "/",
-        "/obras",
-        "/arquitectos/gabinete-de-arquitectura"
+        "/obras/",
+        "/arquitectos/gabinete-de-arquitectura/"
       ]
     },
-    "/arquitectos/gabinete-de-arquitectura": {
-      "url": "https://arq.com.py/arquitectos/gabinete-de-arquitectura",
+    "/arquitectos/gabinete-de-arquitectura/": {
+      "url": "https://arq.com.py/arquitectos/gabinete-de-arquitectura/",
       "status": 200,
-      "title": "Gabinete de Arquitectura | Arquitectos | MONOGRAFÍA",
-      "title_len": 51,
-      "meta_description": "Estudio asunceno liderado por Solano Benítez, referencia mundial en arquitectura de ladrillo. Perfil, obras vinculadas y contacto en MONOGRAFÍA.",
-      "meta_description_len": 144,
+      "title": "Gabinete de Arquitectura | Arquitectos | ARQ",
+      "title_len": 44,
+      "meta_description": "Estudio asunceno liderado por Solano Benítez, referencia mundial en arquitectura de ladrillo. Ficha con datos verificables, fuentes y obras vinculadas e...",
+      "meta_description_len": 155,
       "h1": [
         "Gabinete de Arquitectura"
       ],
-      "h2_count": 3,
-      "canonical": "https://arq.com.py/arquitectos/gabinete-de-arquitectura",
+      "h2_count": 2,
+      "canonical": "https://arq.com.py/arquitectos/gabinete-de-arquitectura/",
       "canonical_self": true,
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
-      "word_count_main": 151,
-      "word_count_body": 195,
+      "word_count_main": 166,
+      "word_count_body": 254,
       "internal_links_out": [
         "/",
-        "/arquitectos",
-        "/contacto",
-        "/nosotros",
-        "/obras",
-        "/obras/bienal-venecia-2016",
-        "/postulate",
-        "/privacidad"
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/obras/",
+        "/obras/bienal-venecia-2016/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/servicios/",
+        "/terminos/"
       ],
       "internal_links_out_in_main": [
         "/",
-        "/arquitectos",
-        "/obras/bienal-venecia-2016",
-        "/privacidad"
+        "/arquitectos/",
+        "/contanos-tu-proyecto/",
+        "/obras/bienal-venecia-2016/"
       ],
       "external_link_hosts": [
         "arq.com.py",
@@ -698,27 +1776,27 @@
       ],
       "schema_telephones": [],
       "faq_items": 0,
-      "whatsapp_ctas": 1,
+      "whatsapp_ctas": 2,
       "whatsapp_numbers": [
         "595992279599"
       ],
       "whatsapp_texts_distinct": [
-        "Hola, vi la ficha de Gabinete de Arquitectura en ARQ.com.py y quiero consultar por mi proyecto."
+        "Hola, vi la ficha de Gabinete de Arquitectura en ARQ.com.py. Quiero contarles mi proyecto para que me conecten con un profesional."
       ],
       "tel_links": [],
-      "phone_display": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
       "cross_domain_links": [],
       "foreign_py_mobiles": [],
       "internal_links_in": [
-        "/",
-        "/arquitectos",
-        "/obras/bienal-venecia-2016"
+        "/arquitectos/",
+        "/obras/bienal-venecia-2016/"
       ],
-      "internal_links_in_count": 3,
+      "internal_links_in_count": 2,
       "internal_links_in_from_main": [
-        "/",
-        "/arquitectos",
-        "/obras/bienal-venecia-2016"
+        "/arquitectos/",
+        "/obras/bienal-venecia-2016/"
       ]
     }
   }
