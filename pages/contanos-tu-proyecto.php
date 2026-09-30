@@ -4,7 +4,7 @@ $crumbs = [['Inicio', '/'], ['Contanos tu proyecto', '/contanos-tu-proyecto/']];
 page_start([
     'title' => 'Contanos tu proyecto de arquitectura | ARQ',
     'description' => 'Tres preguntas sobre tu proyecto, tu terreno y la zona. Seguís por WhatsApp con la consulta ya escrita y te conectamos con el profesional adecuado.',
-    'path' => '/contanos-tu-proyecto/',
+    'path' => '/contanos-tu-proyecto/', 'body' => 'is-selector',
     'crumbs' => $crumbs,
     'jsonld' => [['@type' => 'ContactPage', 'name' => 'Contanos tu proyecto', 'url' => url('/contanos-tu-proyecto/'), 'inLanguage' => SITE_LOCALE]],
 ]);

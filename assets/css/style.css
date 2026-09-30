@@ -42,6 +42,7 @@ a.brand { display: inline-flex; align-items: center; min-height: 44px; }
   .site-header { flex-wrap: nowrap; flex-direction: column; align-items: stretch; gap: 0; padding-bottom: 0; }
   .nav { flex-wrap: nowrap; overflow-x: auto; gap: 0 18px; margin: 0 calc(-1 * var(--gutter)); padding: 0 var(--gutter); scrollbar-width: none; white-space: nowrap; }
   .nav::-webkit-scrollbar { display: none; }
+  .nav { -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); padding-right: 48px; }
   .nav a { flex: none; }
 }
 
@@ -99,14 +100,15 @@ a.brand { display: inline-flex; align-items: center; min-height: 44px; }
 
 /* Hero */
 .hero { position: relative; min-height: 100svh; background: var(--ink); color: var(--paper); display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; }
-.hero__bg { position: absolute; inset: 0; opacity: .55; }
-.hero__bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,18,16,.2), var(--ink) 92%); }
+.hero__bg { position: absolute; inset: 0; }
+.hero__bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,18,16,.35) 0%, rgba(20,18,16,.15) 30%, rgba(20,18,16,.85) 72%, var(--ink) 100%); }
+@media (min-width: 900px) { .hero__bg::after { background: linear-gradient(90deg, var(--ink) 0%, rgba(20,18,16,.82) 34%, rgba(20,18,16,.1) 62%), linear-gradient(180deg, transparent 70%, var(--ink) 100%); } }
 .hero__in { position: relative; padding-bottom: 32px; }
 .hero__in .display span { display: block; }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 .hero__foot { position: relative; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 20px; padding-top: 16px; padding-bottom: 20px; border-top: 1px solid rgba(244,241,234,.35); font-size: .8125rem; letter-spacing: .1em; text-transform: uppercase; color: var(--stone-on-ink); }
 @media (prefers-reduced-motion: no-preference) {
-  .hero__bg { animation: settle 2s var(--ease) both; }
+  .hero__bg .scene { animation: settle 2.4s var(--ease) both; }
   @keyframes settle { from { transform: scale(1.08); } to { transform: scale(1); } }
 }
 
@@ -123,15 +125,15 @@ a.brand { display: inline-flex; align-items: center; min-height: 44px; }
 .selector-aside { border-top: 1px solid var(--ink); padding-top: 20px; }
 .selector-aside .numbered li { padding-left: 48px; font-size: .9375rem; }
 .vision { position: relative; background: var(--ink); color: var(--paper); padding: 0 0 72px; }
-.vision__img { aspect-ratio: 21 / 9; min-height: 280px; opacity: .6; }
+.vision__img { aspect-ratio: 21 / 9; min-height: 280px; }
 .vision__panel { position: relative; background: var(--paper); color: var(--ink); max-width: 640px; padding: 32px 28px; margin: -96px 0 0 auto; }
 .vision__panel p { margin: 0 0 14px; }
 .empty-state { border: 1px dashed var(--stone); padding: 28px; max-width: 760px; }
 .empty-state__t { font: 400 1.6rem/1.2 var(--font-display); margin: 0 0 12px; }
 .empty-state .lead { margin-top: 0; }
 .statement { position: relative; background: var(--ink); color: var(--paper); overflow: hidden; }
-.statement__bg { position: absolute; inset: 0; opacity: .45; }
-.statement__bg::after { content: ""; position: absolute; inset: 0; background: rgba(20,18,16,.55); }
+.statement__bg { position: absolute; inset: 0; }
+.statement__bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20,18,16,.85) 0%, rgba(20,18,16,.55) 45%, rgba(20,18,16,.1) 100%); }
 .statement__in { position: relative; padding-top: 96px; padding-bottom: 96px; }
 .statement .display--xl { font-size: clamp(2.4rem, 9vw, 7rem); max-width: 12em; }
 .ribbon { background: var(--paper-2); border-top: 1px solid var(--stone); }
@@ -142,6 +144,48 @@ a.brand { display: inline-flex; align-items: center; min-height: 44px; }
 .optional { margin-top: 20px; border-top: 1px solid var(--stone); }
 .optional summary { cursor: pointer; min-height: 48px; display: flex; align-items: center; font-weight: 600; font-size: .9375rem; }
 .optional[open] summary { margin-bottom: 8px; }
+
+/* Escenas vectoriales (includes/scenes.php). Estado final = estado sin animación. */
+.scene { display: block; width: 100%; height: 100%; }
+.hero__bg .scene { position: absolute; inset: 0; }
+@media (max-width: 899px) and (orientation: portrait) { .scene--hero > g { transform: translate(830px, 215px) rotate(-12deg) scale(.5); } }
+.sc-line { fill: none; stroke: #F4F1EA; stroke-opacity: .5; stroke-width: 1.2; stroke-dasharray: 10 7; }
+.sc-stake { fill: #E58467; }
+.sc-col { fill: none; stroke: #F4F1EA; stroke-opacity: .8; stroke-width: 1.5; }
+.sc-north text { fill: #F4F1EA; fill-opacity: .55; font: 600 16px var(--font-body); letter-spacing: .2em; }
+.vision__img { position: relative; overflow: hidden; }
+.statement__bg .scene { position: absolute; inset: 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .sc-lot { animation: scFade 1.4s var(--ease) both; }
+  .sc-shadow { animation: scShadow 2.6s .5s var(--ease) both, scDrift 26s 3.2s ease-in-out infinite alternate; }
+  .sc-line { transform-box: fill-box; animation: scDraw 1.1s calc(1.8s + var(--i) * .12s) var(--ease) both; }
+  .sc-line--h { transform-origin: left center; } .sc-line--v { transform-origin: center top; }
+  .sc-stake { animation: scFade .6s 2.8s both; }
+  .sc-col { animation: scFade .5s calc(2.9s + var(--i) * .08s) both; }
+  .sc-north { animation: scFade 1s 3.4s both; }
+  .sc-light { animation: scLight 30s ease-in-out infinite alternate; }
+  .hero__thesis span { animation: rise 1.1s calc(.15s + var(--i) * .14s) var(--ease) both; }
+  .hero__sub, .hero__h1, .hero .hero__cta { animation: rise 1s .7s var(--ease) both; }
+  @keyframes scFade { from { opacity: 0; } }
+  @keyframes scShadow { from { opacity: 0; transform: translate(-38px, -52px); } }
+  @keyframes scDrift { to { transform: translate(7px, 3px); } }
+  @keyframes scDraw { from { transform: scaleX(0); opacity: 0; } }
+  .sc-line--v { animation-name: scDrawV; }
+  @keyframes scDrawV { from { transform: scaleY(0); opacity: 0; } }
+  @keyframes scLight { to { transform: translateX(-40px); } }
+  @keyframes rise { from { opacity: 0; transform: translateY(.35em); } }
+}
+
+/* Celosía: transición del hero oscuro al cuerpo claro (brief §8.4) */
+.celosia { height: 36px; background-color: var(--paper);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='36'%3E%3Cg fill='%23141210'%3E%3Crect width='60' height='12'/%3E%3Crect y='12' width='22' height='8'/%3E%3Crect x='30' y='12' width='22' height='8'/%3E%3Crect x='15' y='24' width='16' height='5'/%3E%3Crect x='45' y='24' width='16' height='5'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat-x; }
+
+/* Barra fija que aparece después del hero (brief §10) */
+.stickybar { position: fixed; top: 0; left: 0; right: 0; z-index: 40; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 6px var(--gutter); background: rgba(20,18,16,.96); color: var(--paper); border-bottom: 1px solid rgba(244,241,234,.15); transform: translateY(-100%); visibility: hidden; transition: transform .6s var(--ease), visibility 0s .6s; }
+.stickybar.is-on { transform: none; visibility: visible; transition: transform .6s var(--ease), visibility 0s; }
+.stickybar__cta { min-height: 44px; padding: 0 18px; }
+.is-selector .stickybar { display: none; }
 
 /* Bands */
 .band { padding: 72px 0; }
