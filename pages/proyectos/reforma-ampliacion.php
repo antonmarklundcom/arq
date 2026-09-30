@@ -99,6 +99,7 @@ page_start([
   </div>
 
   <?= faq_html($faq) ?>
+  <p class="prose-note">Antes de tocar muros o techos, leé <a class="link" href="/guias/cuando-se-necesita-calculo-estructural/">cuándo se necesita cálculo estructural</a>.</p>
   <?= related([
       ['Cálculo estructural', '/servicios/calculo-estructural/', 'Para subir un piso o abrir muros portantes.'],
       ['Planos y documentación municipal', '/servicios/planos-documentacion-municipal/', 'El juego de planos que se presenta y se usa en obra.'],
