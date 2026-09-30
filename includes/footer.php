@@ -17,7 +17,7 @@
       <p><a href="<?= e(wa_page()) ?>" rel="noopener" data-ev="whatsapp_handoff" data-ev-loc="footer">WhatsApp <?= e(wa_display()) ?></a></p>
       <?php if (CONTACT_EMAIL): ?><p><a href="mailto:<?= e(CONTACT_EMAIL) ?>"><?= e(CONTACT_EMAIL) ?></a></p><?php endif; ?>
       <p><a href="/para-arquitectos/" data-ev="partner_cta_click" data-ev-loc="footer">¿Sos arquitecto? Trabajá con ARQ</a></p>
-      <p><a href="/privacidad/">Privacidad</a></p>
+      <p><a href="/privacidad/">Privacidad</a> · <a href="/terminos/">Términos</a></p>
     </div>
   </div>
   <div class="wrap">

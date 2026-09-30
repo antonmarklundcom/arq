@@ -22,19 +22,19 @@ form 301s to it.
 | URL | Status | Phase | Note |
 |---|---|---|---|
 | `/` | **live** | — | Brand and conversion page. H1 per brief §11.4 |
-| `/contanos-tu-proyecto/` | *planned* | A3 | Three-step project selector (§7) → `enviar.php` → WhatsApp |
-| `/como-funciona/` | *planned* | A3 | How ARQ works and the independent-professional boundary |
-| `/servicios/` | *planned* | A3 | Hub of the four services |
-| `/servicios/anteproyecto-arquitectonico/` | *planned* | A3 | |
-| `/servicios/planos-documentacion-municipal/` | *planned* | A3 | |
-| `/servicios/calculo-estructural/` | *planned* | A3 | |
-| `/servicios/direccion-de-proyecto/` | *planned* | A3 | |
-| `/proyectos/` | *planned* | A3 | Hub of project-intent pages |
-| `/proyectos/casa-nueva/` | *planned* | A3 | |
-| `/proyectos/reforma-ampliacion/` | *planned* | A3 | |
+| `/contanos-tu-proyecto/` | **live** | A3 | Three-step project selector (§7) → `enviar.php` → WhatsApp |
+| `/como-funciona/` | **live** | A3 | How ARQ works and the independent-professional boundary |
+| `/servicios/` | **live** | A3 | Hub of the four services |
+| `/servicios/anteproyecto-arquitectonico/` | **live** | A3 | |
+| `/servicios/planos-documentacion-municipal/` | **live** | A3 | |
+| `/servicios/calculo-estructural/` | **live** | A3 | |
+| `/servicios/direccion-de-proyecto/` | **live** | A3 | |
+| `/proyectos/` | **live** | A3 | Hub of project-intent pages |
+| `/proyectos/casa-nueva/` | **live** | A3 | |
+| `/proyectos/reforma-ampliacion/` | **live** | A3 | |
 | `/proyectos/local-comercial/` | *planned* | Phase 2 | Needs a verified partner for commercial work |
 | `/proyectos/evaluar-un-terreno/` | *planned* | Phase 2 | |
-| `/para-arquitectos/` | *planned* | A3 | Partner information and application |
+| `/para-arquitectos/` | **live** | A3 | Partner information and application |
 | `/arquitectos/` | **live** | — | Architects hub. Designed empty state for partners + editorial references |
 | `/arquitectos/gabinete-de-arquitectura/` | **live** | — | Editorial reference with a named source. **Not** an ARQ partner |
 | `/arquitectos/[perfil-verificado]/` | *planned* | Phase 2 | Only with verified registration (CAP member list) and consent |
@@ -44,17 +44,17 @@ form 301s to it.
 | `/guias/` + six guides of §17 Phase 2 | *planned* | Phase 2 | See A4 keyword map for order |
 | `/zonas/asuncion/`, `/zonas/gran-asuncion/` | *not planned* | — | Brief §11.3: only with real partner coverage |
 | `/privacidad/` | **live** | — | Base text; lawyer review pending |
-| `/terminos/` | *planned* | A3 | Terms + matching disclaimer |
+| `/terminos/` | **live** | A3 | Terms + matching disclaimer |
 | `/gracias/` | noindex | — | Thank-you page for the partner and profile forms |
 
 ## 2. Existing URLs that move (301)
 
 | Old URL | → New URL | When |
 |---|---|---|
-| `/contacto` | `/contanos-tu-proyecto/` | A3 |
-| `/postulate` | `/para-arquitectos/` | A3 |
-| `/nosotros` | `/como-funciona/` | A3 |
-| `/obras`, `/arquitectos`, `/privacidad`, `/gracias`, `/obras/x`, `/arquitectos/x` | same path + `/` | A3 |
+| `/contacto` | `/contanos-tu-proyecto/` | live |
+| `/postulate` | `/para-arquitectos/` | live |
+| `/nosotros` | `/como-funciona/` | live |
+| `/obras`, `/arquitectos`, `/privacidad`, `/gracias`, `/obras/x`, `/arquitectos/x` (any slashless path) | same path + `/` | A3 |
 
 `/arquitectos` keeps working for carpinteria's `/cocinas/` and `/placares/` links: 301 → `/arquitectos/`.
 Carpinteria can update the href to `https://arq.com.py/arquitectos/` to save the hop.
@@ -66,12 +66,12 @@ URLs was ever live. Those with a clear equivalent get a 301 so a typed or copied
 
 | Structure doc | Brief equivalent | Handling |
 |---|---|---|
-| `/planos/` | `/servicios/planos-documentacion-municipal/` | 301 (A3) |
-| `/carpeta/` | `/servicios/planos-documentacion-municipal/` | 301 (A3) |
-| `/diseno/` | `/servicios/anteproyecto-arquitectonico/` | 301 (A3) |
-| `/estructural/` | `/servicios/calculo-estructural/` | 301 (A3) |
-| `/como-trabajamos/` | `/como-funciona/` | 301 (A3) |
-| `/cotizar/` | `/contanos-tu-proyecto/` | 301 (A3) |
+| `/planos/` | `/servicios/planos-documentacion-municipal/` | 301 (live) |
+| `/carpeta/` | `/servicios/planos-documentacion-municipal/` | 301 (live) |
+| `/diseno/` | `/servicios/anteproyecto-arquitectonico/` | 301 (live) |
+| `/estructural/` | `/servicios/calculo-estructural/` | 301 (live) |
+| `/como-trabajamos/` | `/como-funciona/` | 301 (live) |
+| `/cotizar/` | `/contanos-tu-proyecto/` | 301 (live) |
 | `/comercial/` | `/proyectos/local-comercial/` | *planned*. 404 until that page exists |
 | `/proyectos/` (portfolio) | `/obras/` | In the brief `/proyectos/` is the project-intent hub, not a portfolio |
 | `/regularizacion/` | — | *not planned*: brief §11.2 says "only if verified partners genuinely provide it" |

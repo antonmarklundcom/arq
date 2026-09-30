@@ -45,7 +45,7 @@ page_start([
       <li>Autoría de cada obra que se muestra y permiso para publicarla.</li>
       <li>Servicios que presta y zona en la que trabaja de verdad.</li>
     </ul>
-    <p>El detalle está en <a class="link" href="/para-arquitectos/">para arquitectos</a>. Las obras del directorio están en <a class="link" href="/obras/">obras</a>.</p>
+    <p>El detalle está en <a class="link" href="/para-arquitectos/">para arquitectos</a> y en los <a class="link" href="/terminos/">términos de uso</a>. Las obras del directorio están en <a class="link" href="/obras/">obras</a>.</p>
   </div>
 
   <?php if ($examples): ?>
