@@ -1,36 +1,45 @@
 # Pendientes del dueño
 
-## Decisión de stack
-PLAN.md pedía Astro + GSAP. Se construyó en **HTML + PHP plano** (sin build, sin base de datos) para subirlo tal cual a Hostinger. La paleta, tipografía, estructura de sitio y reglas del plan se mantienen. El movimiento (Lenis/GSAP, revelado con clip-path, parallax) no está: solo hay revelado suave y un asentamiento del hero, con `prefers-reduced-motion` respetado. Queda para una pasada de pulido.
+Actualizado en la ventana B (2026-09-30). Fuente de verdad: `docs/seo/ARQ-COM-PY-MASTER-BUSINESS-DESIGN-SEO-BRIEF.md`.
+URLs: `docs/seo/arq-urls.md`. Informe de la ventana: `docs/BUILD-REPORT-2026-09-30.md`.
 
-## Configuración (.env, no versionado)
-`SITE_URL`, `CONTACT_EMAIL`, `NOTIFY_EMAIL`, `WHATSAPP_NUMBER` (solo dígitos), `VENDERCRM_API_KEY`. Sin clave de CRM los leads igual se guardan en `storage/leads.csv` (y por email si hay `NOTIFY_EMAIL`). Revisar `storage/form.log` si no llegan leads. Agregar `<script src="{CRM_URL}/vc-attribution.js" defer>` cuando se tenga la URL del CRM.
+## Hecho en la ventana B
+- Dirección resuelta: **el brief maestro gana** sobre PLAN.md (directorio de prestigio). Se mantiene el look MONOGRAFÍA y `/arquitectos/` + `/obras/` como hub de arquitectos. Marca: **ARQ**.
+- Fuentes Fraunces y Archivo autoalojadas en `assets/fonts/` (antes: pendiente).
+- Páginas de la fase 1 del brief: inicio, selector `/contanos-tu-proyecto/`, `/como-funciona/`, `/servicios/` + 4 servicios, `/proyectos/` + casa nueva + reforma o ampliación, `/para-arquitectos/`, `/terminos/`, privacidad reescrita.
+- Selector: guarda el lead (CSV + CRM + email) y redirige a WhatsApp con el mensaje armado.
+- Rutas con barra final y 301 (`/contacto`, `/postulate`, `/nosotros`, URLs del documento de estructura viejo).
+- WhatsApp: número por defecto `595992279599` si `.env` no define otro; un mensaje por página en `includes/data/whatsapp.json`.
+- Herramientas de QA en `tools/` (`tools/gates.sh`).
+- Plan de imágenes en `docs/imagery-manifest.json` (19 imágenes, ~27 créditos), **sin generar**.
 
-## Fuentes
-No se pudieron descargar (red bloqueada). Bajar **Fraunces** y **Archivo** (variable, latin, woff2) a `assets/fonts/` y crear `assets/fonts/fonts.css` con los `@font-face`; el sitio lo carga solo si existe. Mientras tanto usa Georgia y la fuente del sistema.
+## Solo Anton puede hacerlo
 
-## Contenido de ejemplo (`'example' => true`, marcado "Ejemplo" y `noindex`, fuera del sitemap)
-- Arquitectos: `estudio-ejemplo-uno`, `estudio-ejemplo-dos`.
-- Obras: `casa-ejemplo-ladrillo`, `centro-ejemplo-cultural`, `pabellon-ejemplo-encarnacion`.
-Reemplazar por estudios y obras reales (con autorización) en `includes/data/`.
+### En el servidor (Hostinger)
+- Crear `.env` en `public_html` (no viaja con Git): `SITE_URL=https://arq.com.py`, `WHATSAPP_NUMBER` (solo dígitos; si arq tiene su propio número, ponelo acá; si no, queda 595992279599), `CONTACT_EMAIL`, `NOTIFY_EMAIL`, `VENDERCRM_API_KEY` (la clave del sitio `arq` de la tabla de VenderCRM; nunca en el repo).
+- Crear `storage/` con permiso de escritura (ahí van `leads.csv` y `form.log`).
+- Deploy por Git: hPanel → Avanzado → GIT, repo `antonmarklundcom/arq`, rama `main`, ruta vacía. Copiar el webhook a GitHub → Settings → Webhooks (push). `public_html` vacío en el primer deploy.
+- Después del primer deploy: una consulta real de punta a punta (selector → WhatsApp, y que el lead llegue al CRM y al email). Verificar que `/docs/`, `/pages/home.php`, `/includes/config.php`, `/.git/HEAD` y `/PLAN.md` den 403/404.
+- En el entorno de Claude Code: permitir `arq.com.py`, `obra.com.py` y `*.cloudfront.net` (Network access → Allowed domains) para poder hacer la auditoría en vivo y bajar imágenes.
 
-## Contenido real sembrado (verificar redacción con la fuente)
-- Gabinete de Arquitectura / Solano Benítez y Gloria Cabral, León de Oro, Bienal de Venecia 2016. Fuente: La Biennale di Venezia. Se puede ampliar con obras, año de fundación y citas con fuente.
+### Legal y negocio (brief §19–§20)
+- Revisión de un abogado de `/privacidad/` y `/terminos/` (hoy dicen "texto base").
+- Razón social y RUC del operador (se publican en `/terminos/` §1).
+- Plazo de conservación de datos (se publica en `/privacidad/`).
+- Modelo de ingresos y condiciones comerciales con los profesionales (brief §6.5). Ninguna página lo menciona.
+- Territorio inicial exacto, disciplinas disponibles, compromiso de tiempo de respuesta, proceso de reclamos.
+- Procedimiento de verificación por disciplina. Para arquitectos: lista de socios del CAP (Colegio de Arquitectos del Paraguay). Definir cuál se usa para ingenieros.
+- Plataforma de analítica y consentimiento (los CTA ya tienen `data-ev` / `data-ev-loc`).
 
-## Fotos necesarias (no se generó ninguna imagen; hoy hay placeholders de ladrillo en CSS)
-- Hero de inicio: ladrillo monumental, tratamiento duotono ink + clay (1920x1080+).
-- Una foto principal por obra (4:3, mín. 1600 px) con su texto alternativo.
-- Retrato o imagen por estudio.
-- Imagen Open Graph 1200x630 (agregar `og:image` en `includes/lib.php`).
-- Favicon PNG/ICO opcional (hoy hay `assets/img/favicon.svg`).
+### Contenido
+- **Profesionales reales** con matrícula verificada y permiso para publicar su obra: se cargan en `includes/data/architects.php` con `'partner' => true` (solo ellos reciben consultas desde su ficha). Hasta entonces `/arquitectos/` muestra el estado vacío del brief.
+- Gabinete de Arquitectura es una ficha **editorial** (fuente: La Biennale di Venezia 2016), no un estudio asociado. Revisar redacción.
+- Ejemplos (`'example' => true`, noindex): `estudio-ejemplo-uno`, `estudio-ejemplo-dos`, `casa-ejemplo-ladrillo`, `centro-ejemplo-cultural`, `pabellon-ejemplo-encarnacion`. Reemplazar o borrar cuando haya fichas reales.
+- Revisar dos frases operativas que escribimos según el brief: "esa conversación la lleva una persona" (cómo funciona) y "si tu consulta no encuentra un profesional adecuado, te lo vamos a decir" (términos §4).
+- Imágenes: escribir **"Generate image"** en el chat cuando el entorno tenga `*.cloudfront.net` permitido. Costo estimado en `docs/imagery-manifest.json`.
+- Favicon PNG/ICO opcional (hoy `assets/img/favicon.svg`).
+- Agregar `<script src="{CRM_URL}/vc-attribution.js" defer>` cuando se tenga la URL del CRM (hoy no se carga nada de terceros).
 
 ## Otros
-- Privacidad: texto base, que lo revise un abogado.
-- Definir document root y que `includes/`, `storage/`, `docs/` no sean públicos (el `.htaccess` los bloquea).
-- Contadores del hero cuentan solo entradas verificadas.
-
-## Deploy por Git (hPanel → Avanzado → GIT)
-1. Repositorio `antonmarklundcom/arq`, rama `main`, ruta de instalación vacía (= `public_html`). `public_html` tiene que estar vacío en el primer deploy (borrá `default.php` o los archivos del sitio viejo).
-2. Copiá la URL del webhook de Hostinger a GitHub → Settings → Webhooks (evento push): cada merge redeploya solo.
-3. Los archivos ignorados por Git (`config.php`, `.env`, `storage/`) no viajan: creálos una sola vez por el administrador de archivos y no se pisan en los deploys siguientes.
-4. Después del primer deploy, verificá que `/docs/`, `/.git/HEAD` y `/PLAN.md` den 403/404.
+- El movimiento (GSAP/Lenis, película de sombra del hero) queda para una pasada de pulido; hoy hay revelado suave y `prefers-reduced-motion` respetado.
+- Guías de la fase 2 y páginas de zona: ver `docs/NEXT-WINDOW-PROMPT.md`. Zonas solo con cobertura real.
