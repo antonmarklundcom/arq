@@ -147,3 +147,5 @@ vite.config.ts.timestamp-*
 storage/*
 !storage/.htaccess
 !storage/.gitkeep
+audit-shots/
+tools/node_modules/

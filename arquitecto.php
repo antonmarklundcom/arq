@@ -20,7 +20,7 @@ $desc = $a['summary'] . ' Perfil, obras vinculadas y contacto en MONOGRAFÍA.';
 if (mb_strlen($desc) > 155) { $desc = mb_substr($desc, 0, 152) . '...'; }
 if (mb_strlen($desc) < 120) { $desc .= ' Conocé su trabajo y escribile directo desde arq.com.py.'; $desc = mb_substr($desc, 0, 155); }
 
-page_start(['title' => $title, 'description' => $desc, 'path' => '/arquitectos/' . $a['slug'], 'crumbs' => $crumbs, 'jsonld' => [$node], 'og_type' => 'profile', 'noindex' => !empty($a['example'])]);
+page_start(['title' => $title, 'description' => $desc, 'path' => '/arquitectos/' . $a['slug'], 'wa' => wa_template('profile', ['name' => $a['name']]), 'crumbs' => $crumbs, 'jsonld' => [$node], 'og_type' => 'profile', 'noindex' => !empty($a['example'])]);
 ?>
 <article class="wrap section profile">
   <?= crumbs_html($crumbs) ?>

@@ -1,0 +1,20 @@
+{
+  "name": "arq-tools",
+  "private": true,
+  "type": "module",
+  "description": "Local QA helpers for arq.com.py (PHP site). Not deployed; .htaccess blocks /tools/.",
+  "scripts": {
+    "gates": "node gates.mjs",
+    "audit": "node audit.mjs local docs/audit/audit-after.json",
+    "seo-diff": "node seo-diff.mjs docs/audit/audit-before.json docs/audit/audit-after.json",
+    "links": "node linkcheck.mjs",
+    "overlap": "node overlap.mjs",
+    "wa": "node check-wa.mjs",
+    "pw": "node pw-check.mjs --strict",
+    "live": "NODE_USE_ENV_PROXY=1 node live-check.mjs"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0",
+    "playwright": "1.56.1"
+  }
+}

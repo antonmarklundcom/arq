@@ -13,8 +13,8 @@ RewriteRule ^robots\.txt$ robots.php [L]
 RewriteRule ^obras/([a-z0-9-]+)/?$ obra.php?slug=$1 [L,QSA]
 RewriteRule ^arquitectos/([a-z0-9-]+)/?$ arquitecto.php?slug=$1 [L,QSA]
 
-# Nunca servir includes, storage ni .env
-RewriteRule ^(includes|storage|docs)/ - [F]
+# Nunca servir includes, storage, docs, herramientas ni .env
+RewriteRule ^(includes|storage|docs|tools|audit-shots)(/|$) - [F]
 RewriteRule ^\.env - [F]
 # Deploy por Git: la raíz del repo es el sitio; cerramos .git y archivos de desarrollo.
 RewriteRule (^|/)\.git(/|$) - [F]

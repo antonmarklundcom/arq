@@ -51,7 +51,7 @@ function lead_form(string $source, array $opts = [], array $old = [], array $err
     <div class="field"><label for="f-msg">¿Qué querés consultar?</label><textarea id="f-msg" name="mensaje" rows="4" required<?= $inv('mensaje') ?>><?= $v('mensaje') ?></textarea><?= $err('mensaje') ?></div>
 <?php endif; ?>
     <div class="field"><label for="f-name">Nombre</label><input id="f-name" name="nombre" required autocomplete="name" value="<?= $v('nombre') ?>"<?= $inv('nombre') ?>><?= $err('nombre') ?></div>
-    <div class="field"><label for="f-phone">Teléfono o WhatsApp</label><input id="f-phone" type="tel" name="telefono" required autocomplete="tel" placeholder="0981 123 456" value="<?= $v('telefono') ?>"<?= $inv('telefono') ?>><?= $err('telefono') ?></div>
+    <div class="field"><label for="f-phone">Teléfono o WhatsApp</label><input id="f-phone" type="tel" name="telefono" required autocomplete="tel" placeholder="Tu número de WhatsApp" value="<?= $v('telefono') ?>"<?= $inv('telefono') ?>><?= $err('telefono') ?></div>
     <div class="field"><label for="f-email">Email (opcional)</label><input id="f-email" type="email" name="email" autocomplete="email" value="<?= $v('email') ?>"<?= $inv('email') ?>><?= $err('email') ?></div>
   </fieldset>
   <p class="small">Al enviar aceptás nuestra <a href="/privacidad">política de privacidad</a>.</p>
