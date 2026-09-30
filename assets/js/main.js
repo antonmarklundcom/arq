@@ -14,6 +14,18 @@
     els.forEach(function (el) { el.classList.add('reveal'); io.observe(el); });
   }
 
+  // Barra fija con un solo CTA, después del hero (o del encabezado en las demás páginas)
+  var sticky = document.querySelector('[data-stickybar]');
+  var mark = document.querySelector('.hero') || document.querySelector('.site-header');
+  if (sticky && mark && 'IntersectionObserver' in window) {
+    var links = sticky.querySelectorAll('a');
+    new IntersectionObserver(function (en) {
+      var on = !en[0].isIntersecting;
+      sticky.classList.toggle('is-on', on);
+      links.forEach(function (a) { a.tabIndex = on ? 0 : -1; });
+    }, { rootMargin: '-80px 0px 0px 0px' }).observe(mark);
+  }
+
   // Selector de proyecto en pasos (mejora progresiva: sin JS se ven los tres pasos juntos)
   var form = document.querySelector('form.form--steps');
   if (!form) { return; }

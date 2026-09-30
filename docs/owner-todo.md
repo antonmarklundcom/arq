@@ -41,5 +41,5 @@ URLs: `docs/seo/arq-urls.md`. Informe de la ventana: `docs/BUILD-REPORT-2026-09-
 - Agregar `<script src="{CRM_URL}/vc-attribution.js" defer>` cuando se tenga la URL del CRM (hoy no se carga nada de terceros).
 
 ## Otros
-- El movimiento (GSAP/Lenis, película de sombra del hero) queda para una pasada de pulido; hoy hay revelado suave y `prefers-reduced-motion` respetado.
+- Movimiento hecho (C3): el hero muestra la sombra de la casa conceptual sobre el lote vacío (dibujo vectorial animado, sin librerías), más la galería al mediodía, la luz de la celosía y la barra fija con un CTA. Cuando lleguen las fotos se ponen encima de esas escenas.
 - Guías de la fase 2 y páginas de zona: ver `docs/NEXT-WINDOW-PROMPT.md`. Zonas solo con cobertura real.

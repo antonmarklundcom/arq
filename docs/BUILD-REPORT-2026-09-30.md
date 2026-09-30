@@ -55,7 +55,7 @@ ALL GATES GREEN
 - **Real end-to-end lead test into VenderCRM**: not done from here (no .env on the dev server, and it would create a real CRM contact). Owner step after deploy.
 
 ## Things fixed along the way
-- The form placeholder `0981 123 456` looked like a real PY mobile number and was replaced.
+- The form placeholder was a real-looking PY mobile number (a 0981 number) and was replaced.
 - On /contacto the radio inputs were absolutely positioned at 100 % width and overflowed on desktop.
 - The header, brand link, footer and service heading links were under 44 px.
 - The `hidden` attribute was overridden by `.btn { display: inline-flex }`, so all three stepper buttons showed on step 1.
@@ -63,3 +63,17 @@ ALL GATES GREEN
 - The old partner page said "Sin costo de postulación" (a price claim, and the revenue model is undecided). Removed.
 - A budget field with USD/Gs examples on the contact form. Removed: the brief puts budget in the WhatsApp qualification.
 - Tool bug: HEAD fetches left response bodies unread and crashed undici. Fixed in `tools/lib.mjs`.
+
+## Addendum — C3 motion and hero (Opus, same day)
+- `includes/scenes.php` adds three vector scenes, with no images and no third-party requests (about 6 KB of inline SVG in total):
+  - **hero**: an empty lot of tierra colorada carrying the precise shadow of the conceptual L-shaped house, which does not exist yet (brief §8.5), with setting-out lines, stakes, the seven gallery columns and a north arrow. Load sequence: lot → shadow arrives → lines draw → columns → the shadow drifts slowly, as the sun does. Reframed for portrait phones;
+  - **vision band**: the gallery at noon, with the slab shade, seven columns and long raking column shadows on the red floor;
+  - **statement band**: afternoon light through a brick celosía.
+- The celosía strip marks the transition from the dark hero to the light body (brief §8.4).
+- A sticky bar with one CTA appears after the hero (brief §10). It is hidden on the selector page and not focusable while hidden.
+- The hero thesis rises line by line.
+- `prefers-reduced-motion` shows the final state immediately (verified: `animation: none`, `opacity: 1`).
+- No GSAP or Lenis, and home JS is about 3 KB. The LCP element is text, at around 130 ms locally.
+- Each scene sits inside the `data-slot` container its photo will use. In window C the photo goes on top, and the scene remains as the fallback.
+- Mobile nav: an edge fade signals that it scrolls.
+- Gates after C3: ALL GREEN (linkcheck 719 refs 0 broken, overlap OK, check-wa OK, pw-check 0 overflow/3p/small taps, seo-diff 0 failing).

@@ -8,10 +8,10 @@ page_start([
 ]);
 ?>
 <section class="hero" aria-labelledby="hero-h">
-  <div class="hero__bg brick brick--dark" data-slot="home-hero" aria-hidden="true"></div>
+  <div class="hero__bg" data-slot="home-hero" aria-hidden="true"><?= scene_hero() ?></div>
   <div class="wrap hero__in">
     <p class="eyebrow">Arquitectura en Paraguay · <?= e(SITE_COVERAGE) ?></p>
-    <p class="display display--xl hero__thesis" aria-hidden="true"><span>La sombra</span> <span>es el primer</span> <span>material.</span></p>
+    <p class="display display--xl hero__thesis" aria-hidden="true"><span style="--i:0">La sombra</span> <span style="--i:1">es el primer</span> <span style="--i:2">material.</span></p>
     <p class="hero__sub">Arquitectura pensada para el clima paraguayo.</p>
     <h1 id="hero-h" class="hero__h1">Encontrá el arquitecto adecuado para tu proyecto en Paraguay.</h1>
     <p class="hero__cta">
@@ -21,9 +21,10 @@ page_start([
   </div>
   <div class="hero__foot wrap">
     <span>ARQ conecta proyectos con arquitectos e ingenieros independientes</span>
-    <span>No es un estudio ni una constructora</span>
+    <span>Dibujo conceptual: la sombra de una casa que todavía no existe</span>
   </div>
 </section>
+<div class="celosia" aria-hidden="true"></div>
 
 <section class="wrap section manifesto" aria-labelledby="h-man">
   <p class="eyebrow">01 · Manifiesto</p>
@@ -48,7 +49,7 @@ page_start([
 </section>
 
 <section class="vision" aria-labelledby="h-vis">
-  <div class="vision__img brick brick--dark" data-slot="home-vision" aria-hidden="true"></div>
+  <div class="vision__img" data-slot="home-vision" aria-hidden="true"><?= scene_gallery() ?></div>
   <div class="wrap">
     <div class="vision__panel">
       <p class="eyebrow">03 · Antes del plano</p>
@@ -111,7 +112,7 @@ page_start([
 </section>
 
 <section class="statement" aria-labelledby="h-stmt">
-  <div class="statement__bg brick brick--dark" data-slot="home-statement" aria-hidden="true"></div>
+  <div class="statement__bg" data-slot="home-statement" aria-hidden="true"><?= scene_celosia() ?></div>
   <div class="wrap statement__in">
     <h2 id="h-stmt" class="display display--xl">Arquitectura para las dos de la tarde.</h2>
     <p class="hero__cta"><?= selector_cta('Contanos tu proyecto', 'statement') ?></p>

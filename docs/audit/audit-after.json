@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T18:53:25.919Z",
+  "generated": "2026-09-30T19:41:04.824Z",
   "source": "local php -S router.php",
   "sitemap_url_count": 18,
   "summary": {
@@ -49,8 +49,8 @@
       "canonical_self": true,
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
-      "word_count_main": 520,
-      "word_count_body": 608,
+      "word_count_main": 525,
+      "word_count_body": 617,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -161,7 +161,7 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 221,
-      "word_count_body": 309,
+      "word_count_body": 313,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -260,7 +260,7 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 956,
-      "word_count_body": 1044,
+      "word_count_body": 1048,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -370,7 +370,7 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 520,
-      "word_count_body": 608,
+      "word_count_body": 612,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -484,7 +484,7 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 1053,
-      "word_count_body": 1141,
+      "word_count_body": 1145,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -585,7 +585,7 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 1056,
-      "word_count_body": 1144,
+      "word_count_body": 1148,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -688,7 +688,7 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 1017,
-      "word_count_body": 1105,
+      "word_count_body": 1109,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -792,7 +792,7 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 1042,
-      "word_count_body": 1130,
+      "word_count_body": 1134,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -887,7 +887,7 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 197,
-      "word_count_body": 285,
+      "word_count_body": 289,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -981,7 +981,7 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 1030,
-      "word_count_body": 1118,
+      "word_count_body": 1122,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -1084,7 +1084,7 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 1055,
-      "word_count_body": 1143,
+      "word_count_body": 1147,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -1184,7 +1184,7 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 291,
-      "word_count_body": 379,
+      "word_count_body": 383,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -1282,7 +1282,7 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 118,
-      "word_count_body": 206,
+      "word_count_body": 210,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -1378,7 +1378,7 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 998,
-      "word_count_body": 1086,
+      "word_count_body": 1090,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -1482,7 +1482,7 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 241,
-      "word_count_body": 329,
+      "word_count_body": 333,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -1572,7 +1572,7 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 773,
-      "word_count_body": 861,
+      "word_count_body": 865,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -1662,7 +1662,7 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 88,
-      "word_count_body": 176,
+      "word_count_body": 180,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -1738,7 +1738,7 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 166,
-      "word_count_body": 254,
+      "word_count_body": 258,
       "internal_links_out": [
         "/",
         "/arquitectos/",
