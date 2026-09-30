@@ -80,6 +80,7 @@ page_start([
   </div>
 
   <?= faq_html($faq) ?>
+  <p class="prose-note">Si querés saber qué mirar al elegir un profesional, leé la guía <a class="link" href="/guias/como-elegir-arquitecto/">cómo elegir arquitecto</a>.</p>
   <?= related([
       ['Contanos tu proyecto', '/contanos-tu-proyecto/', 'Las tres preguntas que inician la conversación.'],
       ['Servicios', '/servicios/', 'Las cuatro etapas y el profesional de cada una.'],

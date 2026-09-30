@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-30T19:41:04.824Z",
+  "generated": "2026-09-30T19:52:29.385Z",
   "source": "local php -S router.php",
-  "sitemap_url_count": 18,
+  "sitemap_url_count": 22,
   "summary": {
     "not_200": [],
     "foreign_number_hits": [],
@@ -13,6 +13,7 @@
       "/",
       "/contanos-tu-proyecto/",
       "/proyectos/",
+      "/guias/",
       "/arquitectos/",
       "/obras/",
       "/privacidad/",
@@ -30,7 +31,7 @@
     ],
     "word_count_main_min_max": [
       88,
-      1056
+      1208
     ]
   },
   "pages": {
@@ -50,12 +51,13 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 525,
-      "word_count_body": 617,
+      "word_count_body": 618,
       "internal_links_out": [
         "/",
         "/arquitectos/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -116,6 +118,10 @@
         "/proyectos/",
         "/proyectos/casa-nueva/",
         "/proyectos/reforma-ampliacion/",
+        "/guias/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/antes-de-comprar-un-terreno/",
         "/arquitectos/",
         "/obras/",
         "/para-arquitectos/",
@@ -124,7 +130,7 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 17,
+      "internal_links_in_count": 21,
       "internal_links_in_from_main": [
         "/contanos-tu-proyecto/",
         "/como-funciona/",
@@ -136,6 +142,10 @@
         "/proyectos/",
         "/proyectos/casa-nueva/",
         "/proyectos/reforma-ampliacion/",
+        "/guias/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/antes-de-comprar-un-terreno/",
         "/arquitectos/",
         "/obras/",
         "/para-arquitectos/",
@@ -161,12 +171,13 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 221,
-      "word_count_body": 313,
+      "word_count_body": 314,
       "internal_links_out": [
         "/",
         "/arquitectos/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -219,6 +230,10 @@
         "/proyectos/",
         "/proyectos/casa-nueva/",
         "/proyectos/reforma-ampliacion/",
+        "/guias/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/antes-de-comprar-un-terreno/",
         "/arquitectos/",
         "/obras/",
         "/para-arquitectos/",
@@ -227,7 +242,7 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 17,
+      "internal_links_in_count": 21,
       "internal_links_in_from_main": [
         "/",
         "/como-funciona/",
@@ -239,6 +254,10 @@
         "/proyectos/",
         "/proyectos/casa-nueva/",
         "/proyectos/reforma-ampliacion/",
+        "/guias/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/antes-de-comprar-un-terreno/",
         "/arquitectos/",
         "/obras/",
         "/arquitectos/gabinete-de-arquitectura/"
@@ -259,13 +278,15 @@
       "canonical_self": true,
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
-      "word_count_main": 956,
-      "word_count_body": 1048,
+      "word_count_main": 971,
+      "word_count_body": 1064,
       "internal_links_out": [
         "/",
         "/arquitectos/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/",
+        "/guias/como-elegir-arquitecto/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -277,6 +298,7 @@
       "internal_links_out_in_main": [
         "/",
         "/contanos-tu-proyecto/",
+        "/guias/como-elegir-arquitecto/",
         "/para-arquitectos/",
         "/privacidad/",
         "/proyectos/",
@@ -334,6 +356,10 @@
         "/proyectos/",
         "/proyectos/casa-nueva/",
         "/proyectos/reforma-ampliacion/",
+        "/guias/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/antes-de-comprar-un-terreno/",
         "/arquitectos/",
         "/obras/",
         "/para-arquitectos/",
@@ -342,7 +368,7 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 17,
+      "internal_links_in_count": 21,
       "internal_links_in_from_main": [
         "/",
         "/servicios/",
@@ -350,6 +376,8 @@
         "/servicios/planos-documentacion-municipal/",
         "/servicios/direccion-de-proyecto/",
         "/proyectos/casa-nueva/",
+        "/guias/",
+        "/guias/como-elegir-arquitecto/",
         "/para-arquitectos/",
         "/terminos/"
       ]
@@ -370,12 +398,13 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 520,
-      "word_count_body": 612,
+      "word_count_body": 613,
       "internal_links_out": [
         "/",
         "/arquitectos/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -449,6 +478,10 @@
         "/proyectos/",
         "/proyectos/casa-nueva/",
         "/proyectos/reforma-ampliacion/",
+        "/guias/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/antes-de-comprar-un-terreno/",
         "/arquitectos/",
         "/obras/",
         "/para-arquitectos/",
@@ -457,7 +490,7 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 17,
+      "internal_links_in_count": 21,
       "internal_links_in_from_main": [
         "/como-funciona/",
         "/servicios/anteproyecto-arquitectonico/",
@@ -465,6 +498,7 @@
         "/servicios/calculo-estructural/",
         "/servicios/direccion-de-proyecto/",
         "/proyectos/",
+        "/guias/",
         "/para-arquitectos/"
       ]
     },
@@ -483,13 +517,15 @@
       "canonical_self": true,
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
-      "word_count_main": 1053,
-      "word_count_body": 1145,
+      "word_count_main": 1069,
+      "word_count_body": 1162,
       "internal_links_out": [
         "/",
         "/arquitectos/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/",
+        "/guias/que-incluye-un-anteproyecto/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -504,6 +540,7 @@
         "/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/que-incluye-un-anteproyecto/",
         "/proyectos/casa-nueva/",
         "/servicios/",
         "/servicios/calculo-estructural/",
@@ -557,16 +594,20 @@
         "/servicios/planos-documentacion-municipal/",
         "/servicios/calculo-estructural/",
         "/proyectos/casa-nueva/",
-        "/proyectos/reforma-ampliacion/"
+        "/proyectos/reforma-ampliacion/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/antes-de-comprar-un-terreno/"
       ],
-      "internal_links_in_count": 6,
+      "internal_links_in_count": 8,
       "internal_links_in_from_main": [
         "/",
         "/servicios/",
         "/servicios/planos-documentacion-municipal/",
         "/servicios/calculo-estructural/",
         "/proyectos/casa-nueva/",
-        "/proyectos/reforma-ampliacion/"
+        "/proyectos/reforma-ampliacion/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/antes-de-comprar-un-terreno/"
       ]
     },
     "/servicios/planos-documentacion-municipal/": {
@@ -585,12 +626,13 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 1056,
-      "word_count_body": 1148,
+      "word_count_body": 1149,
       "internal_links_out": [
         "/",
         "/arquitectos/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -659,9 +701,12 @@
         "/servicios/calculo-estructural/",
         "/servicios/direccion-de-proyecto/",
         "/proyectos/casa-nueva/",
-        "/proyectos/reforma-ampliacion/"
+        "/proyectos/reforma-ampliacion/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/antes-de-comprar-un-terreno/"
       ],
-      "internal_links_in_count": 7,
+      "internal_links_in_count": 10,
       "internal_links_in_from_main": [
         "/",
         "/servicios/",
@@ -669,7 +714,10 @@
         "/servicios/calculo-estructural/",
         "/servicios/direccion-de-proyecto/",
         "/proyectos/casa-nueva/",
-        "/proyectos/reforma-ampliacion/"
+        "/proyectos/reforma-ampliacion/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/antes-de-comprar-un-terreno/"
       ]
     },
     "/servicios/calculo-estructural/": {
@@ -688,12 +736,13 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 1017,
-      "word_count_body": 1109,
+      "word_count_body": 1110,
       "internal_links_out": [
         "/",
         "/arquitectos/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -763,9 +812,12 @@
         "/servicios/planos-documentacion-municipal/",
         "/servicios/direccion-de-proyecto/",
         "/proyectos/casa-nueva/",
-        "/proyectos/reforma-ampliacion/"
+        "/proyectos/reforma-ampliacion/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/antes-de-comprar-un-terreno/"
       ],
-      "internal_links_in_count": 7,
+      "internal_links_in_count": 10,
       "internal_links_in_from_main": [
         "/",
         "/servicios/",
@@ -773,7 +825,10 @@
         "/servicios/planos-documentacion-municipal/",
         "/servicios/direccion-de-proyecto/",
         "/proyectos/casa-nueva/",
-        "/proyectos/reforma-ampliacion/"
+        "/proyectos/reforma-ampliacion/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/antes-de-comprar-un-terreno/"
       ]
     },
     "/servicios/direccion-de-proyecto/": {
@@ -792,12 +847,13 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 1042,
-      "word_count_body": 1134,
+      "word_count_body": 1135,
       "internal_links_out": [
         "/",
         "/arquitectos/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -862,13 +918,15 @@
       "internal_links_in": [
         "/",
         "/servicios/",
-        "/servicios/calculo-estructural/"
+        "/servicios/calculo-estructural/",
+        "/guias/como-elegir-arquitecto/"
       ],
-      "internal_links_in_count": 3,
+      "internal_links_in_count": 4,
       "internal_links_in_from_main": [
         "/",
         "/servicios/",
-        "/servicios/calculo-estructural/"
+        "/servicios/calculo-estructural/",
+        "/guias/como-elegir-arquitecto/"
       ]
     },
     "/proyectos/": {
@@ -887,12 +945,13 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 197,
-      "word_count_body": 289,
+      "word_count_body": 290,
       "internal_links_out": [
         "/",
         "/arquitectos/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -950,6 +1009,10 @@
         "/servicios/direccion-de-proyecto/",
         "/proyectos/casa-nueva/",
         "/proyectos/reforma-ampliacion/",
+        "/guias/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/antes-de-comprar-un-terreno/",
         "/arquitectos/",
         "/obras/",
         "/para-arquitectos/",
@@ -958,7 +1021,7 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 17,
+      "internal_links_in_count": 21,
       "internal_links_in_from_main": [
         "/como-funciona/",
         "/proyectos/casa-nueva/",
@@ -980,13 +1043,16 @@
       "canonical_self": true,
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
-      "word_count_main": 1030,
-      "word_count_body": 1122,
+      "word_count_main": 1051,
+      "word_count_body": 1144,
       "internal_links_out": [
         "/",
         "/arquitectos/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/",
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/como-elegir-arquitecto/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -1002,6 +1068,8 @@
         "/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/como-elegir-arquitecto/",
         "/proyectos/",
         "/proyectos/reforma-ampliacion/",
         "/servicios/anteproyecto-arquitectonico/",
@@ -1056,16 +1124,22 @@
         "/servicios/anteproyecto-arquitectonico/",
         "/servicios/direccion-de-proyecto/",
         "/proyectos/",
-        "/proyectos/reforma-ampliacion/"
+        "/proyectos/reforma-ampliacion/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/antes-de-comprar-un-terreno/"
       ],
-      "internal_links_in_count": 6,
+      "internal_links_in_count": 9,
       "internal_links_in_from_main": [
         "/como-funciona/",
         "/servicios/",
         "/servicios/anteproyecto-arquitectonico/",
         "/servicios/direccion-de-proyecto/",
         "/proyectos/",
-        "/proyectos/reforma-ampliacion/"
+        "/proyectos/reforma-ampliacion/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/antes-de-comprar-un-terreno/"
       ]
     },
     "/proyectos/reforma-ampliacion/": {
@@ -1084,12 +1158,13 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 1055,
-      "word_count_body": 1147,
+      "word_count_body": 1148,
       "internal_links_out": [
         "/",
         "/arquitectos/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -1168,6 +1243,407 @@
         "/proyectos/casa-nueva/"
       ]
     },
+    "/guias/": {
+      "url": "https://arq.com.py/guias/",
+      "status": 200,
+      "title": "Guías para planificar tu casa en Paraguay | ARQ",
+      "title_len": 47,
+      "meta_description": "Guías prácticas sobre anteproyecto, cómo elegir arquitecto, terreno, planos, estructura y orientación, para decidir mejor antes de construir en Paraguay.",
+      "meta_description_len": 153,
+      "h1": [
+        "Guías para decidir antes de construir"
+      ],
+      "h2_count": 3,
+      "canonical": "https://arq.com.py/guias/",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 201,
+      "word_count_body": 294,
+      "internal_links_out": [
+        "/",
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/guias/",
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/servicios/",
+        "/terminos/"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/servicios/"
+      ],
+      "external_link_hosts": [
+        "arq.com.py",
+        "wa.me"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "BreadcrumbList",
+        "CollectionPage",
+        "ListItem",
+        "Organization",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 0,
+      "whatsapp_ctas": 4,
+      "whatsapp_numbers": [
+        "595992279599"
+      ],
+      "whatsapp_texts_distinct": [
+        "Hola, leí las guías de ARQ.com.py y quiero contarles mi proyecto para que me orienten."
+      ],
+      "tel_links": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
+      "cross_domain_links": [],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/",
+        "/contanos-tu-proyecto/",
+        "/como-funciona/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/planos-documentacion-municipal/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/proyectos/reforma-ampliacion/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/antes-de-comprar-un-terreno/",
+        "/arquitectos/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/terminos/",
+        "/obras/bienal-venecia-2016/",
+        "/arquitectos/gabinete-de-arquitectura/"
+      ],
+      "internal_links_in_count": 21,
+      "internal_links_in_from_main": [
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/antes-de-comprar-un-terreno/"
+      ]
+    },
+    "/guias/que-incluye-un-anteproyecto/": {
+      "url": "https://arq.com.py/guias/que-incluye-un-anteproyecto/",
+      "status": 200,
+      "title": "Qué incluye un anteproyecto de arquitectura | ARQ",
+      "title_len": 49,
+      "meta_description": "Qué se entrega y qué no en un anteproyecto, las etapas del diseño, qué decidís vos en cada una y cómo se pasa al proyecto ejecutivo.",
+      "meta_description_len": 132,
+      "h1": [
+        "¿Qué incluye un anteproyecto de arquitectura?"
+      ],
+      "h2_count": 9,
+      "canonical": "https://arq.com.py/guias/que-incluye-un-anteproyecto/",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 918,
+      "word_count_body": 1011,
+      "internal_links_out": [
+        "/",
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/guias/",
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/como-elegir-arquitecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/calculo-estructural/",
+        "/servicios/planos-documentacion-municipal/",
+        "/terminos/"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/contanos-tu-proyecto/",
+        "/guias/",
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/como-elegir-arquitecto/",
+        "/proyectos/casa-nueva/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/calculo-estructural/",
+        "/servicios/planos-documentacion-municipal/"
+      ],
+      "external_link_hosts": [
+        "arq.com.py",
+        "obra.com.py",
+        "wa.me"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "Answer",
+        "BreadcrumbList",
+        "FAQPage",
+        "ListItem",
+        "Organization",
+        "Question",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 4,
+      "whatsapp_ctas": 4,
+      "whatsapp_numbers": [
+        "595992279599"
+      ],
+      "whatsapp_texts_distinct": [
+        "Hola, leí qué incluye un anteproyecto en ARQ.com.py. Quiero empezar el mío con un arquitecto."
+      ],
+      "tel_links": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
+      "cross_domain_links": [
+        {
+          "href": "https://obra.com.py/",
+          "anchor": "obra.com.py",
+          "in_main": true
+        }
+      ],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/servicios/anteproyecto-arquitectonico/",
+        "/guias/",
+        "/guias/como-elegir-arquitecto/"
+      ],
+      "internal_links_in_count": 3,
+      "internal_links_in_from_main": [
+        "/servicios/anteproyecto-arquitectonico/",
+        "/guias/",
+        "/guias/como-elegir-arquitecto/"
+      ]
+    },
+    "/guias/como-elegir-arquitecto/": {
+      "url": "https://arq.com.py/guias/como-elegir-arquitecto/",
+      "status": 200,
+      "title": "Cómo elegir arquitecto para tu casa | ARQ",
+      "title_len": 41,
+      "meta_description": "Matrícula, experiencia en obras parecidas, alcance por escrito, preguntas para la primera reunión y señales de alerta antes de elegir arquitecto.",
+      "meta_description_len": 145,
+      "h1": [
+        "Cómo elegir arquitecto para tu casa"
+      ],
+      "h2_count": 10,
+      "canonical": "https://arq.com.py/guias/como-elegir-arquitecto/",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 975,
+      "word_count_body": 1068,
+      "internal_links_out": [
+        "/",
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/guias/",
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/servicios/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/servicios/planos-documentacion-municipal/",
+        "/terminos/"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/guias/",
+        "/guias/antes-de-comprar-un-terreno/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/proyectos/casa-nueva/",
+        "/servicios/calculo-estructural/",
+        "/servicios/direccion-de-proyecto/",
+        "/servicios/planos-documentacion-municipal/"
+      ],
+      "external_link_hosts": [
+        "arq.com.py",
+        "obra.com.py",
+        "wa.me"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "Answer",
+        "BreadcrumbList",
+        "FAQPage",
+        "ListItem",
+        "Organization",
+        "Question",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 5,
+      "whatsapp_ctas": 4,
+      "whatsapp_numbers": [
+        "595992279599"
+      ],
+      "whatsapp_texts_distinct": [
+        "Hola, leí cómo elegir arquitecto en ARQ.com.py. Quiero que me conecten con un profesional para mi proyecto."
+      ],
+      "tel_links": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
+      "cross_domain_links": [
+        {
+          "href": "https://obra.com.py/",
+          "anchor": "obra.com.py",
+          "in_main": true
+        }
+      ],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/como-funciona/",
+        "/proyectos/casa-nueva/",
+        "/guias/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/antes-de-comprar-un-terreno/"
+      ],
+      "internal_links_in_count": 5,
+      "internal_links_in_from_main": [
+        "/como-funciona/",
+        "/proyectos/casa-nueva/",
+        "/guias/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/antes-de-comprar-un-terreno/"
+      ]
+    },
+    "/guias/antes-de-comprar-un-terreno/": {
+      "url": "https://arq.com.py/guias/antes-de-comprar-un-terreno/",
+      "status": 200,
+      "title": "Antes de comprar un terreno para construir | ARQ",
+      "title_len": 48,
+      "meta_description": "Qué mirar en un lote antes de firmar: orientación, pendiente, suelo, servicios, retiros y papeles, y cómo hacerlo revisar por un profesional.",
+      "meta_description_len": 141,
+      "h1": [
+        "Antes de comprar un terreno para construir"
+      ],
+      "h2_count": 11,
+      "canonical": "https://arq.com.py/guias/antes-de-comprar-un-terreno/",
+      "canonical_self": true,
+      "robots": "index,follow,max-image-preview:large",
+      "og_image": null,
+      "word_count_main": 1208,
+      "word_count_body": 1301,
+      "internal_links_out": [
+        "/",
+        "/arquitectos/",
+        "/como-funciona/",
+        "/contanos-tu-proyecto/",
+        "/guias/",
+        "/guias/como-elegir-arquitecto/",
+        "/obras/",
+        "/para-arquitectos/",
+        "/privacidad/",
+        "/proyectos/",
+        "/proyectos/casa-nueva/",
+        "/servicios/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/calculo-estructural/",
+        "/servicios/planos-documentacion-municipal/",
+        "/terminos/"
+      ],
+      "internal_links_out_in_main": [
+        "/",
+        "/contanos-tu-proyecto/",
+        "/guias/",
+        "/guias/como-elegir-arquitecto/",
+        "/proyectos/casa-nueva/",
+        "/servicios/anteproyecto-arquitectonico/",
+        "/servicios/calculo-estructural/",
+        "/servicios/planos-documentacion-municipal/"
+      ],
+      "external_link_hosts": [
+        "arq.com.py",
+        "obra.com.py",
+        "wa.me"
+      ],
+      "images": 0,
+      "images_without_alt": [],
+      "external_media": [],
+      "jsonld_parse_errors": [],
+      "schema_types": [
+        "Answer",
+        "BreadcrumbList",
+        "FAQPage",
+        "ListItem",
+        "Organization",
+        "Question",
+        "WebSite"
+      ],
+      "schema_telephones": [],
+      "faq_items": 5,
+      "whatsapp_ctas": 4,
+      "whatsapp_numbers": [
+        "595992279599"
+      ],
+      "whatsapp_texts_distinct": [
+        "Hola, leí la guía para antes de comprar un terreno en ARQ.com.py. Estoy por comprar y quiero que un profesional lo revise conmigo."
+      ],
+      "tel_links": [],
+      "phone_display": [
+        "+595 992 279 599"
+      ],
+      "cross_domain_links": [
+        {
+          "href": "https://obra.com.py/",
+          "anchor": "obra.com.py",
+          "in_main": true
+        }
+      ],
+      "foreign_py_mobiles": [],
+      "internal_links_in": [
+        "/proyectos/casa-nueva/",
+        "/guias/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/"
+      ],
+      "internal_links_in_count": 4,
+      "internal_links_in_from_main": [
+        "/proyectos/casa-nueva/",
+        "/guias/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/"
+      ]
+    },
     "/arquitectos/": {
       "url": "https://arq.com.py/arquitectos/",
       "status": 200,
@@ -1184,7 +1660,7 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 291,
-      "word_count_body": 383,
+      "word_count_body": 384,
       "internal_links_out": [
         "/",
         "/arquitectos/",
@@ -1193,6 +1669,7 @@
         "/arquitectos/gabinete-de-arquitectura/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -1252,6 +1729,10 @@
         "/proyectos/",
         "/proyectos/casa-nueva/",
         "/proyectos/reforma-ampliacion/",
+        "/guias/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/antes-de-comprar-un-terreno/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -1259,7 +1740,7 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 17,
+      "internal_links_in_count": 21,
       "internal_links_in_from_main": [
         "/",
         "/para-arquitectos/",
@@ -1282,12 +1763,13 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 118,
-      "word_count_body": 210,
+      "word_count_body": 211,
       "internal_links_out": [
         "/",
         "/arquitectos/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/",
         "/obras/",
         "/obras/bienal-venecia-2016/",
         "/obras/casa-ejemplo-ladrillo/",
@@ -1349,6 +1831,10 @@
         "/proyectos/",
         "/proyectos/casa-nueva/",
         "/proyectos/reforma-ampliacion/",
+        "/guias/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/antes-de-comprar-un-terreno/",
         "/arquitectos/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -1356,7 +1842,7 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 17,
+      "internal_links_in_count": 21,
       "internal_links_in_from_main": [
         "/arquitectos/",
         "/obras/bienal-venecia-2016/"
@@ -1378,12 +1864,13 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 998,
-      "word_count_body": 1090,
+      "word_count_body": 1091,
       "internal_links_out": [
         "/",
         "/arquitectos/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -1451,6 +1938,10 @@
         "/proyectos/",
         "/proyectos/casa-nueva/",
         "/proyectos/reforma-ampliacion/",
+        "/guias/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/antes-de-comprar-un-terreno/",
         "/arquitectos/",
         "/obras/",
         "/privacidad/",
@@ -1458,7 +1949,7 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 17,
+      "internal_links_in_count": 21,
       "internal_links_in_from_main": [
         "/",
         "/como-funciona/",
@@ -1482,12 +1973,13 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 241,
-      "word_count_body": 333,
+      "word_count_body": 334,
       "internal_links_out": [
         "/",
         "/arquitectos/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -1540,6 +2032,10 @@
         "/proyectos/",
         "/proyectos/casa-nueva/",
         "/proyectos/reforma-ampliacion/",
+        "/guias/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/antes-de-comprar-un-terreno/",
         "/arquitectos/",
         "/obras/",
         "/para-arquitectos/",
@@ -1547,7 +2043,7 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 17,
+      "internal_links_in_count": 21,
       "internal_links_in_from_main": [
         "/",
         "/contanos-tu-proyecto/",
@@ -1572,12 +2068,13 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 773,
-      "word_count_body": 865,
+      "word_count_body": 866,
       "internal_links_out": [
         "/",
         "/arquitectos/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -1632,6 +2129,10 @@
         "/proyectos/",
         "/proyectos/casa-nueva/",
         "/proyectos/reforma-ampliacion/",
+        "/guias/",
+        "/guias/que-incluye-un-anteproyecto/",
+        "/guias/como-elegir-arquitecto/",
+        "/guias/antes-de-comprar-un-terreno/",
         "/arquitectos/",
         "/obras/",
         "/para-arquitectos/",
@@ -1639,7 +2140,7 @@
         "/obras/bienal-venecia-2016/",
         "/arquitectos/gabinete-de-arquitectura/"
       ],
-      "internal_links_in_count": 17,
+      "internal_links_in_count": 21,
       "internal_links_in_from_main": [
         "/arquitectos/",
         "/para-arquitectos/",
@@ -1662,13 +2163,14 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 88,
-      "word_count_body": 180,
+      "word_count_body": 181,
       "internal_links_out": [
         "/",
         "/arquitectos/",
         "/arquitectos/gabinete-de-arquitectura/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/",
         "/obras/",
         "/para-arquitectos/",
         "/privacidad/",
@@ -1738,12 +2240,13 @@
       "robots": "index,follow,max-image-preview:large",
       "og_image": null,
       "word_count_main": 166,
-      "word_count_body": 258,
+      "word_count_body": 259,
       "internal_links_out": [
         "/",
         "/arquitectos/",
         "/como-funciona/",
         "/contanos-tu-proyecto/",
+        "/guias/",
         "/obras/",
         "/obras/bienal-venecia-2016/",
         "/para-arquitectos/",

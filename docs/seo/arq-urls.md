@@ -41,7 +41,14 @@ form 301s to it.
 | `/obras/` | **live** | — | Works index kept per owner. Real entries only in the sitemap |
 | `/obras/bienal-venecia-2016/` | **live** | — | Sourced (La Biennale di Venezia) |
 | `/obras/[slug]/`, `/arquitectos/estudio-ejemplo-*/` | noindex | — | Example entries, marked "Ejemplo", outside the sitemap |
-| `/guias/` + six guides of §17 Phase 2 | *planned* | Phase 2 | See A4 keyword map for order |
+| `/guias/` | **live** | C1 | Guides hub |
+| `/guias/que-incluye-un-anteproyecto/` | **live** | C1 | |
+| `/guias/como-elegir-arquitecto/` | **live** | C1 | |
+| `/guias/antes-de-comprar-un-terreno/` | **live** | C1 | |
+| `/guias/planos-para-construir-en-asuncion/` | *planned* | C1 (PR 2) | |
+| `/guias/cuando-se-necesita-calculo-estructural/` | *planned* | C1 (PR 2) | In §17, not in §11.3 |
+| `/guias/orientacion-y-sombra-casa-paraguay/` | *planned* | C1 (PR 2) | |
+| `/guias/cuanto-cobra-un-arquitecto-en-paraguay/` | *not planned* | — | Price content (brief §11.3); out of scope without the owner |
 | `/zonas/asuncion/`, `/zonas/gran-asuncion/` | *not planned* | — | Brief §11.3: only with real partner coverage |
 | `/privacidad/` | **live** | — | Base text; lawyer review pending |
 | `/terminos/` | **live** | A3 | Terms + matching disclaimer |

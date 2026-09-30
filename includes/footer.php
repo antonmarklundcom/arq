@@ -10,6 +10,7 @@
       <a href="/como-funciona/">Cómo funciona</a>
       <a href="/servicios/">Servicios</a>
       <a href="/proyectos/">Proyectos</a>
+      <a href="/guias/">Guías</a>
       <a href="/arquitectos/">Arquitectos</a>
       <a href="/obras/">Obras</a>
     </nav>
