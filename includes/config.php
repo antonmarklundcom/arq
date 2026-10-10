@@ -39,7 +39,18 @@ define('CONTACT_EMAIL', env('CONTACT_EMAIL'));
 define('NOTIFY_EMAIL', env('NOTIFY_EMAIL', CONTACT_EMAIL));
 
 // VenderCRM (clave nunca en el repo)
-const CRM_ENDPOINT = 'https://crm.clientes.com.py/api/v1/leads';
-define('CRM_API_KEY', env('VENDERCRM_API_KEY', env('VCRM_API_KEY')));
+require_once dirname(__DIR__) . '/lib/vendercrm-config.php';
+$canonicalEnv = ['VENDERCRM_URL'=>getenv('VENDERCRM_URL'), 'VENDERCRM_API_KEY'=>getenv('VENDERCRM_API_KEY'), 'VENDERCRM_CONFIG_FILE'=>getenv('VENDERCRM_CONFIG_FILE')];
+// Verified historical key-only setting remains in the legacy fallback.
+if (!$canonicalEnv['VENDERCRM_URL']) $canonicalEnv['VENDERCRM_API_KEY'] = false;
+$crmConfigurationInvalid = false;
+try { $canonicalCrm = \VenderCRM\Config::optional(dirname(__DIR__), $canonicalEnv); }
+catch (RuntimeException $error) {
+    error_log('arq: invalid server CRM configuration');
+    $canonicalCrm = null;
+    $crmConfigurationInvalid = true;
+}
+define('CRM_ENDPOINT', $crmConfigurationInvalid ? '' : ($canonicalCrm ? $canonicalCrm->endpoint() : 'https://crm.clientes.com.py/api/v1/leads'));
+define('CRM_API_KEY', $crmConfigurationInvalid ? '' : ($canonicalCrm ? $canonicalCrm->apiKey() : env('VENDERCRM_API_KEY', env('VCRM_API_KEY'))));
 
 const STORAGE_DIR = __DIR__ . '/../storage';
